@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 **Snother site**
 
 ## Preview
@@ -32,8 +31,3 @@ Here is an example of using the grid, for a 3 column layout:
     </div>
 </div>
 ```
-=======
-# SNwebsite
-
-Marco & Moises
->>>>>>> e177c9a1a9065c6a6b9f55bad05a4c9cf03896fd
