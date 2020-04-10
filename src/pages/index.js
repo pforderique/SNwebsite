@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Banner from '../components/Banner'
+import Officers from '../components/Officers'
 
 import pic01 from '../assets/images/pic01.jpg'
 import pic02 from '../assets/images/pic02.jpg'
@@ -90,18 +91,14 @@ class HomeIndex extends React.Component {
                         </div>
                     </section>
                 </div>
+                <Officers></Officers>
+
 
             </Layout>
         )
     }
 }
-//                        <div className="box alt">
-//                            <div className="grid-wrapper">
-//                                <div className="col-3"><img src={commander} alt="" /></div>
-//                                <div className="col-3"><img src={ltc} alt="" /></div>
-//                                <div className="col-3"><img src={rush} alt="" /></div>
-//                            </div>
-//                        </div>
+
 
 
 export default HomeIndex
