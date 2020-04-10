@@ -5,6 +5,9 @@ module.exports = {
     description: "A Gatsby.js V2 Starter based on Forty by HTML5 UP"
   },
   plugins: [
+    {
+      resolve: `gatsby-transformer-sharp`
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
