@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Brother from '../components/brother'
 
-import pic11 from '../assets/images/pic11.jpg'
+import pic11 from '../assets/images/derekGarcia.jpg'
 
 const Brothers = (props) => (
     <Layout>
@@ -18,7 +18,7 @@ const Brothers = (props) => (
                     <header className="major">
                         <h1>Brothers</h1>
                     </header>
-                    <Brother img = "derekGarcia.jpg" name = "Derek"></Brother>
+                    <Brother img = {pic11} name = {"Derek"} picView = {"Normal"}></Brother>
                 </div>
             </section>
         </div>
