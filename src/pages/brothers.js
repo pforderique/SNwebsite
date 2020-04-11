@@ -18,11 +18,10 @@ const Brothers = (props) => (
                     <header className="major">
                         <h1>Brothers</h1>
                     </header>
-
+                    <Brother img = "derekGarcia.jpg" name = "Derek"></Brother>
                 </div>
             </section>
         </div>
-        <Brother img = "derekGarcia.jpg" name = "Derek"></Brother>
     </Layout>
 )
 

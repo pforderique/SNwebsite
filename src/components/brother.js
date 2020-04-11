@@ -6,7 +6,7 @@ class Brother extends React.Component {
     super(props);
     this.state = {
       img: null,
-      name: null,
+      name: null},
     };
   }
 
@@ -18,8 +18,9 @@ class Brother extends React.Component {
     return (
     <div className={"brother"}>
         <div>
-            renderBrotherImage(img, name)
-            <p>this.state.name</p>
+        <p>aaaa</p>
+            {this.renderBrotherImage(img, name)}
+            <p>{this.state.name}</p>
         </div>
     </div>
     );
