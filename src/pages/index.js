@@ -57,10 +57,10 @@ class HomeIndex extends React.Component {
                         </article>
                         <article style={{backgroundImage: `url(${pic04})`}}>
                             <header className="major">
-                                <h3>Ipsum</h3>
+                                <h3>Summer Housing</h3>
                                 <p>Nisl sed aliquam</p>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
+                            <Link to="/summer-housing" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic05})`}}>
                             <header className="major">
@@ -86,7 +86,7 @@ class HomeIndex extends React.Component {
                             <p>Sigma Nu brothers represent a wide variety of majors and are all driven to succeed at the highest academic level. With hard work comes success, and our brothers have worked at premier companies such as Amazon, Facebook, and Google. In addition to well-rounded students, you’ll also find a variety of personalities at Sigma Nu including movie aficionados, athletes and weightlifters, poker players, and aspiring bartenders. </p>
                             <p>Whether you’re grabbing a bite at the famous Boston Burger Company or catching a Red Sox game at nearby Fenway Park, there’s always something to do near Sigma Nu. Stop by and meet the brotherhood!</p>
                             <ul className="actions">
-                                <li><Link to="/landing" className="button next">Meet the brothers</Link></li>
+                                <li><Link to="/brothers" className="button next">Meet the brothers</Link></li>
                             </ul>
                         </div>
                     </section>

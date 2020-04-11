@@ -9,19 +9,19 @@ const Officers = (props) => (
     <div className={"officers"}>
         <div>
             <img src={rush} alt={"rush"} className={"officer"}/>
-            <p>LTC</p>
+            <p>Lieutenant Commander</p>
             <p>Derek Garcia</p>
-            <p> email@mit.edu</p>
+            <p>email@mit.edu</p>
         </div>
         <div>
             <img src={commander} alt={'commander'} className={"officer"}/>
             <p>Commander</p>
             <p>Ricky Alvarez</p>
-            <p> email@mit.edu</p>
+            <p>email@mit.edu</p>
         </div>
         <div>
             <img src={ltc} alt={'ltc'} className={"officer"}/>
-            <p>Rush</p>
+            <p>Rush Chair</p>
             <p>Charles Coffey</p>
             <p>email@mit.edu</p>
         </div>
