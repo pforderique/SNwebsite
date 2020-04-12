@@ -3,7 +3,13 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Brother from '../components/brother'
 
-import pic11 from '../assets/images/derekGarcia.jpg'
+import Grid from '@material-ui/core/Grid';
+
+import './brothers.scss'
+
+import brotherInfo from '../assets/brotherInfo'
+
+
 
 const Brothers = (props) => (
     <Layout>
@@ -18,7 +24,14 @@ const Brothers = (props) => (
                     <header className="major">
                         <h1>Brothers</h1>
                     </header>
-                    <Brother img = {pic11} name = {"Derek"} picView = {"Normal"}></Brother>
+                    <div className={'brotherGrid'}>
+
+                      <Grid container spacing={3}>
+                        {brotherInfo.map( obj => {
+                          return <Brother name={obj.name} img={obj.img}></Brother>
+                        })}
+                      </Grid>
+                    </div>
                 </div>
             </section>
         </div>
