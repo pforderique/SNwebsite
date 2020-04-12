@@ -1,5 +1,6 @@
 import React from 'react'
 import "./brother.scss"
+import Popup from "reactjs-popup"
 
 
 //TODO: make brother pic expand into a different view when clicked to show: pledge class, hometown, major, interests/bio all in a pannel view or sm
@@ -31,6 +32,17 @@ class Brother extends React.Component {
     <div className={"brother"}>
       <p>{this.props.name}</p>
       <p>Image Holder</p>
+      <Popup
+        trigger={<button> More </button>}
+        modal
+        closeOnDocumentClick
+      >
+        <span>
+          <p style={{color: "black"}}>
+            This brother does these things
+          </p>
+        </span>
+      </Popup>
     </div>
     );
   }
