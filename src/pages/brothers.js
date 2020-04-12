@@ -28,7 +28,9 @@ const Brothers = (props) => (
 
                       <Grid container spacing={3}>
                         {brotherInfo.map( obj => {
-                          return <Brother name={obj.name} img={obj.img}></Brother>
+                          return <Grid item xs={6} sm={3}>
+                                    <Brother name={obj.name} img={obj.img}></Brother>
+                                </Grid>
                         })}
                       </Grid>
                     </div>
