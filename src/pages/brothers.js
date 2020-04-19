@@ -13,6 +13,14 @@ import brotherInfo from '../assets/brotherInfo'
 import Popup from "reactjs-popup";
 
 import rush from '../assets/images/brothers/charlesCoffey.jpg'
+import rush2 from '../assets/images/brothers/marcoFleming.jpg'
+import rush3 from '../assets/images/brothers/moisesTrejo.jpg'
+
+var brotherMap = {
+  "charles": rush,
+  "marco": rush2,
+  "moi": rush3
+};
 
 const Brothers = (props) => (
     <Layout>
@@ -28,7 +36,7 @@ const Brothers = (props) => (
                     </header>
                   <Grid container spacing={3}>
                     <Grid item xs={6} sm={2}>
-                      <Button>All</Button>
+                      <Button> All</Button>
                     </Grid>
                     <Grid item xs={6} sm={2}>
                       <Button>2023</Button>
@@ -48,7 +56,7 @@ const Brothers = (props) => (
                       <Grid container spacing={3}>
                         {brotherInfo.map( obj => {
                           return <Grid item xs={6} sm={3} onClick={ () =>logItem(obj.name)}>
-                                    <Brother name={obj.name} img={rush} bio={obj.bio} year={obj.year} major={obj.major} hometown={obj.hometown} nickname={obj.nickname}/>
+                                    <Brother name={obj.name} img={brotherMap[obj.img]} bio={obj.bio} year={obj.year} major={obj.major} hometown={obj.hometown} nickname={obj.nickname}/>
                                 </Grid>
                         })}
                       </Grid>

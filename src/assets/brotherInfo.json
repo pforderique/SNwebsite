@@ -1,7 +1,7 @@
 [
   {
     "name": "Charles Coffey",
-    "img": "../assets/images/brothers/charlesCoffey.jpg",
+    "img": "charles",
     "bio": "im a chill guy",
     "year": "2022",
     "major": "Not Course 6-3: Computer Science",
@@ -10,7 +10,7 @@
   },
   {
     "name": "Moi",
-    "img": "img",
+    "img": "moi",
     "description": "this aaaa does things",
     "bio": "shskhs",
     "year": "2022",
@@ -20,7 +20,7 @@
   },
   {
     "name": "Marco Fleming",
-    "img": "img",
+    "img": "marco",
     "description": "this brother does things",
     "bio": "shskhs",
     "year": "2022",

@@ -27,9 +27,9 @@ class Brother extends React.Component {
 
   
 
-  renderBrotherImage(img, name){
+  renderBrotherImage(){
     return (
-        <img src={this.props.img} alt={name} className={"brother"}/>
+        <img src={this.props.img} alt={this.state.name} className={"brother"}/>
         );
   }
 
@@ -40,8 +40,8 @@ class Brother extends React.Component {
   render() {
     return (
     <div className={"brother"}>
-      <p>{this.renderBrotherImage(this.props.img, this.props.name)}</p>
-      <p>{this.props.name}</p>
+      <p>{this.renderBrotherImage()}</p>
+      <p>{this.state.name}</p>
       <Popup
         trigger={<button> More </button>}
         modal
@@ -52,22 +52,22 @@ class Brother extends React.Component {
                       <div className="grid-wrapper">
                           <div className="col-0">
                               <div className="mb-5">
-                                {this.renderBrotherImage(this.props.img, this.props.name)}
+                                {this.renderBrotherImage(this.state.img, this.state.name)}
                               </div>
                           </div>
                           <div className="col-5">
                               <div className="mb-5">
-                                <h2 align = "center">{this.props.name}</h2>
-                                <p>Class of {this.props.year}</p>
-                                <p>{this.props.hometown}</p>
+                                <h2 align = "center">{this.state.name}</h2>
+                                <p>Class of {this.state.year}</p>
+                                <p>{this.state.hometown}</p>
 
                               </div>
                           </div>
                           <div className="col-6">
                               <div className="mb-5">
-                                <h2 align = "center">{this.props.nickname}</h2>
-                                <p>{this.props.major}</p>
-                                <p>"{this.props.bio}"</p>
+                                <h2 align = "center">{this.state.nickname}</h2>
+                                <p>{this.state.major}</p>
+                                <p>"{this.state.bio}"</p>
                               </div>
                           </div>                          
 
