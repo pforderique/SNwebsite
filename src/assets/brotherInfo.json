@@ -1,34 +1,81 @@
 [
   {
-    "name": "Moises Trejo",
-    "img": "img"
+    "name": "Charles Coffey",
+    "img": "../assets/images/brothers/charlesCoffey.jpg",
+    "bio": "im a chill guy",
+    "year": "2022",
+    "major": "Not Course 6-3: Computer Science",
+    "hometown": "From somewhere",
+    "nickname": "Brother Slick"
   },
   {
-    "name": "Derek Garcia",
-    "img": "img"
+    "name": "Moi",
+    "img": "img",
+    "description": "this aaaa does things",
+    "bio": "shskhs",
+    "year": "2022",
+    "major": "not 6-3: Computer Science",
+    "hometown": "from somewhere",
+    "nickname": "brother"
   },
   {
-    "name": "Marco Flemming",
-    "img": "img"
+    "name": "Marco Fleming",
+    "img": "img",
+    "description": "this brother does things",
+    "bio": "shskhs",
+    "year": "2022",
+    "major": "not 6-3: Computer Science",
+    "hometown": "from somewhere",
+    "nickname": "brother"
   },
   {
     "name": "Jesus Lares",
-    "img": "img"
+    "img": "img",
+    "description": "this brother does things",
+    "bio": "shskhs",
+    "year": "2022",
+    "major": "not 6-3: Computer Science",
+    "hometown": "from somewhere",
+    "nickname": "brother"
   },
   {
     "name": "Ricky Alvarez",
-    "img": "img"
+    "img": "img",
+    "description": "this brother does things",
+    "bio": "shskhs",
+    "year": "2022",
+    "major": "not 6-3: Computer Science",
+    "hometown": "from somewhere",
+    "nickname": "brother"
   },
   {
     "name": "Charles Coffey",
-    "img": "img"
+    "img": "img",
+    "description": "this brother does things",
+    "bio": "shskhs",
+    "year": "2022",
+    "major": "not 6-3: Computer Science",
+    "hometown": "from somewhere",
+    "nickname": "brother"
   },
   {
     "name": "Victor Diaz",
-    "img": "img"
+    "img": "img",
+    "description": "this brother does things",
+    "bio": "shskhs",
+    "year": "2022",
+    "major": "not 6-3: Computer Science",
+    "hometown": "from somewhere",
+    "nickname": "brother"
   },
   {
     "name": "Juke Bastian",
-    "img": "img"
+    "img": "img",
+    "description": "this brother does things",
+    "bio": "shskhs",
+    "year": "2022",
+    "major": "not 6-3: Computer Science",
+    "hometown": "from somewhere",
+    "nickname": "brother"
   }
 ]

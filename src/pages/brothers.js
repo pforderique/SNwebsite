@@ -12,7 +12,7 @@ import brotherInfo from '../assets/brotherInfo'
 
 import Popup from "reactjs-popup";
 
-
+import rush from '../assets/images/brothers/charlesCoffey.jpg'
 
 const Brothers = (props) => (
     <Layout>
@@ -48,7 +48,7 @@ const Brothers = (props) => (
                       <Grid container spacing={3}>
                         {brotherInfo.map( obj => {
                           return <Grid item xs={6} sm={3} onClick={ () =>logItem(obj.name)}>
-                                    <Brother name={obj.name} img={obj.img}/>
+                                    <Brother name={obj.name} img={rush} bio={obj.bio} year={obj.year} major={obj.major} hometown={obj.hometown} nickname={obj.nickname}/>
                                 </Grid>
                         })}
                       </Grid>
