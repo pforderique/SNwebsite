@@ -5,11 +5,17 @@
 ///
 
 /* Contact Method */
+	.row{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 
 	.contact-method {
-		margin: 0 0 _size(element-margin) 0;
-		padding-left: 3.25em;
+		margin: 32px 32px _size(element-margin) 32px;
+		padding-left: 64px;
 		position: relative;
+		width: 25%;
 
 		.icon {
 			left: 0;

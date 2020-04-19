@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Hunter Chang",
   "dependencies": {
+    "add": "^2.0.6",
     "dom-helpers": "^5.1.4",
     "gatsby": "2.11.8",
     "gatsby-image": "^2.3.2",
@@ -18,7 +19,9 @@
     "react-bootstrap": "^1.0.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
-    "reactjs-popup": "^1.5.0"
+    "react-responsive-carousel": "^3.2.4",
+    "reactjs-popup": "^1.5.0",
+    "yarn": "^1.22.4"
   },
   "keywords": [
     "gatsby"
