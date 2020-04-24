@@ -22,6 +22,7 @@ var brotherMap = {
   "moi": rush3
 };
 
+
 const Brothers = (props) => (
     <Layout>
         <Helmet>
@@ -36,7 +37,7 @@ const Brothers = (props) => (
                     </header>
                   <Grid container spacing={3}>
                     <Grid item xs={6} sm={2}>
-                      <Button> All</Button>
+                      <Button>All</Button>
                     </Grid>
                     <Grid item xs={6} sm={2}>
                       <Button>2023</Button>
@@ -66,6 +67,14 @@ const Brothers = (props) => (
         </div>
     </Layout>
 )
+
+function brothers(year){
+  {brotherInfo.map( obj => {
+          return <Grid item xs={6} sm={3} onClick={ () =>logItem(obj.name)}>
+                      <Brother name={obj.name} img={brotherMap[obj.img]} bio={obj.bio} year={obj.year} major={obj.major} hometown={obj.hometown} nickname={obj.nickname}/>
+                  </Grid>
+          })}
+}
 
 function logItem(item){
   console.log(item)
