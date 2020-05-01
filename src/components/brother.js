@@ -13,63 +13,52 @@ class Brother extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      img: this.props.img,
-      name: this.props.name,
-      picView: this.props.picView,
-      bio: this.props.bio,
-      year: this.props.year,
-      major: this.props.major,
-      hometown: this.props.hometown,
-      nickname: this.props.nickname,
-
+      brother: this.props.brother
     };
   }
 
-  
 
   renderBrotherImage(){
     return (
-        <img src={this.props.img} alt={this.state.name} className={"brother"}/>
+        <img  src={this.state.brother.img} alt={this.state.name} className={"brother"}/>
         );
   }
 
-  renderBrotherInfo(){
-
-  }
 
   render() {
     return (
     <div className={"brother"}>
       <p>{this.renderBrotherImage()}</p>
-      <p>{this.state.name}</p>
+      <p>{this.state.brother.name}</p>
       <Popup
         trigger={<button> More </button>}
         modal
         closeOnDocumentClick
+        style={{padding: "32px"}}
       >
           <div id="main">
               <section id="one" className="tiles">
                       <div className="grid-wrapper">
                           <div className="col-0">
                               <div className="mb-5">
-                                {this.renderBrotherImage(this.state.img, this.state.name)}
+                                {this.renderBrotherImage(this.state.brother.img, this.state.brother.name)}
                               </div>
                           </div>
                           <div className="col-5">
                               <div className="mb-5">
-                                <h2 align = "center">{this.state.name}</h2>
-                                <p>Class of {this.state.year}</p>
-                                <p>{this.state.hometown}</p>
+                                <h2 align = "center">{this.state.brother.name}</h2>
+                                <p>Class of {this.state.brother.year}</p>
+                                <p>{this.state.brother.hometown}</p>
 
                               </div>
                           </div>
                           <div className="col-6">
                               <div className="mb-5">
-                                <h2 align = "center">{this.state.nickname}</h2>
-                                <p>{this.state.major}</p>
-                                <p>"{this.state.bio}"</p>
+                                <h2 align = "center">{this.state.brother.nickname}</h2>
+                                <p>{this.state.brother.major}</p>
+                                <p>"{this.state.brother.bio}"</p>
                               </div>
-                          </div>                          
+                          </div>
 
 
                       </div>
