@@ -11,7 +11,6 @@ import Grid from '@material-ui/core/Grid'
 
 let images =
   [
-    "https://lh3.googleusercontent.com/IjUZrlnyc7v4MXcg9TAvYhfrFDV3qXQxqV8-T8fyIgpwlsw-xmYtYpW5mUF6_F34ljsFklTkJdu1yeCx19vfCWtyZLQhnWsXsRBu87FLiSRGlgVTFE3by3-r63Qiahz3c-9sR58XULRJIf5RTvjKm_bXrY2fmfc-FWXrcz9ik10Q3ysNqfSjdUa4JNN4YFDiGGdEjhTKnliYSM4xEoMk9LipRuix4Nfn1Xu3PtWq4HhbAhNCTMbd6tUm-iasMsRSpGPZEcifsxvdLefmD6UK5DsDCDsIKkGa3a-7PkymtVG4oAx-FWzSFEUrHU62lEAiyWONPhR8S6vDyuhXtlPGylhfhydY67H0A_7ZvV3sVOOpP6weG0DcXW2-PsXAK0trAqXhs9Q5XaBNw_H7JCRYhkEteav9qT5dLVE4qRwRQF98kIBN3ZtOEURb6Gn6d6gm_4KXic4N_UpfmzmFjR5YpokaKLMZTrdkBZKrK-Y6CuLBlExdaKJbwBKoGPaYL5-rhloFCd6QfPj-3W8GnJRdeVyoT9tkP7Nx66Z5T5Y3vHkJEN6qM5P5e274P_XdlmNmx8JnxgTSGoRcJwhndiY8bSVPoov6gVuTjOvjVnhmCgnBnvGvLno6BVcNWr6ARxLhU_hruFDpEPfnZpBpPhpi-31DdFqHcJ8qITS0mLSh37kUE24hXlrI4lJopymCeQ=w2104-h1578-no",
     "https://lh3.googleusercontent.com/HtS_PuDSPw0BRpE68zoqnEVgY6XkkwHq897CPHi3N5BhypsgT0PxPrQ22mRi5N2S7bVgnny6wY6jEyOnUu-0GojAIXHWj1EcO9a8vXtCs8EcvxPiwm-T9OK1XpmZm-HaKzIEqfaOphG4yfleeu3W9kim2s9LZF35gNWR8Hx-YyS-WofVh4Tc8aBb00w_ELNJZG_UqeNpzXyPYCFvgtfHsJyB4yahsEVBy24aOWGXF2KGykFmgqrSFN9kZAxDf48YUJVEHHkUkqkEMaXB2pS53_B7OYU3lDgoIx4IuRAKtYtIZatRvhTX-CYuMFIXXkDgayzRJ1Crj95nWe7CcsvSMkJgJ2vr5lcxIfE-kFzrCwRz9XlxHMIeMk7-2UE_PJnMSyCRRsq81vA_i26yUK81J28BTnMejMuq-uEE_u4XP9XjPlRALvT1OrKIdYlUKASuWGlbI8gO5oH0TVmFDonXJ_M9RdkNXcw_3CEUen3XyISfIT9fvaiicWeX1O7Wa47QHjZxmRwLkV4ke8wEdb8qiLn81-nkZEBttIZkTw5FMhGtTdV1EebtoLLJVVbez8EpEYUwfgvlToYkLvQONJu3V1VLxhr0VkLZ07Yt4ELn97EDceBSR2F9AI-kuf0XW9wMKjYoYB_jlBVstiL1Nm4U_wAQlKAF2px9H363oBHQeOAcMAU9yJieSWDsaFUzLA=w2160-h1080-no"
   ]
 
@@ -69,17 +68,12 @@ const Rush = (props) => (
                                 <img src={item} alt={index} className={"image"}/>
                               </div>
                             )}
-
                         </Carousel>
                     </div>
                     </span>
-                    <h1>Rush Info</h1>
-                  <p>📞 Call 123-456-7890 for a ride! 📞</p>
-                    <p>Sign up on our Interest <a href="https://docs.google.com/forms/d/e/1FAIpQLSdG3SXCNw_rqQZyRW2rD0xodTmfzsJ35RoTWOJbOPLmgcX8dg/viewform"> Form </a></p>
-                  <p>Reach out to us by <a href="mailto:sn-rush2020@mit.edu" target="_top">Email</a></p>
-                  <p>Follow is on <a href={"instagram.com/mitsigmanu"}>Instagram</a></p>
-                  <p>Check out our <a href={"www.facebook.com/MIT.SigmaNu"}> Facebook!</a></p>
-                  {/*<img src={rushpic1}/>*/}
+                  <h1>Contact Info</h1>
+                  <p>Rush will start this fall but if you want to stay in touch until then sign up on our Interest <a href="https://docs.google.com/forms/d/e/1FAIpQLSdG3SXCNw_rqQZyRW2rD0xodTmfzsJ35RoTWOJbOPLmgcX8dg/viewform"> Form </a></p>
+                  <p>Follow is on <a href={"instagram.com/mitsigmanu"}>Instagram</a> and check out our <a href={"www.facebook.com/MIT.SigmaNu"}> Facebook!</a></p>
 
                   <h1>CP* Events!</h1>
 
@@ -91,14 +85,14 @@ const Rush = (props) => (
                           <br/>
                           {obj.time}
                           <br/>
-                          <img style={{height: "200px", width: "200px", margin: "16px"}} src={obj.img}/>
+                          <img style={{height: "200px", width: "200px", margin: "16px"}} alt="alt" src={obj.img}/>
                         </Grid>
                       })}
                     </Grid>
-                    <h1>Rush 2020 Events</h1>
+                    <h1>Fall Rush Events</h1>
                     <p> Coming soon!</p>
                   </div>
-                    <h1>Contact Info</h1>
+
                 </div>
             </section>
         </div>

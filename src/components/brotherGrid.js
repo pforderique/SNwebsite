@@ -47,7 +47,6 @@ class BrotherGrid extends React.Component {
                     return <Grid item xs={6} sm={3}>
                       <Brother brother={obj}/>
                     </Grid>
-                    break;
                   case 1:
                     if(obj.year === 2023){
                       return <Grid item xs={6} sm={3}>
@@ -76,6 +75,8 @@ class BrotherGrid extends React.Component {
                       </Grid>
                     }
                     break;
+                  default:
+                    return "ok";
                 }
 
               })}

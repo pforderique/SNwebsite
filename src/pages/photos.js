@@ -6,7 +6,6 @@ import BannerPhotos from '../components/BannerPhotos'
 
 import charlesAndRicky from '../assets/images/charlesAndRicky.jpg'
 import paris from '../assets/images/paris.jpg'
-import pic10 from '../assets/images/pic10.jpg'
 
 const Photos = (props) => (
     <Layout>
@@ -18,24 +17,24 @@ const Photos = (props) => (
         <BannerPhotos />
 
 
-                <div id="main">
-                    <section id="one" className="tiles">
-                        <article style={{backgroundImage: `url(${charlesAndRicky})`}}>
-                            <header className="major">
-                                <h3>Rush</h3>
-                                <p>Discover the brotherhood</p>
-                            </header>
-
-                        </article>
-                        <article style={{backgroundImage: `url(${paris})`}}>
-                            <header className="major">
-                                <h3>Brothers</h3>
-                                <p>Learn about us</p>
-                            </header>
-
-                        </article>
-                    </section>
-                    </div>
+        <div id="main">
+            <section id="one" className="tiles">
+                <article style={{backgroundImage: `url(${charlesAndRicky})`}}>
+                    <header className="major">
+                        <h3>Rush</h3>
+                        <p>Discover the brotherhood</p>
+                    </header>
+                    <Link to="/rush" className="link primary"></Link>
+                </article>
+                <article style={{backgroundImage: `url(${paris})`}}>
+                    <header className="major">
+                        <h3>Brothers</h3>
+                        <p>Learn about us</p>
+                    </header>
+                    <Link to="/brothers" className="link primary"></Link>
+                </article>
+            </section>
+            </div>
 
     </Layout>
 )

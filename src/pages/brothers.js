@@ -5,7 +5,6 @@ import Layout from '../components/layout'
 
 import './brothers.scss'
 
-import brotherInfo from '../assets/brotherInfo'
 import BrotherGrid from '../components/brotherGrid'
 
 const Brothers = (props) => (
