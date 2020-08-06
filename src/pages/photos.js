@@ -4,8 +4,8 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import BannerPhotos from '../components/BannerPhotos'
 
-import charlesAndRicky from '../assets/images/charlesAndRicky.JPG'
-import paris from '../assets/images/paris.JPG'
+import charlesAndRicky from '../assets/images/charlesAndRicky.jpg'
+import paris from '../assets/images/paris.jpg'
 
 const Photos = (props) => (
     <Layout>
