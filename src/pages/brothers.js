@@ -6,6 +6,8 @@ import Layout from '../components/layout'
 import './brothers.scss'
 
 import BrotherGrid from '../components/brotherGrid'
+import pic01 from '../assets/images/pic01.jpg'
+import { Link } from 'gatsby'
 
 const Brothers = (props) => (
     <Layout>
@@ -13,12 +15,14 @@ const Brothers = (props) => (
             <title>Brothers</title>
             <meta name="description" content="Brothers Page" />
         </Helmet>
+      <section id="banner" className="major">
+        <div className="inner">
+            <h1 align="center" >Meet the brothers of ΣΝ</h1>
+        </div>
+      </section>
         <div id="main" className="alt">
             <section id="one">
                 <div className="inner">
-                    <header className="major">
-                        <h1>Brothers</h1>
-                    </header>
                   <BrotherGrid></BrotherGrid>
                 </div>
             </section>

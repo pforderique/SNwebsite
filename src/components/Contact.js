@@ -13,7 +13,7 @@ const Contact = (props) => (
             <div className="contact-method">
                 <span className="icon alt fa-home"/>
                 <h3>Address</h3>
-                <span>99 Bay State Road Boston, MA</span>
+                <span> <a href={"https://goo.gl/maps/BpTAT4x7dH12"}>99 Bay State Road Boston, MA</a></span>
             </div>
         </div>
     </section>

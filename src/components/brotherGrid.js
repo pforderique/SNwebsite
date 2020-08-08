@@ -19,23 +19,26 @@ class BrotherGrid extends React.Component {
   render() {
     return (
       <div>
-        <Grid container spacing={3}>
-          <Grid item xs={6} sm={2}>
-            <button onClick= {()=>  this.setState({ filter: 0 })} >All</button>
+        <div className={'buttons'}>
+          <Grid container spacing={3}>
+            <Grid item xs={6} sm={2}>
+              <button onClick= {()=>  this.setState({ filter: 0 })} >All</button>
+            </Grid>
+            <Grid item xs={6} sm={2}>
+              <button onClick={()=> this.setState({ filter: 1 })} >2023</button>
+            </Grid>
+            <Grid item xs={6} sm={2}>
+              <button onClick={()=> this.setState({ filter: 2 })}>2022</button>
+            </Grid>
+            <Grid item xs={6} sm={2}>
+              <button onClick={()=> this.setState({ filter: 3 })}>2021</button>
+            </Grid>
+            <Grid item xs={6} sm={2}>
+              <button onClick={()=> this.setState({ filter: 4 })}>2020</button>
+            </Grid>
           </Grid>
-          <Grid item xs={6} sm={2}>
-            <button onClick={()=> this.setState({ filter: 1 })} >2023</button>
-          </Grid>
-          <Grid item xs={6} sm={2}>
-            <button onClick={()=> this.setState({ filter: 2 })}>2022</button>
-          </Grid>
-          <Grid item xs={6} sm={2}>
-            <button onClick={()=> this.setState({ filter: 3 })}>2021</button>
-          </Grid>
-          <Grid item xs={6} sm={2}>
-            <button onClick={()=> this.setState({ filter: 4 })}>2020</button>
-          </Grid>
-        </Grid>
+        </div>
+      <div>
         <br/>
         <div className={'brotherGrid'}>
           <Grid container spacing={10}>
@@ -81,6 +84,7 @@ class BrotherGrid extends React.Component {
               })}
           </Grid>
         </div>
+      </div>
       </div>
     );
   }
