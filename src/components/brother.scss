@@ -10,11 +10,16 @@
   width: 80%;
 }
 
-.brotherDescription{
+.popupButton{
   position: absolute;
   width: 25%;
-  height: 65%
+  height: 65%;
+  @media (max-width:600px){
+    width: 40%;
+    height: 60%;
+  }
 }
+
 
 .popupImage{
   height: 300px;

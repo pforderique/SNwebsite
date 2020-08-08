@@ -33,7 +33,7 @@ class Brother extends React.Component {
       <h4>{this.state.brother.major}</h4>
       <h4>{this.state.brother.hometown}</h4>
       <Popup
-        trigger={<button className={'brotherDescription'}> </button>}
+        trigger={<button className={'popupButton'}> </button>}
         modal
         closeOnDocumentClick
       >
