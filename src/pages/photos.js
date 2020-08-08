@@ -7,6 +7,11 @@ import BannerPhotos from '../components/BannerPhotos'
 import charlesAndRicky from '../assets/images/charlesAndRicky.jpg'
 import paris from '../assets/images/paris.jpg'
 
+let images = [
+  "https://osfl.ucdavis.edu/sites/g/files/dgvnsk3316/files/styles/sf_profile/public/images/person/Sigma_Nu_%CE%A3%CE%9D_.png?h=8d63324d&itok=oV2h-V1o",
+  "https://osfl.ucdavis.edu/sites/g/files/dgvnsk3316/files/styles/sf_profile/public/images/person/Sigma_Nu_%CE%A3%CE%9D_.png?h=8d63324d&itok=oV2h-V1o",
+  "https://osfl.ucdavis.edu/sites/g/files/dgvnsk3316/files/styles/sf_profile/public/images/person/Sigma_Nu_%CE%A3%CE%9D_.png?h=8d63324d&itok=oV2h-V1o"]
+
 const Photos = (props) => (
     <Layout>
         <Helmet>
@@ -15,7 +20,6 @@ const Photos = (props) => (
         </Helmet>
 
         <BannerPhotos />
-
 
         <div id="main">
             <section id="one" className="tiles">
@@ -34,7 +38,12 @@ const Photos = (props) => (
                     <Link to="/brothers" className="link primary"></Link>
                 </article>
             </section>
-            </div>
+        </div>
+      <div style={{marginLeft:"10%", marginRight:"10%"}}>
+      {
+        images.map( img => <img style={{width:"40%", margin:"32px"}}src={img}/>)
+      }
+      </div>
 
     </Layout>
 )

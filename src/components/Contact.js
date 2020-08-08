@@ -11,11 +11,6 @@ const Contact = (props) => (
                 <a href="#">sn-rush2020@mit.edu</a>
             </div>
             <div className="contact-method">
-                <span className="icon alt fa-phone"/>
-                <h3>Phone</h3>
-                <span>Charles' Number</span>
-            </div>
-            <div className="contact-method">
                 <span className="icon alt fa-home"/>
                 <h3>Address</h3>
                 <span>99 Bay State Road Boston, MA</span>

@@ -8,7 +8,7 @@ const Footer = (props) => (
                 <li><a href="https://www.instagram.com/mitsigmanu/" className="icon alt fa-instagram"><span className="label">Instagram</span></a></li>
             </ul>
             <ul className="copyright">
-                <li>MIT Chapter of Sigma Nu</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+                <li>MIT Chapter of Sigma Nu</li>
             </ul>
         </div>
     </footer>
