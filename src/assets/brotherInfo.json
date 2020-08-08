@@ -8,7 +8,8 @@
     "funMemoryWithAnotherBrother": "Doing FBU with my bros",
     "bio": "Im a fun guy, i have a shiba inu named mango, Im part of SHPE exec, first generation low income student",
     "year": 2022,
-    "img":  "https://drive.google.com/uc?id=17zP6XVlTKJK0eoZ6EjXV3xskWRwHqi_K"
+    "img":  "https://drive.google.com/uc?id=17zP6XVlTKJK0eoZ6EjXV3xskWRwHqi_K",
+    "pin": 761
   },
   {
     "timestamp": "2020-04-19T19:28:20.845Z",
@@ -19,7 +20,8 @@
     "funMemoryWithAnotherBrother": "Playing Fifa with Platypus",
     "bio": "He's a pretty chill guy.  Enjoys playing fifa with the bros, enjoys beating the freshmen class in monopoly, is a member of SHPE. ",
     "year": 2023,
-    "img":  "https://drive.google.com/uc?id=1W5aroDp5U-ieh7Kjye_U-H0CX3s4A30F"
+    "img":  "https://drive.google.com/uc?id=1W5aroDp5U-ieh7Kjye_U-H0CX3s4A30F",
+    "pin": 761
   },
   {
     "timestamp": "2020-04-19T19:30:23.956Z",
@@ -102,7 +104,7 @@
     "timestamp": "2020-04-19T19:33:46.667Z",
     "name": "Viktor Urvantsev",
     "nickname": "Brock",
-    "major": "6-2/6-3 - Computer Science with a focus in Computer Systems",
+    "major": "6-3",
     "hometown": "Brewster, NY",
     "funMemoryWithAnotherBrother": "Laughing my ass off with Moises in 6.006 OH",
     "bio": "Warm, good energy, fun, relaxed. I grew up in Jamaica. I like going outside, working out, eating good, playing video games (pc, hopefully switch soon too), computer systems, politics, building architecture, city planning, survivalist designs, and much more. Ask me about anything, I’m always game to talk about new things!",
@@ -177,7 +179,7 @@
   },
   {
     "timestamp": "2020-04-19T19:39:40.116Z",
-    "name": "Guillermo (Memo) Vasquez",
+    "name": "Guillermo Vasquez",
     "nickname": "Scooby",
     "major": "Course 6-3",
     "hometown": "Plainfield, Illinois",
@@ -226,7 +228,7 @@
     "major": "6-3",
     "hometown": "Dallas, TX",
     "funMemoryWithAnotherBrother": "Going to 7 with Gus",
-    "bio": "“he’s chill”",
+    "bio": "from dallas texas",
     "year": 2021,
     "img":  "https://drive.google.com/uc?id=1cy0J15GyrgLEotRP4IfW5xNbJI7Hh3FU"
   },
@@ -245,7 +247,7 @@
     "timestamp": "2020-04-20T04:12:45.335Z",
     "name": "Diego Arenas",
     "nickname": "Emerald",
-    "major": "6-1 and 8 flex: Electrical Engineering and Computer Science",
+    "major": "6-1 and 8 flex",
     "hometown": "San Diego, California",
     "funMemoryWithAnotherBrother": "Showing up to take an 18.02 midterm with Jesus and Memo even though I wasn't in the class.",
     "bio": "Everyday is PNR. I love art, shopping, and doing nothing at all. If I was a color, I'd be rose gold. My favorite fruit is nectarines, but my favorite fruit flavor is mango. I spend more time picking out my outfits than I do most psets.",
@@ -300,7 +302,7 @@
     "timestamp": "2020-05-01T21:55:51.479Z",
     "name": "Joshua Herrera",
     "nickname": "Tatum",
-    "major": "6-2 Electrical Engineering and Computer Science",
+    "major": "6-2",
     "hometown": "Houston, Texas",
     "funMemoryWithAnotherBrother": "Crossing the harvard bridge at 2am in the middle of what felt like a thunderstorm.",
     "bio": "I love making things and working on projects with other people. Hobbies at home include coding, 3d printing, and electronics. With my friends, I enjoy going out to grab a snack or playing a video game.",
@@ -355,7 +357,7 @@
     "timestamp": "2020-05-02T08:05:52.745Z",
     "name": "Jason Ramirez",
     "nickname": "Blood",
-    "major": "Mechanical Engineering; minor: Chinese",
+    "major": "Mechanical Engineering and Chinese",
     "hometown": "New York, NY",
     "funMemoryWithAnotherBrother": "When Charles and I did some 200 pound dumbbell curls to get pumped for rush",
     "bio": "I like magic, MMA, and learning languages. ",
@@ -366,7 +368,7 @@
     "timestamp": "2020-05-10T18:08:26.361Z",
     "name": "Enriko Chavez",
     "brotherNickname": "Mercury",
-    "major": "Electrical Engineering and Computer Science",
+    "major": "6-2",
     "hometown": "El Paso, TX",
     "funMemoryWithAnotherBrother": "Moving in to the House :^D",
     "bio": "I'm not sure how friends would describe me, I am constantly trying to understand myself to know these answers. However I would describe myself as a free spirit. Fun fact is that I am 4'20, I like to help, and I'm interested in freacking vibing.",

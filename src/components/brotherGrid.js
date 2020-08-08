@@ -38,39 +38,38 @@ class BrotherGrid extends React.Component {
         </Grid>
         <br/>
         <div className={'brotherGrid'}>
-          <Grid container spacing={3}>
+          <Grid container spacing={10}>
             {
               brotherInfo.map( obj => {
-                console.log(this.state)
                 switch (this.state.filter) {
                   case 0:
-                    return <Grid item xs={6} sm={3}>
+                    return <Grid item xs={6} sm={4}>
                       <Brother brother={obj}/>
                     </Grid>
                   case 1:
                     if(obj.year === 2023){
-                      return <Grid item xs={6} sm={3}>
+                      return <Grid item xs={6} sm={4}>
                         <Brother brother={obj}/>
                       </Grid>
                     }
                     break;
                   case 2:
                     if(obj.year === 2022){
-                      return <Grid item xs={6} sm={3}>
+                      return <Grid item xs={6} sm={4}>
                         <Brother brother={obj}/>
                       </Grid>
                     }
                     break;
                   case 3:
                     if(obj.year === 2021){
-                      return <Grid item xs={6} sm={3}>
+                      return <Grid item xs={6} sm={4}>
                         <Brother brother={obj}/>
                       </Grid>
                     }
                     break;
                   case 4:
                     if(obj.year === 2020){
-                      return <Grid item xs={6} sm={3}>
+                      return <Grid item xs={6} sm={4}>
                         <Brother brother={obj}/>
                       </Grid>
                     }
