@@ -7,30 +7,25 @@
 
 .brotherGrid{
   margin-bottom: 64px;
+  margin-top: 64px;
 }
 
 .buttons{
-  width: 55%;
-  height: 64px;
-  margin: 0 auto;
-  margin-bottom: 32px;
+  button{
+    margin-right: 32px;
+    margin-top: 32px;
+  }
 }
 
 .brotherImage{
   margin-bottom: 32px;
-  width: 80%;
 }
 
 .popupButton{
-  position: absolute;
-  width: 25%;
-  height: 65%;
-  @media (max-width:600px){
-    width: 40%;
-    height: 60%;
-  }
+  width: 110%;
+  height: 420px;
+  margin-top: -420px;
 }
-
 
 .popupImage{
   height: 300px;

@@ -5,7 +5,14 @@ import brotherInfo from '../assets/brotherInfo'
 import Brother from './brother'
 
 
-
+function shuffle(array){
+  for(let i = array.length - 1; i > 0; i--){
+    const j = Math.floor(Math.random() * i)
+    const temp = array[i]
+    array[i] = array[j]
+    array[j] = temp
+  }
+}
 
 class BrotherGrid extends React.Component {
   constructor(props) {
@@ -13,36 +20,24 @@ class BrotherGrid extends React.Component {
     this.state = {
       filter: 0
     };
+    shuffle(brotherInfo)
   }
-
-
+  
   render() {
     return (
       <div>
         <div className={'buttons'}>
-          <Grid container spacing={3}>
-            <Grid item xs={6} sm={2}>
-              <button onClick= {()=>  this.setState({ filter: 0 })} >All</button>
-            </Grid>
-            <Grid item xs={6} sm={2}>
-              <button onClick={()=> this.setState({ filter: 1 })} >2023</button>
-            </Grid>
-            <Grid item xs={6} sm={2}>
-              <button onClick={()=> this.setState({ filter: 2 })}>2022</button>
-            </Grid>
-            <Grid item xs={6} sm={2}>
-              <button onClick={()=> this.setState({ filter: 3 })}>2021</button>
-            </Grid>
-            <Grid item xs={6} sm={2}>
-              <button onClick={()=> this.setState({ filter: 4 })}>2020</button>
-            </Grid>
-          </Grid>
+          <button onClick= {()=>  this.setState({ filter: 0 })} >All</button>
+          <button onClick={()=> this.setState({ filter: 1 })} >2023</button>
+          <button onClick={()=> this.setState({ filter: 2 })}>2022</button>
+          <button onClick={()=> this.setState({ filter: 3 })}>2021</button>
+          <button onClick={()=> this.setState({ filter: 4 })}>2020</button>
         </div>
       <div>
-        <br/>
         <div className={'brotherGrid'}>
           <Grid container spacing={10}>
             {
+
               brotherInfo.map( obj => {
                 switch (this.state.filter) {
                   case 0:
