@@ -22,7 +22,7 @@ class BrotherGrid extends React.Component {
     };
     shuffle(brotherInfo)
   }
-  
+
   render() {
     return (
       <div>
