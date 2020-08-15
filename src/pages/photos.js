@@ -94,13 +94,6 @@ const Photos = (props) => (
                         </article>
                     </section>
                     </div>
-
-        <div style={{marginLeft:"5%", marginRight:"5%"}}>
-            {
-                images.map( img => <img style={{width:"45%", margin:"32px"}}src={img}/>)
-            }
-        </div>
-
     </Layout>
 )
 
