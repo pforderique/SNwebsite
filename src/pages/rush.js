@@ -20,15 +20,15 @@ import zoom from '../assets/images/slideshow/zoom.jpg';
 
 let images =
   [
-    allBros,
-    dopeFlagPic,
-    formal,
-    initiation,
-    retreat,
-    ringDel,
-    ringPrem,
-    snow,
-    zoom
+    {src:allBros,legend:"Paper Plate Awards, Spring 2020"},
+    {src:dopeFlagPic,legend:"Brother 'Mars' holding the flag of Sigma Nu, Fall Retreat 2019"},
+    {src:formal,legend:"Cute bros, Spring Formal 2019"},
+    {src:initiation,legend:"Candidate Initiation, Fall  2019"},
+    {src:retreat,legend:"Acadia National Park Maine, Fall Retreat 2019"},
+    {src:ringDel,legend:"Cute bros, Ring Delivery Spring 2019"},
+    {src:ringPrem,legend:"Cute bros, Ring Premiere Spring 2020"},
+    {src:snow,legend:"New Hampshire, Spring Retreat 2019"},
+    {src:zoom,legend:"Trivia Night, Summer 2020"},
   ]
 
 function shuffle(array){
@@ -56,23 +56,24 @@ class Rush extends React.Component {
 
         <div id="main" className="alt">
           <section id="one">
-            <div className={'slideshow'}>
-              <Carousel
-                showStatus={false}
-                showThumbs={false}
-                autoPlay={true}
-                interval={1000}
-                showArrows={false}
-              >
-                {
-                  images.map((item, index) =>
-                    <div>
-                      <img src={item} alt={index} className={'image'}/>
-                    </div>
-                  )}
-              </Carousel>
-            </div>
             <div className="inner">
+              <div className={'slideshow'}>
+                <Carousel
+                  showStatus={false}
+                  showThumbs={false}
+                  autoPlay={true}
+                  interval={5000}
+                  showArrows={false}
+                >
+                  {
+                    images.map((item, index) =>
+                      <div>
+                        <img src={item.src} alt={index} className={'image'}/>
+                        <p className="legend">{item.legend}</p>
+                      </div>
+                    )}
+                </Carousel>
+              </div>
               <header className="major">
                 <h1>Rush</h1>
               </header>
