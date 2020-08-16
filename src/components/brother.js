@@ -29,11 +29,8 @@ class Brother extends React.Component {
     return (
     <div className={"brother"}>
       <img src={this.state.brother.img} alt={this.state.name} className={"brotherImage"}/>
-      <h3><strong>{this.state.brother.name}</strong></h3>
-      <h4>{this.state.brother.major}</h4>
-      <h4>{this.state.brother.hometown}</h4>
       <Popup
-        trigger={<button className={'popupButton'}> </button>}
+        trigger={<button className={'moreButton'}> {this.state.brother.name} </button>}
         modal
         closeOnDocumentClick
       >
@@ -55,6 +52,8 @@ class Brother extends React.Component {
               </section>
           </div>
       </Popup>
+      <p>{this.state.brother.major}</p>
+      <h4>{this.state.brother.hometown}</h4>
     </div>
     );
   }

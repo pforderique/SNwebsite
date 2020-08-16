@@ -1,7 +1,7 @@
 import React from 'react'
 import "./brother.scss"
 import Grid from '@material-ui/core/Grid'
-import brotherInfo from '../assets/brotherInfo'
+import brothers from '../assets/brothers.json'
 import Brother from './brother'
 
 
@@ -20,7 +20,7 @@ class BrotherGrid extends React.Component {
     this.state = {
       filter: 0
     };
-    shuffle(brotherInfo)
+    shuffle(brothers)
   }
 
   render() {
@@ -31,14 +31,13 @@ class BrotherGrid extends React.Component {
           <button onClick={()=> this.setState({ filter: 1 })} >2023</button>
           <button onClick={()=> this.setState({ filter: 2 })}>2022</button>
           <button onClick={()=> this.setState({ filter: 3 })}>2021</button>
-          <button onClick={()=> this.setState({ filter: 4 })}>2020</button>
         </div>
       <div>
         <div className={'brotherGrid'}>
           <Grid container spacing={10}>
             {
 
-              brotherInfo.map( obj => {
+              brothers.map( obj => {
                 switch (this.state.filter) {
                   case 0:
                     return <Grid item xs={6} sm={4}>
@@ -60,13 +59,6 @@ class BrotherGrid extends React.Component {
                     break;
                   case 3:
                     if(obj.year === 2021){
-                      return <Grid item xs={6} sm={4}>
-                        <Brother brother={obj}/>
-                      </Grid>
-                    }
-                    break;
-                  case 4:
-                    if(obj.year === 2020){
                       return <Grid item xs={6} sm={4}>
                         <Brother brother={obj}/>
                       </Grid>

@@ -3,6 +3,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 32px 0;
+  border: #333856 solid 4px;
 }
 
 .brotherGrid{
@@ -21,10 +23,8 @@
   margin-bottom: 32px;
 }
 
-.popupButton{
-  width: 110%;
-  height: 420px;
-  margin-top: -420px;
+.moreButton{
+  margin-bottom: 32px;
 }
 
 .popupImage{
