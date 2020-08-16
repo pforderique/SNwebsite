@@ -37,3 +37,69 @@
   margin-bottom: 32px;
 }
 
+.invisible{
+  background: transparent;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.modal_content {
+  position:fixed;
+  background: #333856;
+  width: 80%;
+  height: auto;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.popupImageQuote{
+  display: flex;
+  margin: 32px;
+
+  @media (max-width: 600px) {
+    display: inline-block;
+    margin: 32px;
+  }
+}
+
+
+.popupImage{
+  width: 300px;
+  margin: 0 auto;
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+.brotherInfo{
+  margin: 0 auto;
+  @media (max-width: 600px) {
+    display: flex;
+    align-items: center;
+    margin-bottom: -32px;
+    > p {
+      margin-left: 32px;
+
+
+    }
+  }
+}
+.quote{
+  padding: 32px;
+  padding-bottom: 0px;
+  margin: 32px;
+  border: #2a2f4a solid;
+  @media (max-width: 600px) {
+    margin: 0px;
+
+  }
+}

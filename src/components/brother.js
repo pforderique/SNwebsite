@@ -26,7 +26,15 @@ class Brother extends React.Component {
         <div className="btn popupButton" onClick={this.togglePop}>
           <button>{this.state.brother.name}</button>
         </div>
-        {this.state.seen ? <PopUp toggle={this.togglePop} brother={this.state.brother}/> : null}
+        {this.state.seen ? <PopUp toggle={this.togglePop}
+                                  className={this.state.seen ? null : "invisible"}
+                                  img={this.props.brother.img}
+                                  name={this.props.brother.name}
+                                  year={this.props.brother.year}
+                                  hometown={this.props.brother.hometown}
+                                  major={this.props.brother.major}
+                                  bio={this.props.brother.bio}
+        />: null}
       </div>
       <p>{this.state.brother.major}</p>
       <h4>{this.state.brother.hometown}</h4>

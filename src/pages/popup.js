@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import './popup.scss';
-export default class PopUp extends Component {
+
+
+class PopUp extends Component {
   handleClick = () => {
     this.props.toggle();
   };
   constructor(props) {
     super(props);
-    this.state = {
-      brother: this.props.brother
-    };
+
   }
   render() {
     return (
@@ -16,16 +16,16 @@ export default class PopUp extends Component {
         <div className="modal" onClick={this.handleClick}>
           <div className="modal_content" >
             <div className={'popupImageQuote'}>
-              <img src={this.state.brother.img}  className={"popupImage"}/>
+              <img src={this.props.img}  className={"popupImage"}/>
               <div className="brotherInfo">
-                <h2 align = "center">{this.state.brother.name}</h2>
-                <p>Class of {this.state.brother.year}</p>
-                <p>{this.state.brother.hometown}</p>
-                <p>{this.state.brother.major}</p>
+                <h2 align = "center">{this.props.name}</h2>
+                <p>Class of {this.props.year}</p>
+                <p>{this.props.hometown}</p>
+                <p>{this.props.major}</p>
               </div>
             </div>
             <div className={"quote"}>
-              <p>"{'\t'}{this.state.brother.bio}
+              <p>"{'\t'}{this.props.bio}
                 {'\t'}"</p>
             </div>
 
@@ -35,3 +35,5 @@ export default class PopUp extends Component {
     );
   }
 }
+
+export default PopUp;
