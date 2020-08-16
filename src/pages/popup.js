@@ -16,13 +16,13 @@ export default class PopUp extends Component {
         <div className="modal" onClick={this.handleClick}>
           <div className="modal_content" >
             <div className={'popupImageQuote'}>
-            <img src={this.state.brother.img}  className={"popupImage"}/>
-            <div className="brotherInfo">
-              <h2 align = "center">{this.state.brother.name}</h2>
-              <p>Class of {this.state.brother.year}</p>
-              <p>{this.state.brother.hometown}</p>
-              <p>Studying: {this.state.brother.major}</p>
-            </div>
+              <img src={this.state.brother.img}  className={"popupImage"}/>
+              <div className="brotherInfo">
+                <h2 align = "center">{this.state.brother.name}</h2>
+                <p>Class of {this.state.brother.year}</p>
+                <p>{this.state.brother.hometown}</p>
+                <p>{this.state.brother.major}</p>
+              </div>
             </div>
             <div className={"quote"}>
               <p>"{'\t'}{this.state.brother.bio}

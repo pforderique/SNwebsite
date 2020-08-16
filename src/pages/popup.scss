@@ -20,22 +20,43 @@
 
 .popupImageQuote{
   display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 32px;
+
+  @media (max-width: 600px) {
+    display: inline-block;
+    margin: 32px;
+  }
 }
+
 
 .popupImage{
   width: 300px;
   margin: 0 auto;
+  @media (max-width: 600px) {
+    display: none;
+  }
 }
 
 .brotherInfo{
-  width: 30%;
   margin: 0 auto;
+  @media (max-width: 600px) {
+    display: flex;
+    align-items: center;
+    margin-bottom: -32px;
+    > p {
+      margin-left: 32px;
+
+
+    }
+  }
 }
 .quote{
   padding: 32px;
+  padding-bottom: 0px;
   margin: 32px;
   border: #2a2f4a solid;
+  @media (max-width: 600px) {
+    margin: 0px;
+
+  }
 }
