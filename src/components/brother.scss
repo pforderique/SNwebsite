@@ -7,9 +7,18 @@
   border: #333856 solid 4px;
 }
 
-.brotherGrid{
-  margin-bottom: 64px;
-  margin-top: 64px;
+.cards{
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+@media (min-width: 600px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 900px) {
+  .cards { grid-template-columns: repeat(3, 1fr); }
 }
 
 .buttons{
@@ -17,26 +26,14 @@
     margin-right: 32px;
     margin-top: 32px;
   }
+  margin-bottom: 64px;
 }
 
 .brotherImage{
   margin-bottom: 32px;
 }
 
-.moreButton{
+.popupButton{
   margin-bottom: 32px;
 }
 
-.popupImage{
-  height: 300px;
-  margin-left: 32px;
-  margin-top: 32px;
-}
-
-.brotherPopup{
-  margin:0 auto;
-  margin-top: 32px;
-}
-.quote{
-  margin: 32px;
-}

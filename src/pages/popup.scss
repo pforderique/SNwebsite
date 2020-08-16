@@ -1,0 +1,41 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.modal_content {
+  position:fixed;
+  background: #333856;
+  width: 80%;
+  height: auto;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.popupImageQuote{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 32px;
+}
+
+.popupImage{
+  width: 300px;
+  margin: 0 auto;
+}
+
+.brotherInfo{
+  width: 30%;
+  margin: 0 auto;
+}
+.quote{
+  padding: 32px;
+  margin: 32px;
+  border: #2a2f4a solid;
+}

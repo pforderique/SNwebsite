@@ -3,6 +3,7 @@ import "./brother.scss"
 import Grid from '@material-ui/core/Grid'
 import brothers from '../assets/brothers.json'
 import Brother from './brother'
+import PopUp from '../pages/popup'
 
 
 function shuffle(array){
@@ -23,6 +24,7 @@ class BrotherGrid extends React.Component {
     shuffle(brothers)
   }
 
+
   render() {
     return (
       <div>
@@ -33,6 +35,36 @@ class BrotherGrid extends React.Component {
           <button onClick={()=> this.setState({ filter: 3 })}>2021</button>
         </div>
       <div>
+        <div className={'cards'}>
+          {
+            brothers.map(
+              obj =>
+              {
+                switch (this.state.filter) {
+                  case 0:
+                    return <Brother brother={obj}/>
+                    break;
+                  case 1:
+                    if(obj.year === 2023){
+                      return <Brother brother={obj}/>
+                    }
+                    break;
+                  case 2:
+                    if(obj.year === 2022){
+                      return <Brother brother={obj}/>
+                    }
+                    break;
+                  case 3:
+                    if(obj.year === 2021){
+                      return <Brother brother={obj}/>
+                    }
+                  default:
+                    return null;
+                }
+
+              })
+          }
+        </div>
         <div className={'brotherGrid'}>
           <Grid container spacing={10}>
             {
