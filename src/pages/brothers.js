@@ -6,8 +6,6 @@ import Layout from '../components/layout'
 import './brothers.scss'
 
 import BrotherGrid from '../components/brotherGrid'
-import pic01 from '../assets/images/pic01.jpg'
-import { Link } from 'gatsby'
 
 const Brothers = (props) => (
     <Layout>

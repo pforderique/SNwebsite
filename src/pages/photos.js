@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import BannerPhotos from '../components/BannerPhotos'
@@ -15,11 +14,6 @@ import sandLetters from '../assets/images/sandLetters.jpg'
 import marathon from '../assets/images/marathon.jpg'
 import charlesPittmanFriend from '../assets/images/charlesPittmanFriend.jpg'
 
-let images = [
-  "https://osfl.ucdavis.edu/sites/g/files/dgvnsk3316/files/styles/sf_profile/public/images/person/Sigma_Nu_%CE%A3%CE%9D_.png?h=8d63324d&itok=oV2h-V1o",
-  "https://osfl.ucdavis.edu/sites/g/files/dgvnsk3316/files/styles/sf_profile/public/images/person/Sigma_Nu_%CE%A3%CE%9D_.png?h=8d63324d&itok=oV2h-V1o",
-  "https://osfl.ucdavis.edu/sites/g/files/dgvnsk3316/files/styles/sf_profile/public/images/person/Sigma_Nu_%CE%A3%CE%9D_.png?h=8d63324d&itok=oV2h-V1o"]
-
 const Photos = (props) => (
     <Layout>
         <Helmet>
@@ -28,9 +22,6 @@ const Photos = (props) => (
         </Helmet>
 
         <BannerPhotos />
-
-
-
                 <div id="main">
                     <section id="one" className="tiles">
                         <article style={{backgroundImage: `url(${charlesAndRicky})`}}>
