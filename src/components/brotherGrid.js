@@ -36,75 +36,34 @@ class BrotherGrid extends React.Component {
         <div className={'cards'}>
           {
             brothers.map(
-              obj =>
+              bro =>
               {
-                let brother = <></>;
                 switch (this.state.filter) {
                   case 0:
-                    brother = <Brother brother={obj}/>
+                    return <Brother brother={bro}/>
                     break;
                   case 1:
-                    if(obj.year === 2023){
-                      brother = <Brother brother={obj}/>
+                    if(bro.year === 2023){
+                      return <Brother brother={bro}/>
                     }
                     break;
                   case 2:
-                    if(obj.year === 2022){
-                      brother = <Brother brother={obj}/>
+                    if(bro.year === 2022){
+                      return <Brother brother={bro}/>
                     }
                     break;
                   case 3:
-                    if(obj.year === 2021){
-                      brother = <Brother brother={obj}/>
+                    if(bro.year === 2021){
+                      return <Brother brother={bro}/>
                     }
                     break;
                   default:
                     return null;
                 }
-                return brother;
-
               })
           }
         </div>
-        <div className={'brotherGrid'}>
-          <Grid container spacing={10}>
-            {
-
-              brothers.map( obj => {
-                switch (this.state.filter) {
-                  case 0:
-                    return <Grid item xs={6} sm={4}>
-                      <Brother brother={obj}/>
-                    </Grid>
-                  case 1:
-                    if(obj.year === 2023){
-                      return <Grid item xs={6} sm={4}>
-                        <Brother brother={obj}/>
-                      </Grid>
-                    }
-                    break;
-                  case 2:
-                    if(obj.year === 2022){
-                      return <Grid item xs={6} sm={4}>
-                        <Brother brother={obj}/>
-                      </Grid>
-                    }
-                    break;
-                  case 3:
-                    if(obj.year === 2021){
-                      return <Grid item xs={6} sm={4}>
-                        <Brother brother={obj}/>
-                      </Grid>
-                    }
-                    break;
-                  default:
-                    return "ok";
-                }
-
-              })}
-          </Grid>
         </div>
-      </div>
       </div>
     );
   }
