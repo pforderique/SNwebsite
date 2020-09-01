@@ -82,6 +82,7 @@ import sn from '../assets/images/brothers/sn.jpg'
 import derekGarcia from '../assets/images/brothers/derekGarcia.jpg'
 import nolanObrien from '../assets/images/brothers/nolanObrien.jpg'
 import enrikoChavez from '../assets/images/brothers/enrikoChavez.jpg'
+import enriqueAvina from '../assets/images/brothers/enriqueAvina.jpeg'
 import jesusCantu from '../assets/images/brothers/jesusCantu.jpg'
 import kolbyDanner from '../assets/images/brothers/kolbyDanner.jpg'
 import miguelVega from '../assets/images/brothers/miguelVega.jpg'
@@ -119,7 +120,7 @@ import moisesTrejo from '../assets/images/brothers/moisesTrejo.jpg'
 import zachMiller from '../assets/images/brothers/zachMiller.jpg'
 import chrisPicard from '../assets/images/brothers/chrisPicard.jpg'
 import davidSilverstein from '../assets/images/brothers/davidSilverstein.jpg'
-
+import adenRothmeyer from '../assets/images/brothers/adenRothmeyer.jpeg'
 
 let brotherDict = {
 'jordanAmbrosio' : jordanAmbrosio,
@@ -200,6 +201,7 @@ let brotherDict = {
   'sn' : sn,
   'derekGarcia' : derekGarcia,
   'enrikoChavez' : enrikoChavez,
+  'enriqueAvina' : enriqueAvina,
   'nolanObrien' : nolanObrien,
   'jesusCantu' : jesusCantu,
   'kolbyDanner' : kolbyDanner,
@@ -238,7 +240,7 @@ let brotherDict = {
   'zachMiller' : zachMiller,
   'chrisPicard' : chrisPicard,
   'davidSilverstein' : davidSilverstein,
-
+  'adenRothmeyer' : adenRothmeyer,
 }
 
 class Brother extends React.Component {
