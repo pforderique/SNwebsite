@@ -1,8 +1,8 @@
 import React from 'react'
 import "./brother.scss"
-import Grid from '@material-ui/core/Grid'
 import brothers from '../assets/brothers.json'
 import Brother from './brother'
+
 
 function shuffle(array){
   for(let i = array.length - 1; i > 0; i--){

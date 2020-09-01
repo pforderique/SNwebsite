@@ -50,37 +50,37 @@ const Photos = (props) => (
 
                         <article style={{backgroundImage: `url(${sophRetreat})`}}>
                             <header className="major">
-                                <h3>Pledges</h3>
+                                <h3>Pledge Retreat</h3>
                             </header>
                         </article>
 
                         <article style={{backgroundImage: `url(${sophFormal})`}}>
                             <header className="major">
-                                <h3>Pledges</h3>
+                                <h3>Spring Formal</h3>
                             </header>
                         </article>                        
 
                         <article style={{backgroundImage: `url(${retreatPic1})`}}>
                             <header className="major">
-                                <h3>Pledges</h3>
+                                <h3>Spring Retreat</h3>
                             </header>
                         </article>                        
 
                         <article style={{backgroundImage: `url(${sandLetters})`}}>
                             <header className="major">
-                                <h3>Pledges</h3>
+                                <h3>Rush Sigma Nu</h3>
                             </header>
                         </article>                        
 
                         <article style={{backgroundImage: `url(${marathon})`}}>
                             <header className="major">
-                                <h3>Pledges</h3>
+                                <h3>Marathon Monday Volunteering!</h3>
                             </header>
                         </article>   
 
                         <article style={{backgroundImage: `url(${charlesPittmanFriend})`}}>
                             <header className="major">
-                                <h3>Pledges</h3>
+                                <h3>Brothers and Friends</h3>
                             </header>
                         </article>
                     </section>
