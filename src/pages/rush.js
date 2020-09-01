@@ -16,6 +16,7 @@ import ringDel from '../assets/images/slideshow/ringDel.jpg';
 import ringPrem from '../assets/images/slideshow/ringPrem.jpg';
 import snow from '../assets/images/slideshow/snow.jpg';
 import zoom from '../assets/images/slideshow/zoom.jpg';
+import Button from '@material-ui/core/Button'
 
 
 let images =
@@ -57,6 +58,12 @@ class Rush extends React.Component {
         <div id="main" className="alt">
           <section id="one">
             <div className="inner">
+              <header className="major">
+                <h1>Rush</h1>
+                <p>Fill out our interest form to keep in contact!</p>
+              </header>
+              <button><a href={'http://tiny.cc/SigNuInterest'}>Interest Form</a></button>
+              <div style={{'margin': '32px'}}></div>
               <div className={'slideshow'}>
                 <Carousel
                   showStatus={false}
@@ -65,8 +72,7 @@ class Rush extends React.Component {
                   interval={3000}
                   showArrows={false}
                 >
-                  {
-                    images.map((item, index) =>
+                  {images.map((item, index) =>
                       <div>
                         <img src={item.src} alt={index} className={'image'}/>
                         <p className="legend">{item.legend}</p>
@@ -74,9 +80,7 @@ class Rush extends React.Component {
                     )}
                 </Carousel>
               </div>
-              <header className="major">
-                <h1>Rush</h1>
-              </header>
+
               <p>Note from the Rush Chairs,</p>
               <p>Sigma Nu is much more than a fraternity; it is a group of loving brothers who push each other to be the
                 best they can be. Our beautiful home is filled with rich camaraderie, hysterical inside jokes, and
