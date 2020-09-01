@@ -20,7 +20,6 @@ class BrotherGrid extends React.Component {
     this.state = {
       filter: 0
     };
-    shuffle(brothers)
   }
 
 
