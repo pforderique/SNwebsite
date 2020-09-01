@@ -6,6 +6,7 @@ import BrotherGrid from '../components/brotherGrid'
 import './brothers.scss'
 
 
+
 const Brothers = (props) => (
     <Layout>
         <Helmet>
