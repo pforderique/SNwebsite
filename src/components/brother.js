@@ -73,6 +73,7 @@ import johnReyes from '../assets/images/brothers/johnReyes.jpg'
 import andrewSepulveda from '../assets/images/brothers/andrewSepulveda.jpg'
 import nav_icon from '../assets/images/brothers/nav_icon.png'
 import jesusRodriguez from '../assets/images/brothers/jesusRodriguez.jpg'
+import javierMendez from '../assets/images/brothers/javierMendez.jpg'
 import nickGuiliano from '../assets/images/brothers/nickGuiliano.jpg'
 import ajGarcia from '../assets/images/brothers/ajGarcia.jpg'
 import luisFranco from '../assets/images/brothers/luisFranco.jpg'
@@ -155,6 +156,7 @@ let brotherDict = {
   'carlosCortez' : carlosCortez,
   'benjaminRodriguez' : benjaminRodriguez,
   'nickPittman' : nickPittman,
+  'javierMendez':javierMendez,
 'nishBhandari' : nishBhandari,
 'reynaldoGarza' : reynaldoGarza,
   'aaronRobles' : aaronRobles,
