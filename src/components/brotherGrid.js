@@ -38,6 +38,9 @@ class BrotherGrid extends React.Component {
             brothers.map(
               bro =>
               {
+                if (bro.img == 'chrisPicard'){
+                  return;
+                }
                 switch (this.state.filter) {
                   case 0:
                     return <Brother brother={bro}/>
