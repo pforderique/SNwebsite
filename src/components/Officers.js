@@ -11,8 +11,8 @@ import './officers.scss'
 const Officers = (props) => (
   <div className={"officers"}>
     <div>
-      <div className={"officer"}>
-        <img src={vik} alt={'ltc'} className={"dual-officer"}/>
+      <div className={"dual-officer"}>
+        <img src={vik} alt={'ltc'} />
         <img src={juan} alt={'ltc'} />
       </div>
       <p> <strong>Social Chairs </strong></p>
@@ -26,8 +26,8 @@ const Officers = (props) => (
       <p><a href={"mailto:sn-commander@mit.edu"}>sn-commander@mit.edu</a></p>
     </div>
     <div>
-      <div className={"officer"}>
-        <img src={marco} alt={'ltc'} className={"dual-officer"}/>
+      <div className={"dual-officer"}>
+        <img src={marco} alt={'ltc'} />
         <img src={rush} alt={'ltc'} />
       </div>
       <p> <strong>Rush Chairs </strong></p>
