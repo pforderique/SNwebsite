@@ -31,6 +31,6 @@ $ gatsby develop
 View the website at: http://localhost:3000
 
 ## Public URLS
-To view the public website, navigate to sigmanu.mit.edu or signu.app
+To view the public website, navigate to [https://sigmanu.mit.edu](sigmanu.mit.edu) or [https://signu.app](signu.app)
 
 A Marco + Moi creation 
