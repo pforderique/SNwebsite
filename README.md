@@ -28,7 +28,7 @@ $ npm install
 $ gatsby develop
 ```
 
-View the website at: http://localhost:3000
+View the website at: http://localhost:8000
 
 ## Public URLS
 To view the public website, navigate to [sigmanu.mit.edu](https://sigmanu.mit.edu) or [signu.app](https://signu.app)
