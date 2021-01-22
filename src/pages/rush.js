@@ -7,6 +7,9 @@ import './rush.scss'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
+import FullCalendar from '@fullcalendar/react'
+import dayGridPlugin from '@fullcalendar/daygrid'
+
 import allBros from '../assets/images/slideshow/allBros.jpg';
 import dopeFlagPic from '../assets/images/slideshow/dopeFlagPic.jpg';
 import formal from '../assets/images/slideshow/formal.jpg';
@@ -102,16 +105,23 @@ class Rush extends React.Component {
               <p>Fraternally,</p>
               <p>Sigma Nu Epsilon Theta Recruitment Chairs</p>
 
-
+              {/*TODO: Add calendar*/}
+              
               <header className="major">
                 <h1>Events</h1>
               </header>
-              <p><h1>TBD!</h1></p>
+              <FullCalendar 
+                plugins={[ dayGridPlugin ]}
+                initialView="dayGridMonth"
+                events={[
+                  { title: 'Kickoff', date: '2021-02-06'}
+                ]}
+              />
 
               <header className="major">
                 <h1>Contact Info</h1>
               </header>
-              <p>Rush will start this fall but if you want to stay in touch until then sign up on our <a
+              <p>Rush will start February 6th, 2021, but if you want to stay in touch until then sign up on our <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSdG3SXCNw_rqQZyRW2rD0xodTmfzsJ35RoTWOJbOPLmgcX8dg/viewform">Interest
                 Form </a></p>
               <p>Follow is on <a href={"instagram.com/mitsigmanu"}>Instagram</a> and check out our <a
