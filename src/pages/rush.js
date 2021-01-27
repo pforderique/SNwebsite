@@ -9,6 +9,7 @@ import { Carousel } from 'react-responsive-carousel';
 
 import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid'
+import googleCalendarPlugin from '@fullcalendar/google-calendar';
 
 import allBros from '../assets/images/slideshow/allBros.jpg';
 import dopeFlagPic from '../assets/images/slideshow/dopeFlagPic.jpg';
@@ -21,6 +22,8 @@ import snow from '../assets/images/slideshow/snow.jpg';
 import zoom from '../assets/images/slideshow/zoom.jpg';
 import Button from '@material-ui/core/Button'
 
+const GOOGLE_CALENDER_API_KEY = 'AIzaSyAvlCx9AWETkeJQlD0O1teMVXOv4Gl-TaA'
+const GOOGLE_CALENDAR_ID = 'krnroh3s5n0ufm8vkfdcqdtj0o@group.calendar.google.com'
 
 let images =
   [
@@ -111,11 +114,12 @@ class Rush extends React.Component {
                 <h1>Events</h1>
               </header>
               <FullCalendar 
-                plugins={[ dayGridPlugin ]}
+                plugins={[ dayGridPlugin, googleCalendarPlugin ]}
                 initialView="dayGridMonth"
-                events={[
-                  { title: 'Kickoff', date: '2021-02-06'}
-                ]}
+                googleCalendarApiKey={GOOGLE_CALENDER_API_KEY}
+                events={{
+                  googleCalendarId: GOOGLE_CALENDAR_ID
+                }}
               />
 
               <header className="major">
