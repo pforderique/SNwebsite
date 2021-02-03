@@ -7,9 +7,7 @@ import './rush.scss'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
-import FullCalendar from '@fullcalendar/react'
-import dayGridPlugin from '@fullcalendar/daygrid'
-import googleCalendarPlugin from '@fullcalendar/google-calendar';
+import TimeGridCalendar from '../components/TimeGridCalendar'
 
 import allBros from '../assets/images/slideshow/allBros.jpg';
 import dopeFlagPic from '../assets/images/slideshow/dopeFlagPic.jpg';
@@ -22,8 +20,6 @@ import snow from '../assets/images/slideshow/snow.jpg';
 import zoom from '../assets/images/slideshow/zoom.jpg';
 import Button from '@material-ui/core/Button'
 
-const GOOGLE_CALENDER_API_KEY = 'AIzaSyAvlCx9AWETkeJQlD0O1teMVXOv4Gl-TaA'
-const GOOGLE_CALENDAR_ID = 'krnroh3s5n0ufm8vkfdcqdtj0o@group.calendar.google.com'
 
 let images =
   [
@@ -68,8 +64,24 @@ class Rush extends React.Component {
                 <h1>Rush</h1>
                 <p>Fill out our interest form to keep in contact!</p>
               </header>
+              <div>
               <button><a href={'http://tiny.cc/SigNuInterest'}>Interest Form</a></button>
+              &nbsp;
+              <button><a href={'#contact'}> Contact info</a></button>
+              </div>
               <div style={{'margin': '32px'}}></div>
+              
+              <header className="major">
+                <h2>Events</h2>
+              </header>
+
+              <p align='left'> All times shown in EST </p>
+
+              <TimeGridCalendar />
+
+              <header className="major">
+                <h2>Pictures</h2>
+              </header>
               <div className={'slideshow'}>
                 <Carousel
                   showStatus={false}
@@ -79,7 +91,7 @@ class Rush extends React.Component {
                   showArrows={false}
                 >
                   {images.map((item, index) =>
-                      <div>
+                      <div key={index}>
                         <img src={item.src} alt={index} className={'image'}/>
                         <p className="legend">{item.legend}</p>
                       </div>
@@ -108,27 +120,15 @@ class Rush extends React.Component {
               <p>Fraternally,</p>
               <p>Sigma Nu Epsilon Theta Recruitment Chairs</p>
 
-              {/*TODO: Add calendar*/}
-              
-              <header className="major">
-                <h1>Events</h1>
-              </header>
-              <FullCalendar 
-                plugins={[ dayGridPlugin, googleCalendarPlugin ]}
-                initialView="dayGridMonth"
-                googleCalendarApiKey={GOOGLE_CALENDER_API_KEY}
-                events={{
-                  googleCalendarId: GOOGLE_CALENDAR_ID
-                }}
-              />
 
-              <header className="major">
-                <h1>Contact Info</h1>
+              <header className="major" id='contact'>
+                <h2>Contact Info</h2>
+                
               </header>
               <p>Rush will start February 6th, 2021, but if you want to stay in touch until then sign up on our <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSdG3SXCNw_rqQZyRW2rD0xodTmfzsJ35RoTWOJbOPLmgcX8dg/viewform">Interest
                 Form </a></p>
-              <p>Follow is on <a href={"instagram.com/mitsigmanu"}>Instagram</a> and check out our <a
+              <p>Follow us on <a href={"instagram.com/mitsigmanu"}>Instagram</a> and check out our <a
                 href={"www.facebook.com/MIT.SigmaNu"}> Facebook!</a></p>
               <p><a href={"mailto:sn-rush2020@mit.edu"}>sn-rush2020@mit.edu</a></p>
 

@@ -18,7 +18,7 @@ const Officers = (props) => (
         <img src={juan} alt={'ltc'} />
       </div>
       <p> <strong>Social Chairs </strong></p>
-      <p>Viktor Urvantsev & Juan Diaz</p>
+      <p>Viktor Urvantsev <br />&<br/> Juan Diaz</p>
       <p><a href={"mailto:sn-rush2020@mit.edu"}>sn-social@mit.edu</a></p>
     </div>
     <div>
@@ -33,10 +33,11 @@ const Officers = (props) => (
         <img src={marvin} alt={'ltc'} />
       </div>
       <p> <strong>Rush Chairs </strong></p>
-      <p>Marco Fleming & Marvin Zetina-Jimenez</p>
+      <p>Marco Fleming<br />&<br />Marvin Zetina-Jimenez</p>
       <p><a href={"mailto:sn-rush2020@mit.edu"}>sn-rush2020@mit.edu</a></p>
     </div>
   </div>
+  
 )
 
 export default Officers
