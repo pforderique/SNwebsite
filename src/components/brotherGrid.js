@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import "./brother.scss"
 import brothers from '../assets/brothers.json'
 import Brother from './brother'
 
+const brotherArray = [];
+for (let bro in brothers){
+  brotherArray.push(brothers[bro]);
+}
 
+// const sortedBroArray = [...brotherArray].sort((bro1, bro2) => bro1.pin - bro2.pin);
+
+brotherArray.sort((bro1, bro2) => bro1.pin - bro2.pin);
 
 function shuffle(array){
   for(let i = array.length - 1; i > 0; i--){
@@ -14,62 +21,50 @@ function shuffle(array){
   }
 }
 
-class BrotherGrid extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      filter: 0
-    };
-  }
+const BrotherGrid = () => {
 
+  // const initialFilters = {
+  //   year: null,
+  //   homestate: null,
+  //   course: null,
+  // }
+  const [stateFilter, setStateFilter] = useState(null);
+  const [courseFilter, setCourseFilter] = useState(null);
+  const [yearFilter, setYearFilter] = useState(1);
+  const [filters, setFilters] = useState({state: stateFilter, course: courseFilter, year: yearFilter});
+  const [visibleBros, setVisibleBros] = useState(brotherArray);
 
-  render() {
-    return (
-      <div>
-        <div className={'buttons'}>
-          <button onClick= {()=>  this.setState({ filter: 0 })} >All</button>
-          <button onClick={()=> this.setState({ filter: 1 })} >2023</button>
-          <button onClick={()=> this.setState({ filter: 2 })}>2022</button>
-          <button onClick={()=> this.setState({ filter: 3 })}>2021</button>
-        </div>
-      <div>
-        <div className={'cards'}>
-          {
-            brothers.map(
-              bro =>
-              {
-                if (bro.img == 'chrisPicard'){
-                  return;
-                }
-                switch (this.state.filter) {
-                  case 0:
-                    return <Brother brother={bro}/>
-                    break;
-                  case 1:
-                    if(bro.year === 2023){
-                      return <Brother brother={bro}/>
-                    }
-                    break;
-                  case 2:
-                    if(bro.year === 2022){
-                      return <Brother brother={bro}/>
-                    }
-                    break;
-                  case 3:
-                    if(bro.year === 2021){
-                      return <Brother brother={bro}/>
-                    }
-                    break;
-                  default:
-                    return null;
-                }
-              })
-          }
-        </div>
-        </div>
+  // useEffect(() => {
+  //   setFilters
+  // }, [stateFilter, courseFilter, yearFilter])
+
+  useEffect(() => {
+    let newBros = [];
+    for (let ix in brotherArray){
+      let bro = brotherArray[ix]
+      if (bro.year%yearFilter === 0){
+        newBros.push(bro);
+      }
+    }
+    setVisibleBros(newBros);
+  }, [yearFilter])
+
+  return (
+    <div>
+      <div className={'buttons'}>
+        <button onClick={()=> setYearFilter(1)}>All</button>
+        <button onClick={()=> setYearFilter(2023)}>2023</button>
+        <button onClick={()=> setYearFilter(2022)}>2022</button>
+        <button onClick={()=> setYearFilter(2021)}>2021</button>
+
       </div>
-    );
-  }
+    <div>
+      <div className={'cards'}>
+        {visibleBros.map(bro => <Brother brother={bro} />)}
+      </div>
+    </div>
+    </div>
+  );
 }
 
 export default BrotherGrid;
