@@ -60,7 +60,7 @@ const BrotherGrid = () => {
       </div>
     <div>
       <div className={'cards'}>
-        {visibleBros.map(bro => <Brother brother={bro} />)}
+        {visibleBros.map((bro, index) => <Brother id={index} brother={bro} />)}
       </div>
     </div>
     </div>
