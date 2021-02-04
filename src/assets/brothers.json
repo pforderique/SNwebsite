@@ -5,7 +5,8 @@
     "hometown": "Dallas, TX",
     "bio": "Moises “me la pela” Trejo is a fun guy who loves his bowls of cereal. He’s got a Shiba Inu named Mango who he can’t go five minutes without sending a picture of. On campus, he’s involved with MAES, LCC, and has served as the secretary and social chair for SHPE. When it comes to academics, he’s got a work hard play hard mentality. His hobbies include, coding, lifting, and coding. Ask him about the first thing he says as soon as he walks into Qdoba.",
     "year": 2022,
-    "img":  "moisesTrejo"
+    "img":  "moisesTrejo",
+    "pin": 761
   },
   {
     "name": "Jesus Rodriguez",
@@ -13,7 +14,8 @@
     "hometown": "Middletown, NY",
     "bio": "Jesus is a chill guy who enjoys playing FIFA with bros, especially with Jordan (aka Platypus), and enjoys beating any of the other ‘23s in Monopoly. When he’s not playing games, he enjoys participating in the Society for Hispanic Professional Engineers (SHPE). Be on the lookout for the next time he partakes in deep conversation and thought, but be careful, he may drown you with his love or spray you with his Sprite bottle. #vibecheck",
     "year": 2023,
-    "img":  "jesusRodriguez"
+    "img":  "jesusRodriguez",
+    "pin": 775
   },
   {
     "name": "Derek Garcia",
@@ -21,7 +23,8 @@
     "hometown": "Mission, TX",
     "bio": "Derek loves dancing, playing video games and learning about the world around him. He enjoys hanging out with friends any way possible even if that means having a talk about dinosaurs and their evolutionary relationship with chickens with Daniel Amaya at a McDonalds. His favorite pair of shoes are his cowboy boots. #yeehaw",
     "year": 2022,
-    "img":  "derekGarcia"
+    "img":  "derekGarcia",
+    "pin": 759
   },
   {
     "name": "Juan Diaz",
@@ -29,7 +32,8 @@
     "hometown": "Dallas, TX",
     "bio": "Juan really loves music and shows that love by having jam sessions with the bros or dropping the #sickest beats during the parties. He will always have a bro’s back, stand by them, and cry with them (or for them).\nFun Fact: He and some bros once had a cookout in the freezing rain while people walked by and judged them.",
     "year": 2023,
-    "img":  "juanDiaz"
+    "img":  "juanDiaz",
+    "pin": 770
   },
   {
     "name": "Enrique Aviña",
@@ -37,15 +41,17 @@
     "hometown": "Redwood City, CA",
     "bio": "Ricky loves all things soccer, both real and FIFA, especially when he gets to wreck Felipe in a few games for a morale boost. He loves talking about future technologies, startups, and whether Jesus Lares is a human or a robot. Oh, and he occasionally sets the house on fire.",
     "year": 2022,
-    "img":  "enriqueAvina"
+    "img":  "enriqueAvina",
+    "pin": 757
   },
   {
-    "name": "Marvin Zetina",
+    "name": "Marvin Zetina-Jimenez",
     "major": "6-3: Computer Science and Engineering",
     "hometown": "Charlotte, NC",
     "bio": "Hit up Marvin’s Room for a great time, if he’s ever there. He’s a sexy beast that loves soccer, CS, and zooming (not Zoom University). He’s very determined and doesn't let anything stand in his way, not even himself. He speaks 3 languages and is a part of the Society of Hispanic Professional Engineers (SHPE) and MAES.",
     "year": 2023,
-    "img":  "marvinZetina"
+    "img":  "marvinZetina",
+    "pin": 771
   },
   {
     "name": "Eric Gonzalez",
@@ -53,7 +59,8 @@
     "hometown": "Long Branch, NJ ",
     "bio": "People would describe Eric as a laid back guy with big dad vibes. If you ask him, he’s chill but always down for an adventure, i.e. finessing a free fridge for José or having a marvel movie marathon with the bros using a classroom’s projector.\n\nHe’s played the trumpet for 10 years and he is also a part of the Society of Hispanic Professional Engineers (SHPE). He also UROPs in the Space Systems Laboratory!",
     "year": 2023,
-    "img":  "ericGonzales"
+    "img":  "ericGonzales",
+    "pin": 781
   },
   {
     "name": "Viktor Urvantsev",
@@ -61,7 +68,8 @@
     "hometown": "Brewster, NY",
     "bio": "Viktor has a warm, good energy and is fun and relaxed. He grew up in Jamaica and likes going outside, working out, eating good, playing video games, moving into the house, building architecture, building computer systems, as well as politics, city planning, survivalist designs, and much more. Ask him about anything, as he’s always game to talk about new things! Note: Do not challenge him to a food eating competition (unless you’re Memo).\n\nOne of his favorite memories with a brother is laughing with Moises in 6.006 office hours.",
     "year": 2021,
-    "img":  "viktorUrvantsev"
+    "img":  "viktorUrvantsev",
+    "pin": 752
   },
   {
     "name": "Ricky Alvarez",
@@ -69,7 +77,8 @@
     "hometown": "Detroit, MI",
     "bio": "Ricky is a super outgoing person who really does not have a filter. He is very talented, plays 9 instruments, loves listening to música regional (Northern Mexican music), and is very connected to his Mexican roots. One time, he and Benji wanted some chips from a vending machine and they got stuck before falling out so they shook the machine and ended up dropping like 10+ other snacks before dropping their chips. They paid $2 for like $20 worth of snacks. We are all proud of our commander for his finesse.",
     "year": 2021,
-    "img":  "rickyAlvarez"
+    "img":  "rickyAlvarez",
+    "pin": 754
   },
   {
     "name": "Nestor Santiago-Perez",
@@ -77,7 +86,8 @@
     "hometown": "Los Angeles, CA",
     "bio": "Nestor enjoys playing video games (favorites include NBA 2K, Borderlands, DOOM), hanging out with bros, and lights. His favorite number is 80, but in French. It’s… so goooood.\nFun Facts: He can play 3 instruments: Trombone, Euphonium, and Cello! Also, he is the youngest of his class. \n\nOne of his favorite memories is when he and a bunch of bros \"borrowed\" a rush van to go to Texas Roadhouse to celebrate Ricky Alvarez’s birthday.",
     "year": 2021,
-    "img":  "nestorSantiago"
+    "img":  "nestorSantiago",
+    "pin": 749
   },
   {
     "name": "Aaron Robles",
@@ -85,7 +95,8 @@
     "hometown": "Compton, CA",
     "bio": "Aaron likes cooking, eating out, driving, playing video games, and watching TV shows and football all with the bois. If you ever need a smoothie or a huge hug with love and compassion, he’s your guy.\n\nOne of his favorite memories is playing volleyball at Spring Retreat 2019 and handing out gatorade at the Boston Marathon with the bois.",
     "year": 2021,
-    "img":  "aaronRobles"
+    "img":  "aaronRobles",
+    "pin": 746
   },
   {
     "name": "Nate Fletcher",
@@ -93,7 +104,8 @@
     "hometown": "Havertown, PA",
     "bio": "Nate is a laid back guy who loves hanging with the brothers, playing video games, and playing his guitar. When he’s not doing these things, he loves to use Snapchat! One of his favorite memories with a brother was doing the ALS Ice Bucket Challenge with Ricky Alvarez at the Boston Marathon!",
     "year": 2021,
-    "img":  "nateFletcher"
+    "img":  "nateFletcher",
+    "pin": 748
   },
   {
     "name": "Nicholas Guiliano",
@@ -101,7 +113,8 @@
     "hometown": "Philadelphia, PA",
     "bio": "Gui is a friendly, funny, and caring extrovert who’s done it all. From wrestling cops and ripping hippos to being a top 100 Hearthstone player, he’s always got a story to tell. He loves learning as much as possible, creating art and music, and reading chem/neuro research. On campus, he’s involved with Camp Kesem. His favorite memories with the bros come from hitting up 7-11 with Gus, Danny, and/or Andrew almost every night.",
     "year": 2021,
-    "img":  "nickGuiliano"
+    "img":  "nickGuiliano",
+    "pin": 733
   },
   {
     "name": "Benjamin Rodriguez",
@@ -109,7 +122,8 @@
     "hometown": "Dallas, TX",
     "bio": "Benji is always laughing, easy to approach, and down for a 1v1. Whether that be on FIFA, basketball, ping pong, soccer, volleyball or pool, he’s always ready to pull the \"Play me 1v1\" card. One time, he and Ricky got into a debate with a woman at a shopping mall in Cambridge. She was heated and he kept mocking her because she was mad he was singing in Spanish. She would say \"you can't sing, who said you can sing\" and he kept saying she did.",
     "year": 2021,
-    "img":  "benjaminRodriguez"
+    "img":  "benjaminRodriguez",
+    "pin": 756
   },
   {
     "name": "Guillermo Vasquez",
@@ -117,7 +131,8 @@
     "hometown": "Plainfield, IL",
     "bio": "Memo is humorous, talented, and a go-getter. He is an achiever; He loves to play Super Smash Bros with Mega Man as his main. He likes to imitate cartoon voices and do impersonations of various characters (just not around Derek). Scooby-Doo is his best, a real good boi. He likes classical music and his favorite musical group is the Canadian Brass. He plays the trombone, trumpet, kazoo, and ocarina! He is the secretary for the First Generation Program, a member of SHPE, and an active member of Sigma Nu!",
     "year": 2023,
-    "img":  "guillermoVazquez"
+    "img":  "guillermoVazquez",
+    "pin": 777
   },
   {
     "name": "Luis Franco",
@@ -125,7 +140,8 @@
     "hometown": "Lawrence, MA",
     "bio": "Luis is a big Boston sports fan, master chef, and sneakerhead. As an aspiring mixologist, he has to be good with his hands. His favorite artist right now is Bad Bunny and his music is always on his rotation. He’s not big on gaming, but he’ll hop on a quick FIFA match with the boys any chance he gets. He also enjoys binge watching movies and shows through his Apple TV. \nFun fact: He’s one of only two bros from Massachusetts.",
     "year": 2022,
-    "img": "luisFranco"
+    "img": "luisFranco",
+    "pin": 767
   },
   {
     "name": "Eduardo Barrios",
@@ -133,7 +149,8 @@
     "hometown": "Mission, TX",
     "bio": "Eduardo is a fun loving guy who loves Marvel, Star Wars, and sleeping. He is close to his Mexican heritage not only by living 3 miles from the Mexican border, but by also having lived in Mexico for 7 years. He enjoys playing soccer, baseball, volleyball and is always down for a game of Smash. On campus he is involved with SHPE and DanceTroupe (DT) and is Secretary of LUCHA. His favorite times are doing things with the boys, whether it’s partying the whole night listening to Gasolina or walking back to campus. If you want the key to his heart, all you need is Hot Cheetos and an Arizona.",
     "year": 2023,
-    "img":  "eduardoBarrios"
+    "img":  "eduardoBarrios",
+    "pin": 780
   },
   {
     "name": "Jesus Cantu",
@@ -141,7 +158,8 @@
     "hometown": "Dallas, TX",
     "bio": "Jesus is a chill and mellow guy who knows how to make the #sickest mixes for our parties. When he is not honing his DJ craft he can be found coding away at his keyboard or going on 7-11 runs with the bros. Ask him about his IAP in Japan!",
     "year": 2021,
-    "img":  "jesusCantu"
+    "img":  "jesusCantu",
+    "pin": 753
   },
   {
     "name": "Charles Coffey",
@@ -149,7 +167,8 @@
     "hometown": "Blue Bell, PA",
     "bio": "Charles is an outgoing guy who loves watching new shows and movies on Netflix. When he’s not Netflixing, he’s chilling with the bros and meeting new people! He is involved with Sigma Nu, Camp Kesem, Orientation, IFC, and more! Rumor has it that freshman year, he slid down an entire mountain... Andrew may or may not have recorded it.",
     "year": 2022,
-    "img":  "charlesCoffey"
+    "img":  "charlesCoffey",
+    "pin": 762
   },
   {
     "name": "Diego Arenas",
@@ -157,7 +176,8 @@
     "hometown": "San Diego, CA",
     "bio": "Diego is a  ~v cool (thumbs up)TM ~ dude. He loves to just chill and hang out with the bros and sketch in his free time. This last semester, he enjoyed getting to go golfing with big Rick, Nico and Pips. If he was a color, he'd be rose gold. His favorite fruit is nectarines, but his favorite fruit flavor is mango. He’s always full of surprises. One of the absolute, most friendliest guys out there, with a real big heart. Just don’t feed him any Hot Cheetos. At MIT, he’s a part of SHPE and is actively involved in Sigma Nu. Everyday is PNR.",
     "year": 2023,
-    "img":  "diegoArenas"
+    "img":  "diegoArenas",
+    "pin": 778
   },
   {
     "name": "Chris Picard",
@@ -165,7 +185,8 @@
     "hometown": "Newton, MA",
     "bio": "Chris is a pretty goofy guy that loves to make everyone happy and is somewhat of a style icon, always wearing his Sunday best. He is what you would call a “food aficionado” and loves to go out to eat with the bois. He is one of 2 brothers that loves anything and everything Boston Sports. He also knows how to stab people as he is a fencing prodigy. Ask him about the incident in the Den.",
     "year": 2023,
-    "img":  "chrisPicard"
+    "img":  "chrisPicard",
+    "pin": 768
   },
   {
     "name": "Victor Diaz",
@@ -173,7 +194,8 @@
     "hometown": "Dallas, TX",
     "bio": "Victor is an out of this world lean, mean, calculating machine that grinds out PSETs during the week, but still finds time for the boys. His favorite memory with his brothers was exploring the Acadia wilderness and watching the sunrise. He lives life in the fast lane stemming from enjoying Formula 1. He also doesn’t stray from watching NBA and NFL games, rooting for his hometown teams the Mavs and the Cowboys. He is also a gaming fanatic, playing FIFA, Call of Duty, and 2K (add him on Xbox: EpicTito1234567).",
     "year": 2023,
-    "img":  "victorDiaz"
+    "img":  "victorDiaz",
+    "pin": 774
   },
   {
     "name": "Jordan Ambrosio",
@@ -181,7 +203,8 @@
     "hometown": "Bronx, NY",
     "bio": "Jordan is a simple livin’, friendly, goofy guy that loves to bond with the brothers. He is our brother baby, and loves to go for a swimTM. He’s a champion swimmer (just ask him about it), but got lost jet skiing with Jesus, his brother from another mother. His room, 0060 (double-oh-sixty), was the legendary hang out room, where he would often chill on his black couch, or play FIFA.",
     "year": 2023,
-    "img":  "jordanAmbrosio"
+    "img":  "jordanAmbrosio",
+    "pin": 779
   },
   {
     "name": "Marco Fleming",
@@ -189,7 +212,8 @@
     "hometown": "Mission, TX",
     "bio": "Marco loves going on trips with the bros, especially Daniel Amaya, travelling to various camps and parks while at MIT. With his head always in the clouds, it’s hard to keep him grounded, but when he is he’s involved with the UA, TAMID, MITMUNC, SHPE, IFC, and a couple more confusing acronyms on campus. He is also quite the sports fan, having run to the commons to rally with the rest of Boston after the Patriots 6th Super Bowl win. Ask him about the memorabilia he has from that night.",
     "year": 2022,
-    "img":  "marcoFleming"
+    "img":  "marcoFleming",
+    "pin": 760
   },
   {
     "name": "Joshua Herrera",
@@ -197,7 +221,8 @@
     "hometown": "Houston, TX",
     "bio": "Josh loves making things and working on projects with other people. His hobbies at home include coding, 3D printing, and electronics. His hobbies on campus include being awesome and getting absolutely shredded. #swole \nHe enjoys going out to grab a snack, playing a video game, or crossing the Harvard Bridge at 2AM in the middle of a thunderstorm… with the bros.",
     "year": 2023,
-    "img":  "joshuaHerrera"
+    "img":  "joshuaHerrera",
+    "pin": 772
   },
   {
     "name": "Naseem Hamed",
@@ -205,7 +230,8 @@
     "hometown": "St.Peterersburg, FL",
     "bio": "Naseem is friendly, open to new adventures, and down for late night Netflix binges. His name means soft wind and he’s visited Palestine 3 times! At MIT, he is currently on the RoboTeam and Muslim Student Association, so he’s either doing work for the clubs or playing video games like League and Valorant in his free time. One of his favorite memories with the bros was ambushing Ricky Alvarez with nerf guns along with the other 23’s right before chapter (he never saw it coming).",
     "year": 2023,
-    "img":  "naseemHamed"
+    "img":  "naseemHamed",
+    "pin": 773
   },
   {
     "name": "Suleman Thaniana",
@@ -213,7 +239,8 @@
     "hometown": "Karachi, Pakistan",
     "bio": "Suleman is fun and athletic. He loves basketball, LeBron James, and he writes the sports articles for the Tech! If you make him mad, he will not hesitate to cross you up and dunk in your face.\n\nOne of his favorite memories is winning in the intramural basketball league for Sigma Nu with the brothers his freshman fall.",
     "year": 2023,
-    "img": "sulemanThaniana"
+    "img": "sulemanThaniana",
+    "pin": 783
   },
   {
     "name": "Endy Beltran",
@@ -221,7 +248,8 @@
     "hometown": "West Hempstead, NY",
     "bio": "Endy is very chill and reserved with perfect comedic timing. He always has the right things to say. When he’s not spitting comedic gold, he does amateur photography, amateur graphic design, and some amateur coffee drinking. On campus, he is a member of SHPE, MIT Technique, and the Undergraduate Energy Club.\n\nOne of his favorite memories with a brother is when he planned a bowling night with Charles, Daniel, Jason, and some other friends, but ended up not going bowling and just having an impromptu dance party in the Den, his favorite room in the house.",
     "year": 2022,
-    "img":  "endyBeltran"
+    "img":  "endyBeltran",
+    "pin": 763
   },
   {
     "name": "Jose Gomez",
@@ -229,7 +257,8 @@
     "hometown": "McAllen, TX",
     "bio": "José’s favorite activities are eating, sleeping, and hanging out with the boys! Whether it be just to listening to music, working out in the gym, “balling up”, or having a good time at Sigma Nu’s parties, he loves to hang out with friends and make new memories. Some of his favorite hobbies include playing the drum set and picking up new skills from YouTube like playing guitar or baking.\nHe’s involved in cultural clubs like SHPE and MAES like many of his SN bros, and his academic interests are in chemistry, energy, and computer science, naturally leading him to find a UROP in chemistry. Hit him up IG: @hosey12 if you want to hear more about his experiences!",
     "year": 2023,
-    "img":  "joseGomez"
+    "img":  "joseGomez",
+    "pin": 776
   },
   {
     "name": "Jason Ramirez",
@@ -237,7 +266,8 @@
     "hometown": "New York, NY",
     "bio": "Jason likes magic, MMA, and learning languages. He has interests in policy making to make a difference in people’s lives. He loves to have deep conversations with people about important issues and topics and is always down to listen to new perspectives!\n\nOne of his favorite memories with a brother is when he and Charles did some 200 pound dumbbell curls to get pumped and ready for the first day of Fall Rush 2019.",
     "year": 2022,
-    "img":  "jasonRamirez"
+    "img":  "jasonRamirez",
+    "pin": 766
   },
   {
     "name": "Enriko Chavez",
@@ -245,7 +275,8 @@
     "hometown": "El Paso, TX",
     "bio": "When asked how a friend would describe him, Enriko responded: “I'm not sure how friends would describe me. I am constantly trying to understand myself, to know these answers. However, I would describe myself as a free spirit. Fun fact is that I am 4'20”, I like to help, and I'm interested in freaking vibing.”\n\nHis favorite memories have come from moving into the house. :^D",
     "year": 2021,
-    "img":  "enrikoChavez"
+    "img":  "enrikoChavez",
+    "pin": 755
   },
   {
     "name": "Luke Bastian",
@@ -253,7 +284,8 @@
     "hometown": "Phoenix, AZ",
     "bio": "Luke is a chill boi that's pretty athletic. He especially likes soccer and running. Right now, he's trying to use computer science to make structures more environmentally friendly and is President of the American Indian Science and Engineering Society. He also loves “reducing dat risk so the bros can throw dummy lit parties.”\n\nSome of his favorite memories with brothers are his glorious April Madness finals run with Nate and going around Boston in a stranger's truck delivering Christmas trees with Nestor.",
     "year": 2021,
-    "img":  "lukeBastian"
+    "img":  "lukeBastian",
+    "pin": 751
   },
   {
     "name": "Jesus Lares",
@@ -261,7 +293,8 @@
     "hometown": "Wellington, FL",
     "bio": "Jesus likes exploring nature and mountains especially with the boys. He’s interested in a bunch of random things and giving his philosophical thoughts on them. He is in MCG, is studying physics to learn how the world works, and is studying computer science to make cool bots and do some serious engineering. He also learned how to unicycle in one week with Ricky Aviña.\n\n“I am so happy to be in Sigma Nu because these guys are like my best friends now and are always down for anything whether it’s coding a random project, going on a trip across the country, or just hanging out.”\n\nFun Fact: He has a student pilot's license and wants to tour the world on a plane some day.",
     "year": 2022,
-    "img":  "jesusLares"
+    "img":  "jesusLares",
+    "pin": 758
   },
   {
     "name": "Armando Garcia",
@@ -269,7 +302,8 @@
     "hometown": "Chicago, IL",
     "bio": "I am funny and always willing to tag along on a trip. I love building things and hanging out with friends. I like talking about cars and anything funny.",
     "year": 2021,
-    "img":  "ajGarcia"
+    "img":  "ajGarcia",
+    "pin": 750
   },
   {
     "name": "Daniel Amaya",
@@ -277,7 +311,8 @@
     "hometown": "Chicago, IL ",
     "bio": "Daniel is quiet but not boring. Fun Fact: He has broken every limb except for his right arm. He enjoys playing volleyball, is a part of Laureates and Leaders, and is also in the Quest Bridge club. Despite all of this, when his brothers needed him most, he vanished like a faint cloud of smoke.",
     "year": 2022,
-    "img":  "danielAmaya"
+    "img":  "danielAmaya",
+    "pin": 765
   },
   {
     "name": "Andrew Sepulveda",
@@ -285,7 +320,8 @@
     "hometown": "Pico Rivera, CA",
     "bio": "Andrew is a star(fish) that loves music, spending time with friends, and the dismantling of capitalism.",
     "year": 2022,
-    "img":  "andrewSepulveda"
+    "img":  "andrewSepulveda",
+    "pin": 764
   },
   {
     "name": "Javier Mendez",
@@ -293,7 +329,8 @@
     "hometown": "Dallas, TX",
     "bio": "Javier is a nice guy who seems to go ghost mode for days on end. When he’s around the boys though, he has a fun time and likes to hang out. In his free time though, he likes to play video games into the late hours of the night, only to remember he has a pset due...",
     "year": 2023,
-    "img":  "javierMendez"
+    "img":  "javierMendez",
+    "pin": 769
   },
   {
     "name": "Aden Rothmeyer",
@@ -301,6 +338,34 @@
     "hometown": "AK",
     "bio": "Aden is super smart and super busy. He’s in army ROTC and on the crew team. When he’s not training, he likes to challenge himself in the classroom and take interesting, but hard classes. He loves Boston, but he wishes he could find somewhere to practice his cross country skiing. He makes up for this by racing people to the house while he’s on foot and they’re on a bicycle. (true story)\n\nFun Fact: His push up record is 1000. He set the record when he was 8 years old.",
     "year": 2023,
-    "img":  "adenRothmeyer"
+    "img":  "adenRothmeyer",
+    "pin": 782
+  },
+  {
+    "name": "Steven Herrera",
+    "major":"2A-6: Mechanical Engineering",
+    "hometown": "Miami, FL",
+    "bio": "",
+    "year": 2023,
+    "img": "stevenHerrera",
+    "pin": 784
+  },
+  {
+    "name": "Isaak Hernandez",
+    "major": "6-3: Computer Science and Engineering",
+    "hometown": "Fresno, CA",
+    "bio": "",
+    "year": 2022,
+    "img": "isaakHernandez",
+    "pin": 785
+  },
+  {
+    "name": "Luis Castro",
+    "major":"6-14: Computer Science, Economics, and Data Science",
+    "hometown": "New York, NY",
+    "bio": "",
+    "year": 2023,
+    "img": "luisCastro",
+    "pin": 786
   }
 ]

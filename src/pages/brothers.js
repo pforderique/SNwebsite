@@ -21,7 +21,7 @@ const Brothers = (props) => (
         <div id="main" className="alt">
             <section id="one">
                 <div className="inner">
-                  <BrotherGrid></BrotherGrid>
+                  <BrotherGrid />
                 </div>
             </section>
         </div>
