@@ -67,7 +67,9 @@ class Rush extends React.Component {
               </header>
               <div>
                 <button>
-                  <a href={'http://tiny.cc/SigNuInterest'}>Interest Form</a>
+                  <a href={'http://tiny.cc/SigNuInterest'} target="_blank">
+                    Interest Form
+                  </a>
                 </button>
                 &nbsp;
                 <button>
@@ -143,14 +145,23 @@ class Rush extends React.Component {
               <p>
                 Rush will start February 6th, 2021, but if you want to stay in
                 touch until then sign up on our{' '}
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdG3SXCNw_rqQZyRW2rD0xodTmfzsJ35RoTWOJbOPLmgcX8dg/viewform">
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdG3SXCNw_rqQZyRW2rD0xodTmfzsJ35RoTWOJbOPLmgcX8dg/viewform"
+                  target="_blank"
+                >
                   Interest Form{' '}
                 </a>
               </p>
               <p>
-                Follow us on <a href={'instagram.com/mitsigmanu'}>Instagram</a>{' '}
+                Follow us on{' '}
+                <a href={'https://instagram.com/mitsigmanu'} target="_blank">
+                  Instagram
+                </a>{' '}
                 and check out our{' '}
-                <a href={'www.facebook.com/MIT.SigmaNu'}> Facebook!</a>
+                <a href={'https://facebook.com/MIT.SigmaNu'} target="_blank">
+                  {' '}
+                  Facebook!
+                </a>
               </p>
               <p>
                 <a href={'mailto:sn-rush2020@mit.edu'}>sn-rush2020@mit.edu</a>
