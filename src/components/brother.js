@@ -2,7 +2,6 @@ import React from 'react'
 import "./brother.scss"
 import PopUp from '../pages/popup'
 
-
 import jordanAmbrosio from '../assets/images/brothers/jordanAmbrosio.jpg'
 import danielOsorio from '../assets/images/brothers/danielOsorio.jpg'
 import omarTrujillo from '../assets/images/brothers/omarTrujillo.jpg'
@@ -122,6 +121,10 @@ import zachMiller from '../assets/images/brothers/zachMiller.jpg'
 import chrisPicard from '../assets/images/brothers/chrisPicard.jpg'
 import davidSilverstein from '../assets/images/brothers/davidSilverstein.jpg'
 import adenRothmeyer from '../assets/images/brothers/adenRothmeyer.jpeg'
+import stevenHerrera from '../assets/images/brothers/stevenHerrera.jpg'
+import isaakHernandez from '../assets/images/brothers/isaakHernandez.jpg'
+import luisCastro from '../assets/images/brothers/luisCastro.jpg'
+
 
 let brotherDict = {
 'jordanAmbrosio' : jordanAmbrosio,
@@ -243,6 +246,9 @@ let brotherDict = {
   'chrisPicard' : chrisPicard,
   'davidSilverstein' : davidSilverstein,
   'adenRothmeyer' : adenRothmeyer,
+  'stevenHerrera': stevenHerrera,
+  'isaakHernandez': isaakHernandez,
+  'luisCastro': luisCastro
 }
 
 class Brother extends React.Component {
@@ -266,7 +272,7 @@ class Brother extends React.Component {
       <img src={brotherDict[this.props.brother.img]} alt={this.state.name} className={"brotherImage"}/>
       <div>
         <div className="btn popupButton" onClick={this.togglePop}>
-          <button>{this.state.brother.name}</button>
+          <button>{this.props.brother.name}</button>
         </div>
         {this.state.seen ? <PopUp toggle={this.togglePop}
                                   className={this.state.seen ? null : "invisible"}
@@ -278,8 +284,8 @@ class Brother extends React.Component {
                                   bio={this.props.brother.bio}
         />: null}
       </div>
-      <p>{this.state.brother.major}</p>
-      <h4>{this.state.brother.hometown}</h4>
+      <p>{this.props.brother.major}</p>
+      <h4>{this.props.brother.hometown}</h4>
     </div>
     );
   }

@@ -1,35 +1,36 @@
-**Snother site**
+# SNother site
+A Website for MIT Chapter of Sigma Nu
 
-## Preview
 
-https://gatsby-forty.surge.sh
+## Quick Start
+  The quickest way to get started 
 
-## Installation
-
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-<br/>
-`gatsby new gatsby-starter-forty https://github.com/codebushi/gatsby-starter-forty`
-
-Run `gatsby develop` in the terminal to start the dev site.
-
-## CSS Grid
-
-The grid on this site was replaced with a custom version, built using CSS Grid. It's a very simple 12 column grid that is disabled on mobile. To start using the grid, wrap the desired items with `grid-wrapper`. Items inside the `grid-wrapper` use the class `col-` followed by a number, which should add up to 12.
-
-Here is an example of using the grid, for a 3 column layout:
-
+  Clone the Repository:
+```bash
+$ git clone https://github.com/MarcoF1/URL-Shortener.git
 ```
-<div className="grid-wrapper">
-    <div className="col-4">
-        <p>Content Here</p>
-    </div>
-    <div className="col-4">
-        <p>Content Here</p>
-    </div>
-    <div className="col-4">
-        <p>Content Here</p>
-    </div>
-</div>
+  Or if you have SSH keys setup:
+```bash
+$ git clone git@github.com:MarcoF1/URL-Shortener.git
+```
+  Install the Gatsby CLI:
+```bash
+$ npm install -g gatsby-cli
+```
+  Install dependencies:
+```bash
+$ npm install
 ```
 
-A Marco + Moi (me la pela) creation
+  Start the server:
+
+```bash
+$ gatsby develop
+```
+
+View the website at: http://localhost:8000
+
+## Public URLS
+To view the public website, navigate to [sigmanu.mit.edu](https://sigmanu.mit.edu) or [signu.app](https://signu.app)
+
+A Marco + Moi creation 
