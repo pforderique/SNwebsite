@@ -4,6 +4,7 @@ import { brothers, filteredBros } from './FilteredBros'
 import Brother from './brother'
 import StateSelect from './StateSelect';
 import { Container } from '@material-ui/core';
+import CourseSelect from './CourseSelect';
 
 
 function shuffle(array){
@@ -54,16 +55,26 @@ const BrotherGrid = () => {
   return (
     <div>
       <Container className={'buttons'}>
-        <button onClick={()=> resetFilters()}>All</button>
-        <button onClick={()=> setYearFilter(2023)}>2023</button>
-        <button onClick={()=> setYearFilter(2022)}>2022</button>
-        <button onClick={()=> setYearFilter(2021)}>2021</button>
-        {/* <button onClick={()=> setStateFilter('TX')}>{stateFilter ? stateFilter : 'Click to toggle states'}</button> */}
+        <div
+          style={{ display: 'inline-block' }}
+        >
+          <button onClick={()=> resetFilters()}>All</button>
+          <button onClick={()=> setYearFilter(2023)}>2023</button>
+          <button onClick={()=> setYearFilter(2022)}>2022</button>
+          <button onClick={()=> setYearFilter(2021)}>2021</button>
+        </div>
         {/* <StateSelect
           stateFilter={stateFilter}
           stateList={Object.keys(filteredBros.state)}
           setStateFilter={setStateFilter}
           placeholder={(stateFilter === '' ? 'Select State' : stateFilter)}
+        />
+
+        <CourseSelect 
+          courseFilter={courseFilter}
+          courseList={Object.keys(filteredBros.course)}
+          setCourseFilter={setCourseFilter}
+          placeholder={(courseFilter === '' ? 'Select Course' : courseFilter)}
         /> */}
       </Container>
     <div>

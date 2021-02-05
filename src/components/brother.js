@@ -269,7 +269,7 @@ class Brother extends React.Component {
   render() {
     return (
     <div className={"brother"}>
-      <img src={brotherDict[this.props.brother.img]} alt={this.state.name} className={"brotherImage"}/>
+      <img src={brotherDict[this.props.brother.img]} alt={this.state.brother.name} className={"brotherImage"}/>
       <div>
         <div className="btn popupButton" onClick={this.togglePop}>
           <button>{this.props.brother.name}</button>

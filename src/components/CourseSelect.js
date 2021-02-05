@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react'
 import "./brother.scss"
 import Select from 'react-select'
 
-const StateSelect = ({ stateList, placeholder, setStateFilter }) => {
-    if (!stateList){
+const CourseSelect = ({ courseList, placeholder, setCourseFilter }) => {
+    if (!courseList){
         return null;
     }
 
@@ -22,10 +22,10 @@ const StateSelect = ({ stateList, placeholder, setStateFilter }) => {
         })
     }
 
-    stateList.sort();
+    courseList.sort();
 
     const options = []
-    stateList.forEach(state => {
+    courseList.forEach(state => {
         options.push({
             value: state,
             label: state
@@ -38,9 +38,9 @@ const StateSelect = ({ stateList, placeholder, setStateFilter }) => {
         >
             <Select 
                 isDisabled={false}
-                options={[{value: '', label: 'Select State'}, ...options]}
+                options={[{value: '', label: 'Select Course'}, ...options]}
                 placeholder={placeholder}
-                onChange={event => setStateFilter(event.value)}
+                onChange={event => setCourseFilter(event.value)}
                 styles={customStyles}
             />
         </div>
@@ -48,4 +48,4 @@ const StateSelect = ({ stateList, placeholder, setStateFilter }) => {
     );
 } 
 
-export default StateSelect
+export default CourseSelect
