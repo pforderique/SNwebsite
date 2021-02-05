@@ -22,11 +22,12 @@ class PopUp extends Component {
                 <p>Class of {this.props.year}</p>
                 <p>{this.props.hometown}</p>
                 <p>{this.props.major}</p>
+                {this.props.minor?<p>{'Minoring in ' + this.props.minor}</p>:null}
               </div>
             </div>
             <div className={"quote"}>
-              <p>"{'\t'}{this.props.bio}
-                {'\t'}"</p>
+              <p>{'\t'}{this.props.bio}
+                {'\t'}</p>
             </div>
 
           </div>

@@ -281,6 +281,7 @@ class Brother extends React.Component {
                                   year={this.props.brother.year}
                                   hometown={this.props.brother.hometown}
                                   major={this.props.brother.major}
+                                  minor={this.props.brother.minor}
                                   bio={this.props.brother.bio}
         />: null}
       </div>

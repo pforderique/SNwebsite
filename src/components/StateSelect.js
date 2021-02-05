@@ -1,9 +1,28 @@
 import React, { useState, useEffect } from 'react'
 import Select from 'react-select'
 
-const StateSelect = ({ stateList, stateFilter, setStateFilter }) => {
+const StateSelect = ({ stateList, placeholder, setStateFilter }) => {
     if (!stateList){
         return null;
+    }
+
+    const customStyles = {
+        option: (provided, state) => ({
+          ...provided,
+          borderBottom: '1px dotted pink',
+          color: state.isSelected ? 'red' : 'blue',
+          padding: 20,
+        }),
+        control: () => ({
+          // none of react-select's styles are passed to <Control />
+          width: 200,
+        }),
+        singleValue: (provided, state) => {
+          const opacity = state.isDisabled ? 0.5 : 1;
+          const transition = 'opacity 300ms';
+      
+          return { ...provided, opacity, transition };
+        }
     }
 
     const options = []
@@ -19,8 +38,10 @@ const StateSelect = ({ stateList, stateFilter, setStateFilter }) => {
         <Select 
             isDisabled={false}
             options={options}
-            placeholder={(stateFilter === '' ? 'Select' : stateFilter)}
+            placeholder={placeholder}
             onChange={event => setStateFilter(event.value)}
+            className={'buttons'}
+            styles={customStyles}
         />
     );
 } 

@@ -164,6 +164,7 @@
   {
     "name": "Charles Coffey",
     "major": "20: Biological Engineering",
+    "minor": "6: Computer Science",
     "hometown": "Blue Bell, PA",
     "bio": "Charles is an outgoing guy who loves watching new shows and movies on Netflix. When he’s not Netflixing, he’s chilling with the bros and meeting new people! He is involved with Sigma Nu, Camp Kesem, Orientation, IFC, and more! Rumor has it that freshman year, he slid down an entire mountain... Andrew may or may not have recorded it.",
     "year": 2022,
@@ -361,9 +362,10 @@
   },
   {
     "name": "Luis Castro",
-    "major":"6-14: Computer Science, Economics, and Data Science",
+    "major":"6-3: Computer Science and Engineering",
+    "minor": "15-2: Buisness Analytics", 
     "hometown": "New York, NY",
-    "bio": "",
+    "bio": "Luis is a huge ambivert. He loves to hang out and connect with people on a personal level, but you can also catch him just relaxing and doing his own thing. Whether it’s going to the Havana Club with some bros to dance salsa, bachata, and/or merengue, or playing video games, or singing karaoke on a Saturday night, you can count on Luis to have a great time! He’s also obsessed with Chipotle and SpongeBob memes. Around MIT, he is a co-founder of ColorStack@MIT and one of the Exec members of the Minority Business Association, (check them out if you're into CS or business!)",
     "year": 2023,
     "img": "luisCastro",
     "pin": 786
