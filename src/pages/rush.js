@@ -77,7 +77,7 @@ class Rush extends React.Component {
                 </button>
                 &nbsp;
                 <button>
-                  <a href={'signu.app/interview'} target="_blank">
+                  <a href={'https://signu.app/interview'} target="_blank">
                     Schedule an Interview
                   </a>
                 </button>
@@ -88,7 +88,7 @@ class Rush extends React.Component {
                 <h2>Events</h2>
               </header>
 
-              <p align="left"> All times shown in your local time zone </p>
+              <p align="left"> All times shown in your <strong>local time zone</strong></p>
 
               <TimeGridCalendar />
 
