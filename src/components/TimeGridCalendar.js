@@ -7,7 +7,7 @@ import googleCalendarPlugin from '@fullcalendar/google-calendar'
 import Tooltip from '@material-ui/core/Tooltip'
 import Typography from '@material-ui/core/Typography'
 
-const key = process.env.GATSBY_CALENDAR_API_KEY
+const key = 'AIzaSyCurE75SMg0CWiyUKPErU8aZ9S0UszqX9Q'; //process.env.GATSBY_CALENDAR_API_KEY
 const GOOGLE_CALENDAR_ID =
   'akgs00sgh4f7fjsugd8q1cjcm0@group.calendar.google.com'
 

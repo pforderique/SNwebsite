@@ -77,7 +77,7 @@ class Rush extends React.Component {
                 </button>
                 &nbsp;
                 <button>
-                  <a href={'signu.app/interview'} target="_blank">
+                  <a href={'https://signu.app/interview'} target="_blank">
                     Schedule an Interview
                   </a>
                 </button>
