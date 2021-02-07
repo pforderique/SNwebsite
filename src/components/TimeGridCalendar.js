@@ -49,6 +49,13 @@ function TimeGridCalendar() {
     )
   }
 
+  const handleEventClick = (info) => {
+    info.jsEvent.preventDefault();
+    if (info.event.url) {
+      window.open('https://signu.app/gcal-add');
+    }
+  }
+
   return (
     <div>
       {typeof window !== 'undefined' && FullCalendar && (
@@ -76,6 +83,7 @@ function TimeGridCalendar() {
           allDaySlot={false}
           datesSet={handleDatesSet}
           eventContent={eventContent}
+          eventClick={handleEventClick}
         />
       )}
     </div>

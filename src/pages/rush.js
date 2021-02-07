@@ -88,7 +88,7 @@ class Rush extends React.Component {
                 <h2>Events</h2>
               </header>
 
-              <p align="left"> All times shown in your local time zone </p>
+              <p align="left"> All times shown in your <strong>local time zone</strong></p>
 
               <TimeGridCalendar />
 
