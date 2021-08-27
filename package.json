@@ -16,6 +16,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "gatsby": "^2.19.5",
+    "gatsby-plugin-create-page-html": "0.0.2",
     "gatsby-plugin-manifest": "^2.2.38",
     "gatsby-plugin-offline": "^3.0.32",
     "gatsby-plugin-react-helmet": "^3.1.21",
@@ -28,12 +29,12 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
     "react-responsive-carousel": "^3.2.9",
+    "react-select": "^4.0.2",
+    "react-tooltip": "^4.2.13",
     "reactjs-popup": "^1.5.0",
     "serve-favicon": "^2.5.0",
     "sharp": "^0.27.0",
-    "vhost": "^3.0.2",
-    "react-select": "^4.0.2",
-    "react-tooltip": "^4.2.13"
+    "vhost": "^3.0.2"
   },
   "keywords": [
     "gatsby"

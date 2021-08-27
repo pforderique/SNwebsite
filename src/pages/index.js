@@ -18,15 +18,15 @@ class HomeIndex extends React.Component {
                 <Helmet
                     title="Sigma Nu MIT"
                     meta={[
-                        { name: 'description', content: 'Sample' },
+                        { name: 'google-site-verification', content: 'NgPeQMF7lE4W03aCqNr8oXbM8RISXv1Ji77vFYxzWoc' },
                         { name: 'keywords', content: 'sample, something' },
                     ]}
                 >
                 </Helmet>
 
                 <Banner />
-
                 <div id="main">
+				<meta name="google-site-verification" content="NgPeQMF7lE4W03aCqNr8oXbM8RISXv1Ji77vFYxzWoc" />
                     <section id="one" className="tiles">
                         <article style={{backgroundImage: `url(${pic01})`}}>
                             <header className="major">

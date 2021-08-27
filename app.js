@@ -1,3 +1,6 @@
+const fs = require('fs');
+const https = require('https');
+const http = require('http');
 var express = require('express');
 var multer  = require('multer');
 var path = require('path');
@@ -9,6 +12,27 @@ var request = require('request');
 var vhost = require('vhost');
 
 var main = express();
+
+const hostname = 'sigmanu.mit.edu';
+const httpsPort = 443;
+const httpPort = 80;
+
+
+const httpsOptions = {
+	cert: fs.readFileSync('/etc/httpd/conf/ssl.crt/sigmanu.mit.edu.cer'),
+	ca: fs.readFileSync('/etc/httpd/conf/ssl.ca/InCommon-chain.crt'),
+	key: fs.readFileSync('/etc/httpd/conf/ssl.key/sigmanu.mit.edu.key')
+};
+
+const httpsServer = https.createServer(httpsOptions,main);
+const httpServer = http.createServer(main);
+//redirecting from http server to https
+main.use((req,res,next) => {
+	if (req.protocol == 'http') {
+		res.redirect(301, `https://${req.headers.host}${req.url}`);
+	}
+	next();
+});
 
 //var routes = require('./routes/index');
 
@@ -37,7 +61,7 @@ var redirect = express();
 redirect.use(function(req, res){
     if (!module.parent) console.log(req.vhost);
     console.log(req._parsedUrl.path)
-  res.redirect('http://sigmanu.mit.edu' + req._parsedUrl.path);
+  res.redirect('https://sigmanu.mit.edu' + req._parsedUrl.path);
 });
 
 // catch 404 and forward to error handler
@@ -83,7 +107,7 @@ if (main.get('env') === 'development') {
   module.exports = main;
 } else {
   var app = express();
-
+  console.log("here");
   app.use(vhost('*.sigmanu.mit.edu', redirect)); // Serves all subdomains via Redirect app
   app.use(vhost('sigmanu.mit.edu', main)); // Serves top level domain via Main server app
   
@@ -93,3 +117,6 @@ if (main.get('env') === 'development') {
 
   module.exports = app;
 }
+
+httpsServer.listen(httpsPort,hostname);
+httpServer.listen(httpPort,hostname);
