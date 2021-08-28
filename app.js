@@ -17,23 +17,6 @@ const hostname = 'sigmanu.mit.edu';
 const httpsPort = 443;
 const httpPort = 80;
 
-
-const httpsOptions = {
-	cert: fs.readFileSync('/etc/httpd/conf/ssl.crt/sigmanu.mit.edu.cer'),
-	ca: fs.readFileSync('/etc/httpd/conf/ssl.ca/InCommon-chain.crt'),
-	key: fs.readFileSync('/etc/httpd/conf/ssl.key/sigmanu.mit.edu.key')
-};
-
-const httpsServer = https.createServer(httpsOptions,main);
-const httpServer = http.createServer(main);
-//redirecting from http server to https
-main.use((req,res,next) => {
-	if (req.protocol == 'http') {
-		res.redirect(301, `https://${req.headers.host}${req.url}`);
-	}
-	next();
-});
-
 //var routes = require('./routes/index');
 
 //Log all uncaught exceptions so we know what's going on if the mainlication crashes
@@ -61,7 +44,7 @@ var redirect = express();
 redirect.use(function(req, res){
     if (!module.parent) console.log(req.vhost);
     console.log(req._parsedUrl.path)
-  res.redirect('https://sigmanu.mit.edu' + req._parsedUrl.path);
+  res.redirect('http://sigmanu.mit.edu' + req._parsedUrl.path);
 });
 
 // catch 404 and forward to error handler
@@ -100,14 +83,23 @@ main.use(function(err, req, res, next) {
  Else use redirect
 */
 if (main.get('env') === 'development') {
-  main.listen('8080', function(req, res, err) {
-      console.log("Sigma Nu website running on port 8080. [Development mode]");
-  });
-  
-  module.exports = main;
+    // main.listen('8080', 'localhost'); 
+    console.log("Sigma Nu website running on port 8080. [Development mode]");
+    console.log("Running on localhost")
+    
+    const httpsOptions = {
+        cert: fs.readFileSync('./localhost.pem'),
+	    key: fs.readFileSync('./localhost-key.pem')
+    };
+
+    const httpsServer = https.createServer(httpsOptions,main);
+    httpsServer.listen(8080,'localhost')
+    module.exports = main;
+
 } else {
   var app = express();
   console.log("here");
+
   app.use(vhost('*.sigmanu.mit.edu', redirect)); // Serves all subdomains via Redirect app
   app.use(vhost('sigmanu.mit.edu', main)); // Serves top level domain via Main server app
   
@@ -115,8 +107,24 @@ if (main.get('env') === 'development') {
     console.log("Sigma Nu website running on port 8080.");
   });
 
+    const httpsOptions = {
+        cert: fs.readFileSync('/etc/httpd/conf/ssl.crt/sigmanu.mit.edu.cer'),
+	    ca: fs.readFileSync('/etc/httpd/conf/ssl.ca/InCommon-chain.crt'),
+	    key: fs.readFileSync('/etc/httpd/conf/ssl.key/sigmanu.mit.edu.key')
+    };
+
+    const httpsServer = https.createServer(httpsOptions,app);
+
+    //redirecting from http server to https
+    main.use((req,res,next) => {
+        if (req.protocol == 'http') {
+            res.redirect(301, `https://${req.headers.host}${req.url}`);
+        }
+        next();
+    });
+
+    httpsServer.listen(httpsPort,hostname);
+    
+
   module.exports = app;
 }
-
-httpsServer.listen(httpsPort,hostname);
-httpServer.listen(httpPort,hostname);
