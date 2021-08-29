@@ -44,7 +44,8 @@ var redirect = express();
 redirect.use(function(req, res){
     if (!module.parent) console.log(req.vhost);
     console.log(req._parsedUrl.path)
-  res.redirect('http://sigmanu.mit.edu' + req._parsedUrl.path);
+console.log("redirect");
+  res.redirect('https://sigmanu.mit.edu' + req._parsedUrl.path);
 });
 
 // catch 404 and forward to error handler
@@ -78,6 +79,13 @@ main.use(function(err, req, res, next) {
     });
 });
 
+main.get('*',function(req,res) {
+	res.redirect('https://' + req.headers.host + req.url);
+});
+
+main.use(vhost('*.sigmanu.mit.edu', redirect)); // Serves all subdomains via Redirect app
+ 
+
 /*
  If in development, expose the application directly
  Else use redirect
@@ -89,7 +97,7 @@ if (main.get('env') === 'development') {
     
     const httpsOptions = {
         cert: fs.readFileSync('./localhost.pem'),
-	    key: fs.readFileSync('./localhost-key.pem')
+	 key: fs.readFileSync('./localhost-key.pem')
     };
 
     const httpsServer = https.createServer(httpsOptions,main);
@@ -97,15 +105,15 @@ if (main.get('env') === 'development') {
     module.exports = main;
 
 } else {
-  var app = express();
+  //var app = express();
   console.log("here");
 
-  app.use(vhost('*.sigmanu.mit.edu', redirect)); // Serves all subdomains via Redirect app
-  app.use(vhost('sigmanu.mit.edu', main)); // Serves top level domain via Main server app
+//  app.use(vhost('*.sigmanu.mit.edu', redirect)); // Serves all subdomains via Redirect app
+ // app.use(vhost('sigmanu.mit.edu', main)); // Serves top level domain via Main server app
   
-  app.listen('8080', function(req, res, err) {
-    console.log("Sigma Nu website running on port 8080.");
-  });
+  //app.listen('8080', function(req, res, err) {
+    //console.log("Sigma Nu website running on port 8080.");
+ // });
 
     const httpsOptions = {
         cert: fs.readFileSync('/etc/httpd/conf/ssl.crt/sigmanu.mit.edu.cer'),
@@ -113,18 +121,20 @@ if (main.get('env') === 'development') {
 	    key: fs.readFileSync('/etc/httpd/conf/ssl.key/sigmanu.mit.edu.key')
     };
 
-    const httpsServer = https.createServer(httpsOptions,app);
-
-    //redirecting from http server to https
-    main.use((req,res,next) => {
+   var app = express();
+    const httpsServer = https.createServer(httpsOptions,main);
+    const httpServer = http.createServer(app);
+ 
+   app.use((req,res,next) => {
         if (req.protocol == 'http') {
-            res.redirect(301, `https://${req.headers.host}${req.url}`);
-        }
-        next();
+		res.redirect(301,`https://${req.headers.host}${req.url}`);
+	console.log("should redirect");
+	}
+	next();
     });
 
     httpsServer.listen(httpsPort,hostname);
-    
+    httpServer.listen(httpPort,hostname);
 
-  module.exports = app;
+  module.exports = main;
 }
