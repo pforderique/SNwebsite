@@ -125,6 +125,7 @@ import stevenHerrera from '../assets/images/brothers/stevenHerrera.jpg'
 import isaakHernandez from '../assets/images/brothers/isaakHernandez.jpg'
 import luisCastro from '../assets/images/brothers/luisCastro.jpg'
 import pieroOrderique from '../assets/images/brothers/pieroOrderique.jpg'
+import jabesGallardo from '../assets/images/brothers/jabesGallardo.jpg'
 
 
 let brotherDict = {
@@ -251,6 +252,7 @@ let brotherDict = {
   'isaakHernandez': isaakHernandez,
   'luisCastro': luisCastro,
   'pieroOrderique': pieroOrderique,
+  'jabesGallardo': jabesGallardo,
 }
 
 class Brother extends React.Component {

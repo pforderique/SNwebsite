@@ -236,15 +236,6 @@
     "pin": 773
   },
   {
-    "name": "Suleman Thaniana",
-    "major": "10: Chemical Engineering",
-    "hometown": "Karachi, Pakistan",
-    "bio": "Suleman is fun and athletic. He loves basketball, LeBron James, and he writes the sports articles for the Tech! If you make him mad, he will not hesitate to cross you up and dunk in your face.\n\nOne of his favorite memories is winning in the intramural basketball league for Sigma Nu with the brothers his freshman fall.",
-    "year": 2023,
-    "img": "sulemanThaniana",
-    "pin": 783
-  },
-  {
     "name": "Endy Beltran",
     "major": "10: Chemical Engineering",
     "hometown": "West Hempstead, NY",
@@ -335,15 +326,6 @@
     "pin": 769
   },
   {
-    "name": "Aden Rothmeyer",
-    "major": "26: All Majors",
-    "hometown": "AK",
-    "bio": "Aden is super smart and super busy. He’s in army ROTC and on the crew team. When he’s not training, he likes to challenge himself in the classroom and take interesting, but hard classes. He loves Boston, but he wishes he could find somewhere to practice his cross country skiing. He makes up for this by racing people to the house while he’s on foot and they’re on a bicycle. (true story)\n\nFun Fact: His push up record is 1000. He set the record when he was 8 years old.",
-    "year": 2023,
-    "img":  "adenRothmeyer",
-    "pin": 782
-  },
-  {
     "name": "Steven Herrera",
     "major":"2A-6: Mechanical Engineering",
     "hometown": "Miami, FL",
@@ -380,6 +362,16 @@
     "year": 2024,
     "img": "pieroOrderique",
     "pin": 787
+  },
+
+  {
+    "name": "Jabes Gallardo",
+    "major": "15-3: Finance",
+    "hometown": "Pharr, TX",
+    "bio": "Jabes is an all-around nice and empathetic person. If you want a hug or consolation, he's your guy. He loves to talk about Finance and Investing (as would any Course 15). Some of his favorite hobbies include jogging along the Charles River, playing basketball, going out to eat, and watching Marvel shows (What If...? is so good!). If you want to go to the movies, he's also your guy. ",
+    "year": 2024,
+    "img": "jabesGallardo",
+    "pin": 788
   }
 
 ]

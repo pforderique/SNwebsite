@@ -31,7 +31,10 @@
 
 .popupImage{
   width: 300px;
+  height: 300px;
   margin: 0 auto;
+  display: flex;
+  align-self: center;
   @media (max-width: 600px) {
     display: none;
   }
