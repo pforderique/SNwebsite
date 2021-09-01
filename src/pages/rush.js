@@ -76,11 +76,6 @@ class Rush extends React.Component {
                   <a href={'#contact'}> Contact info</a>
                 </button>
                 &nbsp;
-                <button>
-                  <a href={'https://signu.app/interview'} target="_blank">
-                    Schedule an Interview
-                  </a>
-                </button>
               </div>
               <div style={{ margin: '32px' }}></div>
 
@@ -88,7 +83,8 @@ class Rush extends React.Component {
                 <h2>Events</h2>
               </header>
 
-              <p align="left"> All times shown in your <strong>local time zone</strong></p>
+              <p align="left"> All events are also on the <a href="https://mitfallrush2021.sched.com/overview/type/Sigma+Nu" target
+              ="_blank" >IFC schedule</a> </p>
 
               <TimeGridCalendar />
 
@@ -149,7 +145,7 @@ class Rush extends React.Component {
                 <h2>Contact Info</h2>
               </header>
               <p>
-                Rush will start February 6th, 2021, but if you want to stay in
+                Rush will start September 4th, 2021, but if you want to stay in
                 touch until then sign up on our{' '}
                 <a
                   href="https://docs.google.com/forms/d/e/1FAIpQLSdG3SXCNw_rqQZyRW2rD0xodTmfzsJ35RoTWOJbOPLmgcX8dg/viewform"
@@ -170,7 +166,7 @@ class Rush extends React.Component {
                 </a>
               </p>
               <p>
-                <a href={'mailto:sn-rush2020@mit.edu'}>sn-rush2020@mit.edu</a>
+                <a href={'mailto:sn-rush2021@mit.edu'}>sn-rush2021@mit.edu</a>
               </p>
             </div>
           </section>

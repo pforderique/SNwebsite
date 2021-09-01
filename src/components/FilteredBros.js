@@ -4,6 +4,7 @@ brothers.sort((bro1, bro2) => bro1.pin - bro2.pin);
 
 const filteredBros = {
                         year: {
+                                2024: new Array(),
                                 2023: new Array(),
                                 2022: new Array(),
                                 2021: new Array()

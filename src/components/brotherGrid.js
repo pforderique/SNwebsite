@@ -59,6 +59,7 @@ const BrotherGrid = () => {
           style={{ display: 'inline-block' }}
         >
           <button onClick={()=> resetFilters()}>All</button>
+          <button onClick={()=> setYearFilter(2024)}>2024</button>
           <button onClick={()=> setYearFilter(2023)}>2023</button>
           <button onClick={()=> setYearFilter(2022)}>2022</button>
           <button onClick={()=> setYearFilter(2021)}>2021</button>

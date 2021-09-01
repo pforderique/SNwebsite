@@ -42,7 +42,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "start": "gatsby build && node app.js",
+    "start": "ENABLE_GATSBY_REFRESH_ENDPOINT=true gatsby build && node app.js",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",

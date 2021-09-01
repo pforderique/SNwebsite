@@ -1,15 +1,15 @@
 import React, { useState, Fragment } from 'react'
 
-import FullCalendar from '@fullcalendar/react'
+import FullCalendar, { DaySeriesModel } from '@fullcalendar/react'
 import timeGridPlugin from '@fullcalendar/timegrid'
 import googleCalendarPlugin from '@fullcalendar/google-calendar'
 
 import Tooltip from '@material-ui/core/Tooltip'
 import Typography from '@material-ui/core/Typography'
+import { flushToDom } from '@fullcalendar/react/dist/vdom'
 
 const key = 'AIzaSyCurE75SMg0CWiyUKPErU8aZ9S0UszqX9Q'; //process.env.GATSBY_CALENDAR_API_KEY
-const GOOGLE_CALENDAR_ID =
-  'akgs00sgh4f7fjsugd8q1cjcm0@group.calendar.google.com'
+const GOOGLE_CALENDAR_ID = 'kkjgltm1bisr2eesnm0rnnu8is@group.calendar.google.com'
 
 function TimeGridCalendar() {
   const [isFirstWeek, setIsFirstWeek] = useState(true)
@@ -18,6 +18,8 @@ function TimeGridCalendar() {
     let [month, date, year] = info.start.toLocaleDateString('en-US').split('/')
     parseInt(date) < 13 ? setIsFirstWeek(true) : setIsFirstWeek(false)
   }
+
+
 
   function renderInnerContent(innerProps) {
     return (
@@ -61,24 +63,25 @@ function TimeGridCalendar() {
       {typeof window !== 'undefined' && FullCalendar && (
         <FullCalendar
           headerToolbar={{
-            start: 'timeGridDay,timeGridWeek',
+            start: false,
             center: 'title',
-            end: 'prev,next',
+            end: false,
           }}
           contentHeight={'auto'}
           fixedWeekCount={false}
-          firstDay="6"
           plugins={[timeGridPlugin, googleCalendarPlugin]}
           validRange={{
-            start: '2021-02-06',
-            end: '2021-02-20',
+            start: '2021-09-04',
+            end: '2021-09-10',
           }}
           googleCalendarApiKey={key}
           events={{
             googleCalendarId: GOOGLE_CALENDAR_ID,
           }}
-          initialView="timeGridWeek"
-          slotMinTime={isFirstWeek ? '10:00:00' : '17:00:00'}
+          initialView="timeGrid" //originally timeGridWeek
+          dayCount="6"
+          duration="days:6"
+          slotMinTime={isFirstWeek ? '11:30:00' : '17:00:00'}
           nowIndicator={true}
           allDaySlot={false}
           datesSet={handleDatesSet}

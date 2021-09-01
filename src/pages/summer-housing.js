@@ -15,7 +15,7 @@ const Summer = (props) => (
                     <header className="major">
                         <h1>Summer Housing</h1>
                     </header>
-                    <h3>Summer housing 2020 has been cancelled :(</h3>
+                    <h3>Summer housing for 2021 is TBD </h3>
                 </div>
             </section>
         </div>

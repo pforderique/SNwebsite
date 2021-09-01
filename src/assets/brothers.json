@@ -128,8 +128,9 @@
   {
     "name": "Guillermo Vasquez",
     "major": "6-3: Computer Science and Engineering",
+    "minor": "Statistics and Data Science",
     "hometown": "Plainfield, IL",
-    "bio": "Memo is humorous, talented, and a go-getter. He is an achiever; He loves to play Super Smash Bros with Mega Man as his main. He likes to imitate cartoon voices and do impersonations of various characters (just not around Derek). Scooby-Doo is his best, a real good boi. He likes classical music and his favorite musical group is the Canadian Brass. He plays the trombone, trumpet, kazoo, and ocarina! He is the secretary for the First Generation Program, a member of SHPE, and an active member of Sigma Nu!",
+    "bio": "Memo is humorous, talented, and a go-getter. He is an achiever; He loves to play Super Smash Bros with Mega Man as his main. He likes to imitate cartoon voices and do impersonations of various characters (just not around Derek). Scooby-Doo is his best, a real good boi. He likes classical music and his favorite musical group is the Canadian Brass. He plays the trombone, trumpet, kazoo, and ocarina! He was secretary for the First Generation Program, is a member of SHPE, and is the VP of Sigma Nu!",
     "year": 2023,
     "img":  "guillermoVazquez",
     "pin": 777
@@ -173,7 +174,7 @@
   },
   {
     "name": "Diego Arenas",
-    "major": "15-2: Business Analytics",
+    "major": "15-2: Business Analytics and 18C",
     "hometown": "San Diego, CA",
     "bio": "Diego is a  ~v cool (thumbs up)TM ~ dude. He loves to just chill and hang out with the bros and sketch in his free time. This last semester, he enjoyed getting to go golfing with big Rick, Nico and Pips. If he was a color, he'd be rose gold. His favorite fruit is nectarines, but his favorite fruit flavor is mango. He’s always full of surprises. One of the absolute, most friendliest guys out there, with a real big heart. Just don’t feed him any Hot Cheetos. At MIT, he’s a part of SHPE and is actively involved in Sigma Nu. Everyday is PNR.",
     "year": 2023,
@@ -355,7 +356,7 @@
     "name": "Isaak Hernandez",
     "major": "6-3: Computer Science and Engineering",
     "hometown": "Fresno, CA",
-    "bio": "Isaak is a very passionate person. He will dedicate hours to anything that makes him happy, whether it’s learning some new course 6 skill or hanging out with friends. One of his favorite memories with Sigma Nu is ordering “brain food”, aka candy and redbull, twice a night to PSET with Amaya for 8.03. He is always down to watch or play basketball, and will gladly sit down and watch an entire UFC or Boxing card from start to finish.",
+    "bio": "Isaak is swag incarnate. The living embodiment of swag.",
     "year": 2022,
     "img": "isaakHernandez",
     "pin": 785
@@ -369,5 +370,16 @@
     "year": 2023,
     "img": "luisCastro",
     "pin": 786
+  },
+
+  {
+    "name": "Piero Orderique",
+    "major": "6-3: Computer Science and Engineering",
+    "hometown": "Columbus, GA",
+    "bio": "Piero (Fabrizzio) is a family-man who loves long-distance swimming and riding his bike in the trails. He is also a big fan of the Marvel and Star Wars franchises and just about any movie with time travel. His other hobbies include programming, playing guitar, and writing Google reviews.",
+    "year": 2024,
+    "img": "pieroOrderique",
+    "pin": 787
   }
+
 ]
