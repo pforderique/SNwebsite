@@ -27,6 +27,7 @@ class HomeIndex extends React.Component {
                 <Banner />
                 <div id="main">
 				<meta name="google-site-verification" content="NgPeQMF7lE4W03aCqNr8oXbM8RISXv1Ji77vFYxzWoc" />
+                <meta property="og:image" content="https://images.squarespace-cdn.com/content/v1/542c9b0de4b0de4a5f820179/1597596313337-7MGP2JL2458A3EV7VYY7/B5981E1A-A9AF-445A-B8FB-A03CDB127D7F+-+Charles+Coffey.png?format=750w"/>
                     <section id="one" className="tiles">
                         <article style={{backgroundImage: `url(${pic01})`}}>
                             <header className="major">

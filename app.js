@@ -52,6 +52,7 @@ console.log("redirect");
 main.use(function(req, res, next) {
     var err = new Error('Not Found');
     err.status = 404;
+    res.redirect('https://' + req.headers.host + "/404")
     next(err);
 });
 
@@ -105,16 +106,7 @@ if (main.get('env') === 'development') {
     module.exports = main;
 
 } else {
-  //var app = express();
   console.log("here");
-
-//  app.use(vhost('*.sigmanu.mit.edu', redirect)); // Serves all subdomains via Redirect app
- // app.use(vhost('sigmanu.mit.edu', main)); // Serves top level domain via Main server app
-  
-  //app.listen('8080', function(req, res, err) {
-    //console.log("Sigma Nu website running on port 8080.");
- // });
-
     const httpsOptions = {
         cert: fs.readFileSync('/etc/httpd/conf/ssl.crt/sigmanu.mit.edu.cer'),
 	    ca: fs.readFileSync('/etc/httpd/conf/ssl.ca/InCommon-chain.crt'),
