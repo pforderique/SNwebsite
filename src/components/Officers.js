@@ -24,7 +24,7 @@ const Officers = props => (
       </p>
       <p>Javier Mendez</p>
       <p>
-        <a href={'mailto:sn-rush2020@mit.edu'}>sn-social@mit.edu</a>
+        <a href={'mailto:sn-social@mit.edu'}>sn-social@mit.edu</a>
       </p>
     </div>
     <div>
@@ -40,16 +40,16 @@ const Officers = props => (
     </div>
     <div>
       <div className={'dual-officer'}>
-        <img src={eric} alt={'ltc'} />
-        <img src={chris} alt={'ltc'} />
+        <img src={eric} alt={'Rush Chair - Eric'} />
+        <img src={chris} alt={'Rush Chair - Chris'} />
       </div>
       <p>
         {' '}
-        <strong>Rush Chairs </strong>
+        <strong>Rush Chairs</strong>
       </p>
       <p>Chris Picard & Eric Gonzalez </p>
       <p>
-        <a href={'mailto:sn-rush2020@mit.edu'}>sn-rush2021@mit.edu</a>
+        <a href={'mailto:sn-rush@mit.edu'}>sn-rush@mit.edu</a>
       </p>
     </div>
   </div>
