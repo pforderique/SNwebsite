@@ -16,7 +16,6 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "gatsby": "^2.32.13",
-    "gatsby-plugin-create-page-html": "0.0.2",
     "gatsby-plugin-manifest": "^2.2.38",
     "gatsby-plugin-offline": "^3.0.32",
     "gatsby-plugin-react-helmet": "^3.1.21",
