@@ -1,6 +1,31 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
+import { Carousel } from 'react-responsive-carousel'
+
+import chapterRoom from '../../public/images/house/Chapter.jpg'
+import landing2 from '../../public/images/house/2Floorlanding.jpg'
+import athena from '../../public/images/house/AthenaCluster.jpg'
+import denNight from '../../public/images/house/DenNight.jpg'
+import denDay from '../../public/images/house/DenDay.jpg'
+import f1Bathroom from '../../public/images/house/Floor1Bathroom.jpg'
+import frontDark from '../../public/images/house/FrontDark.jpg'
+import kitchen from '../../public/images/house/Kitchen.jpg'
+import snakePit from '../../public/images/house/SnakePit.jpg'
+
+
+const images = [
+    {src: frontDark, legend: 'Front of the house at night'},
+    {src: chapterRoom, legend: 'Common area room (2nd floor)'},
+    {src: landing2, legend: 'Common area landing (2nd floor)'},
+    {src: denDay, legend: 'Den common area (3rd floor)'},
+    {src: denNight, legend: 'Den common area (3rd floor)'},
+    {src: snakePit, legend: 'Study room common area (6th floor)'},
+    {src: kitchen, legend: 'Commercial common kitchen (1st floor)'},
+    {src: athena, legend: 'Fridge space next to kitchen (1st floor)'},
+    {src: f1Bathroom, legend: 'Sample bathroom (1st floor)'},
+]
+
 
 const Summer = (props) => (
     <Layout>
@@ -11,10 +36,38 @@ const Summer = (props) => (
 
         <div id="main" className="alt">
             <section id="one">
-                <div className="inner">
+                <div className="inner" style={{ 'paddingBottom': '0px' }}>
                     <header className="major">
                         <h1>Summer Housing</h1>
                     </header>
+                </div>
+
+                <div className='inner' style={{'paddingTop': '0px'}}>
+                    <button>
+                        <a href={'https://tinyurl.com/SNSummer2022'} target="_blank">
+                            APPLY HERE
+                        </a>
+                    </button>
+                </div>
+
+                <div className={'slideshow'} align="center" style={{ "height": "50%" }}>
+                    <Carousel
+                        showStatus={false}
+                        showThumbs={false}
+                        autoPlay={true}
+                        interval={2000}
+                        showArrows={true}
+                        width="50%"
+                        dynamicHeight={true}
+                        centerMode={true}
+                    >
+                    {images.map((item, index) => (
+                        <div key={index}>
+                        <img src={item.src} alt={index} className={'image'} />
+                        <p className="legend">{item.legend}</p>
+                        </div>
+                    ))}
+                    </Carousel>
                 </div>
             </section>
 
@@ -23,7 +76,6 @@ const Summer = (props) => (
                     <header className="major">
                         <h2>Location</h2>
                     </header>
-                    {/* maybe include picture slideshow here? */}
                     <p> 
                         Our house is located at 99 Bay State Road in the heart of Kenmore. The house itself is a beautiful six-story brownstone mansion that includes a fully-equipped kitchen and several large common areas. We are conveniently located near public transportation, including the Kenmore Square Green Line Stop (B,C, and D Line Trains), so getting in and around the city is easy. Fenway park is a 5 minute walk away, so we recommend you take in a Red Sox game or two while you're here.
                     </p>
@@ -56,7 +108,7 @@ const Summer = (props) => (
                         <h2>Pricing</h2>
                     </header>
                     <p>
-                    For the summer of 2022, we have singles, doubles, triples, and quads available for rent from Saturday, May 30th to Friday, August 19th. Once you are approved for housing a spot will be reserved for you. You will have five (5) business days to return a signed lease agreement and a security deposit of $300. If you fail to submit a contract and/or deposit in this timeframe, your spot will be released. Full payment of the summer rent is due on or prior to May 23rd. If you prefer to pay your rent in two installments (1/2 on or before May 23rd and 1/2 on July 1st), a fee of $200 will be charged.
+                    For the summer of 2022, we have singles, doubles, triples, and quads available for rent from Monday, May 30th to Saturday, August 20th. Once you are approved for housing a spot will be reserved for you. You will have five (5) business days to return a signed lease agreement and a security deposit of $300. If you fail to submit a contract and/or deposit in this timeframe, your spot will be released. Full payment of the summer rent is due on or prior to May 23rd. If you prefer to pay your rent in two installments (1/2 on or before May 23rd and 1/2 on July 1st), a fee of $200 will be charged.
                     </p>
                     <h2>Rental Rates</h2>
                     <table align="center">
@@ -112,7 +164,7 @@ const Summer = (props) => (
                             <td>2nd Payment Installment Due</td>
                         </tr>
                         <tr>
-                            <td><b>August 19</b></td>
+                            <td><b>August 20</b></td>
                             <td>End of Summer Session (Last Day to Move Out)</td>
                         </tr>
                     </table>
