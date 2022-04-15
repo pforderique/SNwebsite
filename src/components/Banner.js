@@ -15,7 +15,7 @@ const Banner = (props) => (
             <div className="about-us content">
                 <ul className="actions">
                     <li><a href="#two" className="button next scrolly">About us</a></li>
-                    <li><a href="/rush" className="button next scrolly">Rush 2021</a></li>
+                    <li><a href="/rush" className="button next scrolly">Rush 2022</a></li>
                 </ul>
             </div>
         </div>

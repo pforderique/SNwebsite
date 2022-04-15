@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Marvin Zetina-Jimenez",
+        "title": "President",
+        "img": "marvinZetina",
+        "email": "mzetina@mit.edu"
+    },
+    {
+        "name": "Guillermo Vasquez",
+        "title": "Vice President",
+        "img": "guillermoVazquez",
+        "email": "gvasquez@mit.edu"
+    },
+    {
+        "name": "Eric Gonzalez",
+        "title": "Treasurer",
+        "img": "ericGonzales",
+        "email": "ericgon@mit.edu"
+    },
+    {
+        "name": "Juan Diaz",
+        "title": "New Member Educator",
+        "img": "juanDiaz",
+        "email": "juandiaz@mit.edu"
+    },
+    {
+        "name": "Luis Castro",
+        "title": "Chaplain",
+        "img": "luisCastro",
+        "email": "lcastro@mit.edu"
+    },
+    {
+        "name": "Chris Picard",
+        "title": "Rush Chair",
+        "img": "chrisPicard",
+        "email": "cwpicard@mit.edu"
+    },
+    {
+        "name": "Javier Mendez",
+        "title": "Social Chair",
+        "img": "javierMendez",
+        "email": "jmendez@mit.edu"
+    },
+    {
+        "name": "Victor Diaz",
+        "title": "Risk Manager",
+        "img": "victorDiaz",
+        "email": "vadiaz@mit.edu"
+    },
+    {
+        "name": "Diego Arenas",
+        "title": "House Manager",
+        "img": "diegoArenas",
+        "email": "dmarenas@mit.edu"
+    },
+    {
+        "name": "Jesus Rodriguez",
+        "title": "House Manager",
+        "img": "jesusRodriguez",
+        "email": "jesusr@mit.edu"
+    },
+    {
+        "name": "Jordan Ambrosio",
+        "title": "Secretary",
+        "img": "jordanAmbrosio",
+        "email": "ambrosio@mit.edu"
+    },
+    {
+        "name": "Fabrizzio Orderique",
+        "title": "Publicity",
+        "img": "pieroOrderique",
+        "email": "porderiq@mit.edu"
+    }
+]

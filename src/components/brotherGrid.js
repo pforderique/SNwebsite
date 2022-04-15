@@ -26,16 +26,22 @@ function intersection(setA, setB) {
   return _intersection
 }
 
-const BrotherGrid = () => {
+const BrotherGrid = (props) => {
 
   const [stateFilter, setStateFilter] = useState('');
   const [courseFilter, setCourseFilter] = useState('');
   const [yearFilter, setYearFilter] = useState(1);
   const [filters, setFilters] = useState(false);
-  const [visibleBros, setVisibleBros] = useState(brothers);
+  const [visibleBros, setVisibleBros] = useState(props.brothers ? props.brothers : brothers);
 
+  // console.log('vis', visibleBros)
   useEffect(() => {    
-    const newBros = new Array();
+    let newBros = [];
+    let brothers;
+
+    if (props.brothers){
+      brothers = props.brothers 
+    } 
 
     for (let bro of brothers){
       if (bro.year%yearFilter === 0 && bro.hometown.includes(stateFilter) && bro.major.includes(courseFilter)){
@@ -43,6 +49,10 @@ const BrotherGrid = () => {
       }
     }
 
+    if (props.brothers) {
+      newBros = brothers
+    }
+    // console.log(newBros)
     setVisibleBros(newBros);
   }, [yearFilter, stateFilter, courseFilter])
 
@@ -80,7 +90,7 @@ const BrotherGrid = () => {
       </Container>
     <div>
       <div className={'cards'}>
-        {visibleBros.map((bro, index) => <Brother key={`${index}`} brother={bro} />)}
+        {visibleBros.map((bro, index) => <Brother key={`${index}`} brother={bro} modal={props.modal}/>)}
       </div>
     </div>
     </div>

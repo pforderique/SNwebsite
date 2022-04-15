@@ -9,6 +9,7 @@ import pic01 from '../assets/images/pic01.jpg'
 import pic02 from '../assets/images/pic02.jpg'
 import pic03 from '../assets/images/pic03.jpg'
 import pic04 from '../assets/images/pic04.jpg'
+import exec from '../assets/images/fullSN.jpg'
 
 class HomeIndex extends React.Component {
     render() {
@@ -56,6 +57,13 @@ class HomeIndex extends React.Component {
                                 <p>Live with us</p>
                             </header>
                             <Link to="/summer-housing" className="link primary"></Link>
+                        </article>
+                        <article style={{backgroundImage: `url(${exec})`}}>
+                            <header className="major">
+                                <h3>Exec</h3>
+                                <p>Sigma Nu Executive Team</p>
+                            </header>
+                            <Link to="/exec" className="link primary"></Link>
                         </article>
                     </section>
                     <section id="two">

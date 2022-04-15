@@ -276,9 +276,9 @@ class Brother extends React.Component {
       <img src={brotherDict[this.props.brother.img]} alt={this.state.brother.name} className={"brotherImage"}/>
       <div>
         <div className="btn popupButton" onClick={this.togglePop}>
-          <button>{this.props.brother.name}</button>
+          <button><a href={"mailto:"+this.props.brother.email}>{this.props.brother.name}</a></button>
         </div>
-        {this.state.seen ? <PopUp toggle={this.togglePop}
+        {this.state.seen && this.props.modal ? <PopUp toggle={this.togglePop}
                                   className={this.state.seen ? null : "invisible"}
                                   img={ brotherDict[this.props.brother.img]}
                                   name={this.props.brother.name}
@@ -291,6 +291,7 @@ class Brother extends React.Component {
       </div>
       <p>{this.props.brother.major}</p>
       <h4>{this.props.brother.hometown}</h4>
+      {this.props.modal ? null : <h4>{this.props.brother.title}</h4> }
     </div>
     );
   }
