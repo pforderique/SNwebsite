@@ -3,15 +3,16 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import { Carousel } from 'react-responsive-carousel'
 
-import chapterRoom from '../../public/images/house/Chapter.jpg'
-import landing2 from '../../public/images/house/2Floorlanding.jpg'
-import athena from '../../public/images/house/AthenaCluster.jpg'
-import denNight from '../../public/images/house/DenNight.jpg'
-import denDay from '../../public/images/house/DenDay.jpg'
-import f1Bathroom from '../../public/images/house/Floor1Bathroom.jpg'
-import frontDark from '../../public/images/house/FrontDark.jpg'
-import kitchen from '../../public/images/house/Kitchen.jpg'
-import snakePit from '../../public/images/house/SnakePit.jpg'
+
+import chapterRoom from '../assets/images/house/Chapter.jpg'
+import landing2 from '../assets/images/house/2Floorlanding.jpg'
+import athena from '../assets/images/house/AthenaCluster.jpg'
+import denNight from '../assets/images/house/DenNight.jpg'
+import denDay from '../assets/images/house/DenDay.jpg'
+import f1Bathroom from '../assets/images/house/Floor1Bathroom.jpg'
+import frontDark from '../assets/images/house/FrontDark.jpg'
+import kitchen from '../assets/images/house/Kitchen.jpg'
+import snakePit from '../assets/images/house/SnakePit.jpg'
 
 
 const images = [
@@ -120,7 +121,7 @@ const Summer = (props) => (
                             <td>Single</td>
                             <td>$2,400</td>
                             <td>$3,500</td>
-                            <td>7 rooms</td>
+                            <td><s>7 rooms</s></td>
                         <tr>
                             <td>Double</td>
                             <td>$2,200</td>
