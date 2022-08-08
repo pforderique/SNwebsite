@@ -22,8 +22,6 @@ const BrotherGrid = (props) => {
     bro.year % yearFilter === 0 
     && bro.hometown.includes(stateFilter) 
     && bro.major.includes(courseFilter))
-    console.log('brothersToFilter', brothersToFilter);
-    console.log('filteredBros', filteredBros);
 
     setVisibleBros(filteredBros);
   }, [yearFilter, stateFilter, courseFilter])
