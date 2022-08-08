@@ -6,58 +6,30 @@ import StateSelect from './StateSelect';
 import { Container } from '@material-ui/core';
 import CourseSelect from './CourseSelect';
 
-
-function shuffle(array){
-  for(let i = array.length - 1; i > 0; i--){
-    const j = Math.floor(Math.random() * i)
-    const temp = array[i]
-    array[i] = array[j]
-    array[j] = temp
-  }
-}
-
-function intersection(setA, setB) {
-  let _intersection = new Set()
-  for (let elem of setB) {
-      if (setA.has(elem)) {
-          _intersection.add(elem)
-      }
-  }
-  return _intersection
-}
+const CLEAR_YEAR_FILTER = 1;
 
 const BrotherGrid = (props) => {
 
   const [stateFilter, setStateFilter] = useState('');
   const [courseFilter, setCourseFilter] = useState('');
-  const [yearFilter, setYearFilter] = useState(1);
-  const [filters, setFilters] = useState(false);
+  const [yearFilter, setYearFilter] = useState(CLEAR_YEAR_FILTER);
   const [visibleBros, setVisibleBros] = useState(props.brothers ? props.brothers : brothers);
 
-  // console.log('vis', visibleBros)
-  useEffect(() => {    
-    let newBros = [];
-    let brothers;
+  useEffect(() => {
+    const brothersToFilter = props.brothers ? props.brothers : brothers;
+    const filteredBros = 
+      props.notFilterable ? brothersToFilter : brothersToFilter.filter((bro) => 
+    bro.year % yearFilter === 0 
+    && bro.hometown.includes(stateFilter) 
+    && bro.major.includes(courseFilter))
+    console.log('brothersToFilter', brothersToFilter);
+    console.log('filteredBros', filteredBros);
 
-    if (props.brothers){
-      brothers = props.brothers 
-    } 
-
-    for (let bro of brothers){
-      if (bro.year%yearFilter === 0 && bro.hometown.includes(stateFilter) && bro.major.includes(courseFilter)){
-        newBros.push(bro)
-      }
-    }
-
-    if (props.brothers) {
-      newBros = brothers
-    }
-    // console.log(newBros)
-    setVisibleBros(newBros);
+    setVisibleBros(filteredBros);
   }, [yearFilter, stateFilter, courseFilter])
 
   const resetFilters = () => {
-    setYearFilter(1);
+    setYearFilter(CLEAR_YEAR_FILTER);
     setCourseFilter('');
     setStateFilter('');
   }
