@@ -7,6 +7,8 @@ import pandas
 def csv_to_json(csv_filename: str, output_filename: str, log=False):
     if log: print('[INFO] reading data from excel...', end='')
     excel_data_df = pandas.read_csv(csv_filename)
+    excel_data_df.rename(columns = {'kerb':'email'}, inplace = True)
+    excel_data_df['email'] += '@mit.edu'
 
     if log: print('done.\n[INFO] converting data to json...', end='')
     json_str = excel_data_df.to_json(orient='records')

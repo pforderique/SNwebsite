@@ -2,7 +2,7 @@
   {
     "timestamp": "8/9/2022 9:45:56",
     "name": "Diego Arenas",
-    "kerb": "dmarenas",
+    "email": "dmarenas@mit.edu",
     "major": "18-c and 15-2",
     "year": 2023,
     "pin": 778,
@@ -16,7 +16,7 @@
   {
     "timestamp": "8/9/2022 10:43:01",
     "name": "Alex Harris",
-    "kerb": "akharris",
+    "email": "akharris@mit.edu",
     "major": "2-A",
     "year": 2025,
     "pin": 813,
@@ -30,7 +30,7 @@
   {
     "timestamp": "8/9/2022 10:56:45",
     "name": "Jose Hernan Cerritos Arevalo",
-    "kerb": "joseca",
+    "email": "joseca@mit.edu",
     "major": "8,6-2",
     "year": 2025,
     "pin": 805,
@@ -44,7 +44,7 @@
   {
     "timestamp": "8/9/2022 11:23:15",
     "name": "Chris Picard",
-    "kerb": "cwpicard",
+    "email": "cwpicard@mit.edu",
     "major": "6-14 15-2",
     "year": 2023,
     "pin": 768,
@@ -58,7 +58,7 @@
   {
     "timestamp": "8/9/2022 12:08:42",
     "name": "Jordan Ambrosio",
-    "kerb": "ambrosio",
+    "email": "ambrosio@mit.edu",
     "major": "2A6",
     "year": 2023,
     "pin": 779,
@@ -72,7 +72,7 @@
   {
     "timestamp": "8/9/2022 12:14:42",
     "name": "Juan Antonio Luera ",
-    "kerb": "jluera ",
+    "email": "jluera @mit.edu",
     "major": "8/6-2",
     "year": 2024,
     "pin": 806,
@@ -86,7 +86,7 @@
   {
     "timestamp": "2/9/2022 21:05:01",
     "name": "Carlos Sanchez",
-    "kerb": "cjsanche",
+    "email": "cjsanche@mit.edu",
     "major": "6-1",
     "year": 2025,
     "pin": 791,
@@ -100,7 +100,7 @@
   {
     "timestamp": "3/3/2022 16:33:13",
     "name": "Daniel Fleming",
-    "kerb": "dfleming",
+    "email": "dfleming@mit.edu",
     "major": "6-3",
     "year": 2024,
     "pin": 792,
@@ -114,7 +114,7 @@
   {
     "timestamp": "3/3/2022 17:16:54",
     "name": "Jason Garcia",
-    "kerb": "jasongar",
+    "email": "jasongar@mit.edu",
     "major": "10:Chemical Engineering ",
     "year": 2024,
     "pin": 801,
@@ -128,7 +128,7 @@
   {
     "timestamp": "3/5/2022 11:22:36",
     "name": "Robert Jenzel Freeman",
-    "kerb": "jenzel",
+    "email": "jenzel@mit.edu",
     "major": "6-2: Electrical Engineering and Computer Science",
     "year": 2024,
     "pin": 790,
@@ -142,7 +142,7 @@
   {
     "timestamp": "3/6/2022 11:22:14",
     "name": "Maxwell Zetina-Jimenez",
-    "kerb": "zetina",
+    "email": "zetina@mit.edu",
     "major": "6-3 Computer Science and Engineering",
     "year": 2025,
     "pin": 789,
@@ -156,7 +156,7 @@
   {
     "timestamp": "3/8/2022 17:35:21",
     "name": "Edgar Morfin",
-    "kerb": "emorfin",
+    "email": "emorfin@mit.edu",
     "major": "6-9",
     "year": 2025,
     "pin": 796,
