@@ -8,20 +8,36 @@ import CourseSelect from './CourseSelect';
 
 const CLEAR_YEAR_FILTER = 1;
 
+/**
+ * @param brothers list of brother objects
+ * @returns true iff all brothers in brothers list contain filterable fields
+ */
+function isFilterable(brothers) {
+  if (!brothers) return true;
+  return brothers.every((bro) => bro.year && bro.hometown && bro.major);
+}
+
 const BrotherGrid = (props) => {
 
   const [stateFilter, setStateFilter] = useState('');
   const [courseFilter, setCourseFilter] = useState('');
   const [yearFilter, setYearFilter] = useState(CLEAR_YEAR_FILTER);
   const [visibleBros, setVisibleBros] = useState(props.brothers ? props.brothers : brothers);
+  const [canFilter, setCanFilter] = useState(false);
 
   useEffect(() => {
     const brothersToFilter = props.brothers ? props.brothers : brothers;
-    const filteredBros = 
-      props.notFilterable ? brothersToFilter : brothersToFilter.filter((bro) => 
-    bro.year % yearFilter === 0 
-    && bro.hometown.includes(stateFilter) 
-    && bro.major.includes(courseFilter))
+    setCanFilter(isFilterable(brothersToFilter));
+  }, []);
+
+  useEffect(() => {
+    const brothersToFilter = props.brothers ? props.brothers : brothers;
+    const filteredBros = !canFilter ? 
+      brothersToFilter : 
+      brothersToFilter.filter((bro) => 
+        bro.year % yearFilter === 0 
+        && bro.hometown.includes(stateFilter) 
+        && bro.major.includes(courseFilter));
 
     setVisibleBros(filteredBros);
   }, [yearFilter, stateFilter, courseFilter])
@@ -34,7 +50,7 @@ const BrotherGrid = (props) => {
 
   return (
     <div>
-      <Container className={'buttons'}>
+      {canFilter && <Container className={'buttons'}>
         <div
           style={{ display: 'inline-block' }}
         >
@@ -57,7 +73,7 @@ const BrotherGrid = (props) => {
           setCourseFilter={setCourseFilter}
           placeholder={(courseFilter === '' ? 'Select Course' : courseFilter)}
         /> */}
-      </Container>
+      </Container>}
     <div>
       <div className={'cards'}>
         {visibleBros.map((bro, index) => <Brother key={`${index}`} brother={bro} modal={props.modal}/>)}

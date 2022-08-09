@@ -23,7 +23,7 @@ const Exec = (props) => (
         <div id="main" className="alt">
             <section id="one">
                 <div className="inner">
-                <BrotherGrid modal={false} notFilterable={true} brothers={exec}/>
+                <BrotherGrid modal={false} brothers={exec}/>
                 </div>
             </section>
         </div>
