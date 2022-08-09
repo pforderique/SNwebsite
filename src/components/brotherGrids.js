@@ -5,7 +5,7 @@ import Brother from '../components/brother'
 
 import Grid from '@material-ui/core/Grid';
 
-import brotherInfo from '../assets/brotherInfo'
+import brotherInfo from '../../data/brotherInfo.json'
 
 import rush from '../assets/images/brothers/charlesCoffey.jpg'
 import rush2 from '../assets/images/brothers/marcoFleming.jpg'

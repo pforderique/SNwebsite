@@ -1,13 +1,13 @@
-import brothers from '../assets/brothers.json'
+import brothers from '../../data/brothers.json'
 
 brothers.sort((bro1, bro2) => bro1.pin - bro2.pin);
 
 const filteredBros = {
                         year: {
-                                2024: new Array(),
-                                2023: new Array(),
-                                2022: new Array(),
-                                2021: new Array()
+                                2024: [],
+                                2023: [],
+                                2022: [],
+                                2021: [],
                               },
                         state: {},
                         course: {}

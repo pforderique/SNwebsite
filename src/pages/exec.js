@@ -5,7 +5,7 @@ import BrotherGrid from '../components/brotherGrid'
 
 import './brothers.scss'
 
-import exec from '../assets/exec.json'
+import exec from '../../data/exec.json'
 
 console.log('exec', exec)
 
