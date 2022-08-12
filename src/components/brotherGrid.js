@@ -39,6 +39,7 @@ const BrotherGrid = (props) => {
         && bro.hometown.includes(stateFilter) 
         && bro.major.includes(courseFilter));
 
+    console.log('filteredBros', filteredBros);
     setVisibleBros(filteredBros);
   }, [yearFilter, stateFilter, courseFilter])
 
@@ -55,6 +56,7 @@ const BrotherGrid = (props) => {
           style={{ display: 'inline-block' }}
         >
           <button onClick={()=> resetFilters()}>All</button>
+          <button onClick={()=> setYearFilter(2025)}>2025</button>
           <button onClick={()=> setYearFilter(2024)}>2024</button>
           <button onClick={()=> setYearFilter(2023)}>2023</button>
           <button onClick={()=> setYearFilter(2022)}>2022</button>
@@ -77,6 +79,7 @@ const BrotherGrid = (props) => {
     <div>
       <div className={'cards'}>
         {visibleBros.map((bro, index) => <Brother key={`${index}`} brother={bro} modal={props.modal}/>)}
+        {/* {visibleBros.map((bro, index) => <Brother brother={bro} modal={props.modal}/>)} */}
       </div>
     </div>
     </div>
