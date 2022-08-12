@@ -28,10 +28,16 @@ const Brother = (props) => {
                                   bio={props.brother.bio}
         />: null} */}
       </div>
-      <p>{props.brother.major}</p>
-      <h4>{props.brother.hometown}</h4>
-      {props.modal ? null : <h4>{props.brother.title}</h4> }
-    </div>
+      {props.includeRole ? 
+        <h3>{props.brother.role}</h3> : 
+        (
+          <>
+            <p>{props.brother.major}</p>
+            <h4>{props.brother.hometown}</h4>
+          </>
+        )
+      }
+      </div>
   );
 }
 

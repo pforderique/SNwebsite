@@ -78,7 +78,7 @@ const BrotherGrid = (props) => {
       </Container>}
     <div>
       <div className={'cards'}>
-        {visibleBros.map((bro, index) => <Brother key={`${index}`} brother={bro} modal={props.modal}/>)}
+        {visibleBros.map((bro, index) => <Brother key={`${index}`} brother={bro} includeRole={props.includeRole} modal={props.modal}/>)}
         {/* {visibleBros.map((bro, index) => <Brother brother={bro} modal={props.modal}/>)} */}
       </div>
     </div>
