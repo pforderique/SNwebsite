@@ -8,6 +8,7 @@ class PopUp extends Component {
 
   }
   render() {
+    if (!this.props.brother) return <>Loading...</>
     return (
       <div>
         <div className="modal" onClick={this.props.toggle}>
