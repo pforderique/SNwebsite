@@ -120,6 +120,21 @@
     "active": true
   },
   {
+    "timestamp": "5/12/2021 15:15:27",
+    "name": "Jabes Gallardo",
+    "kerb": null,
+    "major": "15-3",
+    "year": 2025,
+    "pin": 788,
+    "nickname": "Karp",
+    "hometown": "Pharr, TX",
+    "bio": null,
+    "funMemoryWithAnotherBrother": null,
+    "img": "https://drive.google.com/uc?id=18AilZZl6-7qbMpIjyJFwyiUqfkdPCkxL",
+    "role": null,
+    "active": true
+  },
+  {
     "timestamp": "8/9/2022 12:14:42",
     "name": "Juan Antonio Luera",
     "kerb": "jluera",
@@ -235,7 +250,7 @@
     "hometown": "Middletown, NY",
     "bio": "He's a pretty chill guy. Enjoys playing fifa with the bros, enjoys beating the freshmen class in monopoly, is a member of SHPE.",
     "funMemoryWithAnotherBrother": "Playing Fifa with Platypus",
-    "img": "https://drive.google.com/uc?id=1W5aroDp5U-ieh7Kjye_U-H0CX3s4A30F",
+    "img": "https://drive.google.com/uc?id=1-pKKw-XJXmtgLC3zkH1J6F9sFe3jsyDp",
     "role": null,
     "active": true
   },
@@ -253,21 +268,6 @@
     "img": "https://drive.google.com/uc?id=1segsgswetIKLZgqXV2h6noY9rB3JBsH0",
     "role": null,
     "active": true
-  },
-  {
-    "timestamp": "8/12/2022 15:15:27",
-    "name": "Andrew Sepulveda",
-    "kerb": "andrews9",
-    "major": "6-3",
-    "year": 2022,
-    "pin": 764,
-    "nickname": "Patrick",
-    "hometown": "Pico Rivera, CA",
-    "bio": "I like music and the dismantling of Capitalism.",
-    "funMemoryWithAnotherBrother": null,
-    "img": null,
-    "role": "House Manager",
-    "active": null
   },
   {
     "timestamp": "4/19/2020 19:32:26",
@@ -310,7 +310,7 @@
     "hometown": "Plainfield, Illinois",
     "bio": "Humorous, talented, go-getter. I am gamer; I love to play Super Smash Bros with Mega Man as my main. I like to make cartoonish voices and impersonations of various characters. I listen to classical music and my favorite musical group is the Canadian Brass. I play the trombone, trumpet, kazoo, and ocarina! I am secretary for the First Generation Program, a member of SHPE, and an active member of Sigma Nu!",
     "funMemoryWithAnotherBrother": "Helping build my first robot with Joshua Herrera during IAP in Momentum 2020.",
-    "img": "https://drive.google.com/uc?id=1V6e7vaS77pYr6ErzEYn-zr6PedM7Klvj",
+    "img": "https://drive.google.com/uc?id=1VdbDBSCj_725P8rwpA-GbZtFrBlqV8q8",
     "role": null,
     "active": true
   },
@@ -435,6 +435,51 @@
     "active": true
   },
   {
+    "timestamp": "5/13/2021 15:15:28",
+    "name": "Luis Castro",
+    "kerb": null,
+    "major": "6-3",
+    "year": 2023,
+    "pin": 786,
+    "nickname": "Jinx",
+    "hometown": "NYC, NY",
+    "bio": null,
+    "funMemoryWithAnotherBrother": null,
+    "img": "https://drive.google.com/uc?id=1qFbKPQhZZgBwH70lIpER6nros_qfop8V",
+    "role": null,
+    "active": true
+  },
+  {
+    "timestamp": "5/14/2021 15:15:29",
+    "name": "Steven Herrera",
+    "kerb": null,
+    "major": "2",
+    "year": 2023,
+    "pin": 785,
+    "nickname": "Mistake",
+    "hometown": "Miami, FL",
+    "bio": null,
+    "funMemoryWithAnotherBrother": null,
+    "img": "https://drive.google.com/uc?id=1cYpN8hG37z4ql6owG4y4GBuj_lHJWS55",
+    "role": null,
+    "active": true
+  },
+  {
+    "timestamp": "8/12/2022 15:15:27",
+    "name": "Andrew Sepulveda",
+    "kerb": "andrews9",
+    "major": "6-3",
+    "year": 2022,
+    "pin": 764,
+    "nickname": "Patrick",
+    "hometown": "Pico Rivera, CA",
+    "bio": "I like music and the dismantling of Capitalism.",
+    "funMemoryWithAnotherBrother": null,
+    "img": "https://drive.google.com/uc?id=1l4JabkZfveI8n6N73szezZrwryNY80go",
+    "role": "House Manager",
+    "active": true
+  },
+  {
     "timestamp": "4/19/2020 19:28:02",
     "name": "Moises Trejo",
     "kerb": null,
@@ -455,7 +500,7 @@
     "kerb": null,
     "major": "6-3",
     "year": 2022,
-    "pin": null,
+    "pin": 759,
     "nickname": "Harbour",
     "hometown": "Mission, TX",
     "bio": "I believe I am a fun guy that enjoys having a good time and to learn about the world around me. I enjoy dancing, playing video games and exploring all the opportunities around me. BIO EXISTS FOR ME IN THE OTHER STUFF I WOULD PREFER A MIX OF THE TWO",
