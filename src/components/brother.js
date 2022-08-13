@@ -32,7 +32,7 @@ const Brother = (props) => {
         <h3>{props.brother.role}</h3> : 
         (
           <>
-            <p>{props.brother.major}</p>
+            <p>Major(s): {props.brother.major}</p>
             <h4>{props.brother.hometown}</h4>
           </>
         )
