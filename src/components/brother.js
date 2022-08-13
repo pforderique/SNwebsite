@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
-import "./brother.scss"
 import PopUp from '../pages/popup'
+
+import "./brother.scss"
+
 
 const permissions = {
   CAN_SHOW_LASTNAME: ['Diego Arenas'],

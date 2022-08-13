@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import BrotherGrid from '../components/brotherGrid'
-import { brothers, filteredBros } from '../components/FilteredBros'
+import { brothers } from '../components/FilteredBros'
 
 import './brothers.scss'
 

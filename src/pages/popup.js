@@ -3,10 +3,7 @@ import './popup.scss';
 
 
 class PopUp extends Component {
-  constructor(props) {
-    super(props);
 
-  }
   render() {
     if (!this.props.brother) return <>Loading...</>
     return (

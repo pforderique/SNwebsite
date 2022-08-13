@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react'
-import "./brother.scss"
-import { brothers, filteredBros } from './FilteredBros'
-import Brother from './brother'
-import StateSelect from './StateSelect';
 import { Container } from '@material-ui/core';
+
+import Brother from './brother'
+import { brothers } from './FilteredBros'
 import CourseSelect from './CourseSelect';
+import StateSelect from './StateSelect';
+import "./brother.scss"
+
 
 const CLEAR_YEAR_FILTER = 1;
 
@@ -78,8 +80,12 @@ const BrotherGrid = (props) => {
       </Container>}
     <div>
       <div className={'cards'}>
-        {visibleBros.map((bro, index) => <Brother key={`${index}`} brother={bro} includeRole={props.includeRole} modal={props.modal}/>)}
-        {/* {visibleBros.map((bro, index) => <Brother brother={bro} modal={props.modal}/>)} */}
+        {visibleBros.map((bro, index) => 
+          <Brother
+            key={`${index}`}
+            brother={bro}
+            includeRole={props.includeRole}
+          />)}
       </div>
     </div>
     </div>
