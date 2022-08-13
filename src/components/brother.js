@@ -2,6 +2,12 @@ import React, { useState } from 'react'
 import "./brother.scss"
 import PopUp from '../pages/popup'
 
+const permissions = {
+  CAN_SHOW_LASTNAME: [],
+  CAN_SHOW_HOMETOWN: ['Jason Garcia'],
+  CAN_SHOW_EMAIL: [],
+} 
+
 const Brother = (props) => {
 
   const [seen, setSeen] = useState(false);
@@ -15,25 +21,28 @@ const Brother = (props) => {
       <img src={props.brother.img} key={props.brother.img} alt={props.brother.name} className={"brotherImage"}/>
       <div>
         <div className="btn popupButton" onClick={togglePop}>
-          <button><a href={"mailto:"+props.brother.kerb+"@mit.edu"}>{props.brother.name}</a></button>
+          {permissions.CAN_SHOW_LASTNAME.includes(props.brother.name) ?
+            <button align = "center">{props.brother.name}</button>
+          : <button align = "center">{props.brother.name.split(' ')[0]}</button>}
         </div>
-        {/* {state.seen && props.modal ? <PopUp toggle={togglePop}
-                                  className={state.seen ? null : "invisible"}
-                                  img={ brotherDict[props.brother.img]}
-                                  name={props.brother.name}
-                                  year={props.brother.year}
-                                  hometown={props.brother.hometown}
-                                  major={props.brother.major}
-                                  minor={props.brother.minor}
-                                  bio={props.brother.bio}
-        />: null} */}
+        {seen && <PopUp
+          toggle={togglePop}
+          className={seen ? null : "invisible"}
+          brother={props.brother}
+          permissions={permissions}
+        />}
       </div>
       {props.includeRole ? 
         <h3>{props.brother.role}</h3> : 
         (
           <>
             <p>Major(s): {props.brother.major}</p>
-            <h4>{props.brother.hometown}</h4>
+            {/* NOTE: Hometown city excluded for privacy reasons. */}
+            {
+              permissions.CAN_SHOW_HOMETOWN.includes(props.brother.name) ? 
+                <h5>{props.brother.hometown}</h5>
+              : <h5>{'Home state: ' + props.brother.hometown.split(', ')[1]}</h5>
+            }
           </>
         )
       }
@@ -42,4 +51,3 @@ const Brother = (props) => {
 }
 
 export default Brother
-

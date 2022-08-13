@@ -3,9 +3,6 @@ import './popup.scss';
 
 
 class PopUp extends Component {
-  handleClick = () => {
-    this.props.toggle();
-  };
   constructor(props) {
     super(props);
 
@@ -13,23 +10,41 @@ class PopUp extends Component {
   render() {
     return (
       <div>
-        <div className="modal" onClick={this.handleClick}>
+        <div className="modal" onClick={this.props.toggle}>
           <div className="modal_content" >
             <div className={'popupImageQuote'}>
-              <img src={this.props.img}  className={"popupImage"}/>
+              <img src={this.props.brother.img}  className={"popupImage"}/>
               <div className="brotherInfo">
-                <h2 align = "center">{this.props.name}</h2>
-                <p>Class of {this.props.year}</p>
-                <p>{this.props.hometown}</p>
-                <p>{this.props.major}</p>
-                {this.props.minor?<p>{'Minoring in ' + this.props.minor}</p>:null}
+                {/* NOTE: last name excluded for privacy reasons. */}
+                {this.props.permissions.CAN_SHOW_LASTNAME.includes(this.props.brother.name) ?
+                  <h2 align = "center">{this.props.brother.name}</h2>
+                : <h2 align = "center">{this.props.brother.name.split(' ')[0]}</h2>}
+                <p>Class of {this.props.brother.year}</p>
+                {/* NOTE: Hometown city excluded for privacy reasons. */}
+                {this.props.permissions.CAN_SHOW_HOMETOWN.includes(this.props.brother.name) ? 
+                  <p>{this.props.brother.hometown}</p>
+                : <p>{'Home state: ' + this.props.brother.hometown.split(', ')[1]}</p>}
+                <p>Studying course(s): {this.props.brother.major}</p>
+                {/* NOTE: Email excluded for privacy reasons. */}
+                {/* <p>Contact: <a href={"mailto:" + this.props.brother.kerb + "@mit.edu"}>{this.props.brother.kerb + '@mit.edu'}</a> <i class="fa fa-envelope"></i></p> */}
               </div>
             </div>
             <div className={"quote"}>
-              <p>{'\t'}{this.props.bio}
-                {'\t'}</p>
+              {
+                this.props.brother.bio && 
+                <>
+                  <h4>About:</h4>
+                  <p>{this.props.brother.bio}</p>
+                </>
+              }
+              {
+                this.props.brother.funMemoryWithAnotherBrother && 
+                <>
+                  <h4>Favorite Memory w/ SN:</h4>
+                  <p>{this.props.brother.funMemoryWithAnotherBrother}</p>
+                </>
+              }
             </div>
-
           </div>
         </div>
       </div>
