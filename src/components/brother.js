@@ -7,7 +7,8 @@ import "./brother.scss"
 const permissions = {
   CAN_SHOW_LASTNAME: ['Diego Arenas'],
   CAN_SHOW_HOMETOWN: [
-    'Jason Garcia', 'Hector Martinez', 'Juan Antonio Luera', 'Diego Arenas'
+    'Jason Garcia', 'Hector Martinez', 'Juan Antonio Luera', 'Diego Arenas',
+    'Guillermo Vasquez'
   ],
   CAN_SHOW_EMAIL: ['Diego Arenas'],
 }

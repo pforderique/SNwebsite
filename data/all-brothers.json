@@ -23,8 +23,8 @@
     "pin": 805,
     "nickname": "Kong",
     "hometown": "Smyrna, TN",
-    "bio": "I\u2019m Hoes\u00e9. Hmu if u want me to fix your mother or listen to weezer.",
-    "funMemoryWithAnotherBrother": "Mariano wearing his gf\u2019s pants",
+    "bio": "I\u2019m Hoes\u00e9. Hmu if u want to listen to weezer.",
+    "funMemoryWithAnotherBrother": null,
     "img": "https://drive.google.com/uc?id=17U8U9yJay2UqZ928ca_zV_zoQL74YZSr",
     "role": null,
     "active": true
@@ -135,8 +135,23 @@
     "active": true
   },
   {
+    "timestamp": "8/13/2022 12:52:50",
+    "name": "Cameron Young",
+    "kerb": "camerony",
+    "major": "6-3",
+    "year": 2025,
+    "pin": 809,
+    "nickname": "Knowledge",
+    "hometown": "Lancaster, PA",
+    "bio": "Goofy dude. Love to play soccer and basketball & listen to music. My favorite music artists are Brent Faiyaz and Kanye.",
+    "funMemoryWithAnotherBrother": null,
+    "img": "https://drive.google.com/uc?id=1kNslDOzhWfp72bKKGqxf5q11JkVztVw-",
+    "role": "Alumni Relations Chair",
+    "active": true
+  },
+  {
     "timestamp": "8/9/2022 12:14:42",
-    "name": "Juan Antonio Luera",
+    "name": "Antonio Luera",
     "kerb": "jluera",
     "major": "8, 6-2",
     "year": 2024,
@@ -211,7 +226,7 @@
   },
   {
     "timestamp": "3/5/2022 11:22:36",
-    "name": "Robert Jenzel Freeman",
+    "name": "Jenzel Freeman",
     "kerb": "jenzel",
     "major": "6-2",
     "year": 2024,
@@ -251,6 +266,21 @@
     "bio": "I\u2019m a gym rat but my YouTube recommendations are filled with cooking content and microcomputer videos.",
     "funMemoryWithAnotherBrother": "Watching Hector and Daniel play chess with rave music in the background",
     "img": "https://drive.google.com/uc?id=1iuLBgx4dzfARqBWjqxL-zjUTgifpGgKS",
+    "role": null,
+    "active": true
+  },
+  {
+    "timestamp": "8/13/2022 13:23:21",
+    "name": "Kevin Garcia",
+    "kerb": "keving07",
+    "major": "2A-16",
+    "year": 2024,
+    "pin": 815,
+    "nickname": "Poison",
+    "hometown": "Queens, NY",
+    "bio": "One of the last existing brothers to love playing/watching soccer. Also a big marvel fan, it's the only thing I'll watch. On campus catch me at the gym, learning to play piano, or working on robots and rockets",
+    "funMemoryWithAnotherBrother": "Watching Gossip Girl with the the Summer Galleon Bros + Border Friend",
+    "img": "https://drive.google.com/uc?id=1iANKywEhc3Kqt1mihot1jpX6vd9soaLu",
     "role": null,
     "active": true
   },
