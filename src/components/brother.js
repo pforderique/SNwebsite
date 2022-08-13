@@ -3,10 +3,12 @@ import "./brother.scss"
 import PopUp from '../pages/popup'
 
 const permissions = {
-  CAN_SHOW_LASTNAME: [],
-  CAN_SHOW_HOMETOWN: ['Jason Garcia'],
-  CAN_SHOW_EMAIL: [],
-} 
+  CAN_SHOW_LASTNAME: ['Diego Arenas'],
+  CAN_SHOW_HOMETOWN: [
+    'Jason Garcia', 'Hector Martinez', 'Juan Antonio Luera', 'Diego Arenas'
+  ],
+  CAN_SHOW_EMAIL: ['Diego Arenas'],
+}
 
 const Brother = (props) => {
 
@@ -21,6 +23,7 @@ const Brother = (props) => {
       <img src={props.brother.img} key={props.brother.img} alt={props.brother.name} className={"brotherImage"}/>
       <div>
         <div className="btn popupButton" onClick={togglePop}>
+          {/* NOTE: Last name excluded for privacy reasons. */}
           {permissions.CAN_SHOW_LASTNAME.includes(props.brother.name) ?
             <button align = "center">{props.brother.name}</button>
           : <button align = "center">{props.brother.name.split(' ')[0]}</button>}

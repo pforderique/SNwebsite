@@ -27,7 +27,13 @@ class PopUp extends Component {
                 : <p>{'Home state: ' + this.props.brother.hometown.split(', ')[1]}</p>}
                 <p>Studying course(s): {this.props.brother.major}</p>
                 {/* NOTE: Email excluded for privacy reasons. */}
-                {/* <p>Contact: <a href={"mailto:" + this.props.brother.kerb + "@mit.edu"}>{this.props.brother.kerb + '@mit.edu'}</a> <i class="fa fa-envelope"></i></p> */}
+                {this.props.permissions.CAN_SHOW_EMAIL.includes(this.props.brother.name) && 
+                  <p>{'Contact: '} 
+                    <a href={"mailto:" + this.props.brother.kerb + "@mit.edu"}>
+                      {this.props.brother.kerb + '@mit.edu'}
+                    </a>
+                    {' '}<i class="fa fa-envelope"></i>
+                  </p>}
               </div>
             </div>
             <div className={"quote"}>
