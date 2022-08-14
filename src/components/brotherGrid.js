@@ -5,6 +5,7 @@ import Brother from './brother'
 import { brothers, filteredBros } from './FilteredBros'
 import CourseSelect from './CourseSelect';
 import StateSelect from './StateSelect';
+import YearSelect from './YearSelect';
 import "./brother.scss"
 
 
@@ -58,21 +59,22 @@ const BrotherGrid = (props) => {
           // style={{ display: 'inline-block' }}
           style={{ display: 'flex-wrap', alignItems:'space-between'}}
         >
-          <button onClick={()=> resetFilters()}>All</button>
-          <button onClick={()=> setYearFilter(2025)}>2025</button>
-          <button onClick={()=> setYearFilter(2024)}>2024</button>
-          <button onClick={()=> setYearFilter(2023)}>2023</button>
-          <button onClick={()=> setYearFilter(2022)}>2022</button>
-          <button onClick={()=> setYearFilter(2021)}>2021</button>
+        <button onClick={()=> resetFilters()}>Clear Filters</button>
+        <YearSelect
+          yearFilter={yearFilter}
+          yearList={[2021, 2022, 2023, 2024, 2025]}
+          setYearFilter={setYearFilter}
+        />
+
         {/* <StateSelect
           stateFilter={stateFilter}
           stateSet={new Set(visibleBros.map((bro) =>
             bro.hometown.split(', ')[1]))}
           setStateFilter={setStateFilter}
           placeholder={(stateFilter === '' ? 'Select State' : stateFilter)}
-        />
+        /> */}
 
-        <CourseSelect 
+        {/* <CourseSelect 
           courseFilter={courseFilter}
           courseSet={new Set(visibleBros.map((bro) =>
             bro.major.split(/(\s|,)+/).filter((course) =>
