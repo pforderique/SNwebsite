@@ -525,6 +525,36 @@
     "active": true
   },
   {
+    "timestamp": "8/13/2022 16:29:16",
+    "name": "Javier Mendez",
+    "kerb": "Jmendez",
+    "major": "18c",
+    "year": 2023,
+    "pin": 769,
+    "nickname": "Rosa",
+    "hometown": "Dallas, TX",
+    "bio": "I enjoy music, computers and bowls \ud83e\udd63. I\u2019ve recently started running/lifting.",
+    "funMemoryWithAnotherBrother": "Celebrating birthdays at the house is always super fun.",
+    "img": "https://drive.google.com/uc?id=19pSgnr3w6Pj6eOTy-uS2Vaklk6zl0Jte",
+    "role": null,
+    "active": true
+  },
+  {
+    "timestamp": "8/13/2022 20:16:00",
+    "name": "Angel Luera",
+    "kerb": "j_luera",
+    "major": "8",
+    "year": 2024,
+    "pin": 800,
+    "nickname": "Baby ",
+    "hometown": "Moctezuma, S.L.P, Mexico",
+    "bio": "Hobbies: gym, playing music, making music, Djing, skating .",
+    "funMemoryWithAnotherBrother": "Interview with Marvin (fogo) and Luis Franco(Fenway park)",
+    "img": "https://drive.google.com/uc?id=1KeTJH3D4WiMC1gCBF-IlAuYfmOSybSoR",
+    "role": null,
+    "active": true
+  },
+  {
     "timestamp": "4/19/2020 19:28:02",
     "name": "Moises Trejo",
     "kerb": null,
