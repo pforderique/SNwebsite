@@ -22,15 +22,26 @@
 }
 
 .buttons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   button{
-    margin-right: 32px;
-    margin-top: 32px;
+    margin: 16px;
   }
-  margin-bottom: 64px;
 }
 
 .brotherImage{
   margin-bottom: 32px;
+}
+
+.dropdown {
+  width: 15rem;
+  margin: 16px;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
 }
 
 .popupButton{

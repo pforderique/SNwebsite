@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react'
-import "./brother.scss"
 import Select from 'react-select'
 
-const StateSelect = ({stateSet, placeholder, setStateFilter }) => {
+import "./brother.scss"
+
+
+const StateSelect = ({stateSet, placeholder, stateFilter, setStateFilter }) => {
     if (!stateSet){
         return null;
     }
@@ -19,7 +21,10 @@ const StateSelect = ({stateSet, placeholder, setStateFilter }) => {
         singleValue: provided => ({
           ...provided,
           color: 'black'
-        })
+        }),
+        // menu: ({ width, ...css }) => ({ ...css })
+        width: '20%',
+
     }
 
     const stateList = Array.from(stateSet).sort();
@@ -29,12 +34,11 @@ const StateSelect = ({stateSet, placeholder, setStateFilter }) => {
     }))
 
     return (
-        <div
-            style={{ width: '15%', display: 'inline-block', padding: '4px'}}
-        >
+        <div className='dropdown'>
             <Select 
                 isDisabled={false}
-                options={[{value: '', label: 'Select State'}, ...options]}
+                options={[{value: '', label: 'All States'}, ...options]}
+                value={stateFilter}
                 placeholder={placeholder}
                 onChange={event => setStateFilter(event.value)}
                 styles={customStyles}

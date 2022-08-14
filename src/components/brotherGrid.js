@@ -2,14 +2,14 @@ import React, { useState, useEffect } from 'react'
 import { Container } from '@material-ui/core';
 
 import Brother from './brother'
-import { brothers, filteredBros } from './FilteredBros'
+import { brothers } from './FilteredBros'
 import CourseSelect from './CourseSelect';
 import StateSelect from './StateSelect';
 import YearSelect from './YearSelect';
 import "./brother.scss"
 
 
-const CLEAR_YEAR_FILTER = 1;
+export const CLEAR_YEAR_FILTER = 1;
 
 /**
  * @param brothers list of brother objects
@@ -39,10 +39,9 @@ const BrotherGrid = (props) => {
       brothersToFilter : 
       brothersToFilter.filter((bro) => 
         bro.year % yearFilter === 0 
-        && bro.hometown.includes(stateFilter) 
+        && bro.hometown.split(', ')[1].includes(stateFilter) 
         && bro.major.includes(courseFilter));
 
-    console.log('filteredBros', filteredBros);
     setVisibleBros(filteredBros);
   }, [yearFilter, stateFilter, courseFilter])
 
@@ -54,46 +53,47 @@ const BrotherGrid = (props) => {
 
   return (
     <div>
-      {canFilter && <Container className={'buttons'}>
-        <div
-          // style={{ display: 'inline-block' }}
-          style={{ display: 'flex-wrap', alignItems:'space-between'}}
-        >
-        <button onClick={()=> resetFilters()}>Clear Filters</button>
-        <YearSelect
-          yearFilter={yearFilter}
-          yearList={[2021, 2022, 2023, 2024, 2025]}
-          setYearFilter={setYearFilter}
-        />
+      <Container>
+          <div className='buttons'>
+          <button onClick={()=> resetFilters()}>Clear Filters</button>
+            <YearSelect
+              yearFilter={yearFilter}
+              yearList={[2021, 2022, 2023, 2024, 2025]}
+              setYearFilter={setYearFilter}
+            />
+          </div>
 
-        {/* <StateSelect
-          stateFilter={stateFilter}
-          stateSet={new Set(visibleBros.map((bro) =>
-            bro.hometown.split(', ')[1]))}
-          setStateFilter={setStateFilter}
-          placeholder={(stateFilter === '' ? 'Select State' : stateFilter)}
-        /> */}
+          <div className='filters'>
+            <StateSelect
+              stateFilter={stateFilter}
+              stateSet={new Set(visibleBros.map((bro) =>
+                bro.hometown.split(', ')[1]))}
+              setStateFilter={setStateFilter}
+              placeholder={(stateFilter === '' ? 'All States' : stateFilter)}
+            />
 
-        {/* <CourseSelect 
-          courseFilter={courseFilter}
-          courseSet={new Set(visibleBros.map((bro) =>
-            bro.major.split(/(\s|,)+/).filter((course) =>
-              !['', ' ', ',', '&'].includes(course))).flat())}
-          setCourseFilter={setCourseFilter}
-          placeholder={(courseFilter === '' ? 'Select Course' : courseFilter)}
-        /> */}
+            <CourseSelect 
+              courseFilter={courseFilter}
+              courseSet={new Set(visibleBros.map((bro) =>
+                bro.major.split(/(\s|,)+/).filter((course) =>
+                  !['', ' ', ',', '&'].includes(course))).flat())}
+              setCourseFilter={setCourseFilter}
+              placeholder={(courseFilter === '' ? 'All Courses' : courseFilter)}
+            />
         </div>
-      </Container>}
-    <div>
-      <div className={'cards'}>
-        {visibleBros.map((bro, index) => 
-          <Brother
-            key={`${index}`}
-            brother={bro}
-            includeRole={props.includeRole}
-          />)}
+      </Container>
+      <div style={{marginTop: '8px', display: 'flex', justifyContent: 'flex-end', margin: '64px 0 16px 0'}}>        
       </div>
-    </div>
+      <div>
+        <div className={'cards'}>
+          {visibleBros.map((bro, index) => 
+            <Brother
+              key={`${index}`}
+              brother={bro}
+              includeRole={props.includeRole}
+            />)}
+        </div>
+      </div>
     </div>
   );
 }

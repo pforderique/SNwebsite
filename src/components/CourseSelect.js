@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import "./brother.scss"
 import Select from 'react-select'
 
-const CourseSelect = ({ courseSet, placeholder, setCourseFilter }) => {
+const CourseSelect = ({ courseSet, placeholder, courseFilter, setCourseFilter }) => {
     if (!courseSet){
         return null;
     }
@@ -29,12 +29,11 @@ const CourseSelect = ({ courseSet, placeholder, setCourseFilter }) => {
     }))
 
     return (
-        <div
-            style={{ width: '15%', display: 'inline-block', padding: '4px'}}
-        >
+        <div className='dropdown'>
             <Select 
                 isDisabled={false}
-                options={[{value: '', label: 'Select Course'}, ...options]}
+                options={[{value: '', label: 'All Courses'}, ...options]}
+                value={courseFilter}
                 placeholder={placeholder}
                 onChange={event => setCourseFilter(event.value)}
                 styles={customStyles}
