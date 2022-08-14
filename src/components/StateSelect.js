@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react'
 import "./brother.scss"
 import Select from 'react-select'
 
-const StateSelect = ({ stateList, placeholder, setStateFilter }) => {
-    if (!stateList){
+const StateSelect = ({stateSet, placeholder, setStateFilter }) => {
+    if (!stateSet){
         return null;
     }
 
@@ -22,19 +22,15 @@ const StateSelect = ({ stateList, placeholder, setStateFilter }) => {
         })
     }
 
-    stateList.sort();
-
-    const options = []
-    stateList.forEach(state => {
-        options.push({
-            value: state,
-            label: state
-        });
-    });
+    const stateList = Array.from(stateSet).sort();
+    const options = stateList.map((state) => ({
+        value: state,
+        label: state 
+    }))
 
     return (
         <div
-            style={{ width: '15%', display: 'inline-block' }}
+            style={{ width: '15%', display: 'inline-block', padding: '4px'}}
         >
             <Select 
                 isDisabled={false}

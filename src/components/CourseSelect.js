@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react'
 import "./brother.scss"
 import Select from 'react-select'
 
-const CourseSelect = ({ courseList, placeholder, setCourseFilter }) => {
-    if (!courseList){
+const CourseSelect = ({ courseSet, placeholder, setCourseFilter }) => {
+    if (!courseSet){
         return null;
     }
 
@@ -22,19 +22,15 @@ const CourseSelect = ({ courseList, placeholder, setCourseFilter }) => {
         })
     }
 
-    courseList.sort();
-
-    const options = []
-    courseList.forEach(state => {
-        options.push({
-            value: state,
-            label: state
-        });
-    });
+    const courseList = Array.from(courseSet).sort();
+    const options = courseList.map((course) => ({
+        value: course,
+        label: course 
+    }))
 
     return (
         <div
-            style={{ width: '15%', display: 'inline-block' }}
+            style={{ width: '15%', display: 'inline-block', padding: '4px'}}
         >
             <Select 
                 isDisabled={false}

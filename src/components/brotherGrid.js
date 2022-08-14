@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Container } from '@material-ui/core';
 
 import Brother from './brother'
-import { brothers } from './FilteredBros'
+import { brothers, filteredBros } from './FilteredBros'
 import CourseSelect from './CourseSelect';
 import StateSelect from './StateSelect';
 import "./brother.scss"
@@ -55,7 +55,8 @@ const BrotherGrid = (props) => {
     <div>
       {canFilter && <Container className={'buttons'}>
         <div
-          style={{ display: 'inline-block' }}
+          // style={{ display: 'inline-block' }}
+          style={{ display: 'flex-wrap', alignItems:'space-between'}}
         >
           <button onClick={()=> resetFilters()}>All</button>
           <button onClick={()=> setYearFilter(2025)}>2025</button>
@@ -63,20 +64,23 @@ const BrotherGrid = (props) => {
           <button onClick={()=> setYearFilter(2023)}>2023</button>
           <button onClick={()=> setYearFilter(2022)}>2022</button>
           <button onClick={()=> setYearFilter(2021)}>2021</button>
-        </div>
         {/* <StateSelect
           stateFilter={stateFilter}
-          stateList={Object.keys(filteredBros.state)}
+          stateSet={new Set(visibleBros.map((bro) =>
+            bro.hometown.split(', ')[1]))}
           setStateFilter={setStateFilter}
           placeholder={(stateFilter === '' ? 'Select State' : stateFilter)}
         />
 
         <CourseSelect 
           courseFilter={courseFilter}
-          courseList={Object.keys(filteredBros.course)}
+          courseSet={new Set(visibleBros.map((bro) =>
+            bro.major.split(/(\s|,)+/).filter((course) =>
+              !['', ' ', ',', '&'].includes(course))).flat())}
           setCourseFilter={setCourseFilter}
           placeholder={(courseFilter === '' ? 'Select Course' : courseFilter)}
         /> */}
+        </div>
       </Container>}
     <div>
       <div className={'cards'}>
