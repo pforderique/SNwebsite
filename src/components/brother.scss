@@ -1,4 +1,4 @@
-.brother{
+.brother {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,30 +7,34 @@
   border: #333856 solid 4px;
 }
 
-.cards{
+.cards {
   margin: 0 auto;
   display: grid;
   grid-gap: 1rem;
 }
 
 @media (min-width: 600px) {
-  .cards { grid-template-columns: repeat(2, 1fr); }
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 900px) {
-  .cards { grid-template-columns: repeat(3, 1fr); }
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-.buttons{
+.buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  button{
+  button {
     margin: 16px;
   }
 }
 
-.brotherImage{
+.brotherImage {
   margin-bottom: 32px;
 }
 
@@ -44,11 +48,11 @@
   justify-content: center;
 }
 
-.popupButton{
+.popupButton {
   margin-bottom: 32px;
 }
 
-.invisible{
+.invisible {
   background: transparent;
 }
 
@@ -56,23 +60,23 @@
   position: fixed;
   top: 0;
   left: 0;
-  width:100%;
+  width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
 
 .modal_content {
-  position:fixed;
+  position: fixed;
   background: #333856;
   width: 80%;
   height: auto;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.popupImageQuote{
+.popupImageQuote {
   display: flex;
   margin: 32px;
 
@@ -82,8 +86,7 @@
   }
 }
 
-
-.popupImage{
+.popupImage {
   width: 300px;
   margin: 0 auto;
   @media (max-width: 600px) {
@@ -91,7 +94,7 @@
   }
 }
 
-.brotherInfo{
+.brotherInfo {
   margin: 0 auto;
   @media (max-width: 600px) {
     display: flex;
@@ -99,18 +102,15 @@
     margin-bottom: -32px;
     > p {
       margin-left: 32px;
-
-
     }
   }
 }
-.quote{
+.quote {
   padding: 32px;
   padding-bottom: 0px;
   margin: 32px;
   border: #2a2f4a solid;
   @media (max-width: 600px) {
     margin: 0px;
-
   }
 }

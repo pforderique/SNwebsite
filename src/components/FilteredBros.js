@@ -1,29 +1,32 @@
 // import brothers from '../../data/brothers.json'
-import allBrothers from '../../data/all-brothers.json'
-import nopic from '../assets/images/brothers/nopic.jpg'
+import allBrothers from '../../data/all-brothers.json';
+import nopic from '../assets/images/brothers/nopic.jpg';
 
 // brothers.sort((bro1, bro2) => bro1.pin - bro2.pin);
 
 // Clean allBrothers
 const infty = Math.pow(2, 12);
 for (const bro of allBrothers) {
-    bro.timestamp = bro.timestamp || '1/1/1869';
-    bro.name = bro.name || '';
-    bro.kerb = bro.kerb || '';
-    bro.major = bro.major || '';
-    bro.year = bro.year || 1869;
-    bro.pin = bro.pin || infty;
-    bro.nickname = bro.nickname || '';
-    bro.hometown = bro.hometown || '';
-    bro.bio = bro.bio || '';
-    bro.funMemoryWithAnotherBrother = bro.funMemoryWithAnotherBrother || '';
-    bro.img = bro.img || nopic;
-    bro.role = bro.role || '';
-    bro.active = bro.active || false;
+  bro.timestamp = bro.timestamp || '1/1/1869';
+  bro.name = bro.name || '';
+  bro.kerb = bro.kerb || '';
+  bro.major = bro.major || '';
+  bro.year = bro.year || 1869;
+  bro.pin = bro.pin || infty;
+  bro.nickname = bro.nickname || '';
+  bro.hometown = bro.hometown || '';
+  bro.bio = bro.bio || '';
+  bro.funMemoryWithAnotherBrother = bro.funMemoryWithAnotherBrother || '';
+  bro.img = bro.img || nopic;
+  bro.role = bro.role || '';
+  bro.active = bro.active || false;
 }
 
-allBrothers.sort((bro1, bro2) => 
-  (bro1.pin || Number.POSITIVE_INFINITY) - (bro2.pin || Number.POSITIVE_INFINITY));
+allBrothers.sort(
+  (bro1, bro2) =>
+    (bro1.pin || Number.POSITIVE_INFINITY) -
+    (bro2.pin || Number.POSITIVE_INFINITY)
+);
 
 // console.log('brothers', allBrothers);
 
@@ -72,4 +75,4 @@ const filteredBros = {
 //   }
 // }
 
-export { /**brothers,*/allBrothers as brothers, filteredBros }
+export { /**brothers,*/ allBrothers as brothers, filteredBros };
