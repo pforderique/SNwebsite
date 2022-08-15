@@ -26,8 +26,6 @@ const StateSelect = ({
       ...provided,
       color: 'black',
     }),
-    // menu: ({ width, ...css }) => ({ ...css })
-    width: '20%',
   };
 
   const stateList = Array.from(stateSet).sort();
@@ -40,6 +38,7 @@ const StateSelect = ({
     <div className="dropdown">
       <Select
         isDisabled={false}
+        isSearchable={false}
         options={[{ value: '', label: 'All States' }, ...options]}
         value={stateFilter}
         placeholder={placeholder}

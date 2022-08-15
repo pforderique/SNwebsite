@@ -38,6 +38,7 @@ const CourseSelect = ({
     <div className="dropdown">
       <Select
         isDisabled={false}
+        isSearchable={false}
         options={[{ value: '', label: 'All Courses' }, ...options]}
         value={courseFilter}
         placeholder={placeholder}
