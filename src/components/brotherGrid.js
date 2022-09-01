@@ -40,8 +40,8 @@ const BrotherGrid = props => {
       : brothersToFilter.filter(
           bro =>
             bro.year % yearFilter === 0 &&
-            bro.hometown.split(', ')[1].includes(stateFilter) &&
-            bro.major.includes(courseFilter)
+            (stateFilter ? bro.hometown.split(', ')[1] === stateFilter : true) &&
+            (courseFilter ? bro.major.split(/(\s|,)+/).includes(courseFilter) : true)
         );
 
     setVisibleBros(filteredBros);
