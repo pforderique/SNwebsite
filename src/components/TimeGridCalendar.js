@@ -8,8 +8,8 @@ import Tooltip from '@material-ui/core/Tooltip'
 import Typography from '@material-ui/core/Typography'
 import { flushToDom } from '@fullcalendar/react/dist/vdom'
 
-const key = 'AIzaSyCurE75SMg0CWiyUKPErU8aZ9S0UszqX9Q'; //process.env.GATSBY_CALENDAR_API_KEY
-const GOOGLE_CALENDAR_ID = 'kkjgltm1bisr2eesnm0rnnu8is@group.calendar.google.com'
+const API_KEY = 'AIzaSyD0rLC8A32v86g7Du9GRR-MYQm8Q2zvjzQ'; //process.env.GATSBY_CALENDAR_API_KEY
+const GOOGLE_CALENDAR_ID = 'on4vje0cfkputobfefgsfvc5jc@group.calendar.google.com'
 
 function TimeGridCalendar() {
   const [isFirstWeek, setIsFirstWeek] = useState(true)
@@ -37,6 +37,7 @@ function TimeGridCalendar() {
   }
 
   const eventContent = info => {
+    console.log('info', info);
     return (
       <Tooltip
         title={
@@ -74,7 +75,7 @@ function TimeGridCalendar() {
             start: '2022-09-03',
             end: '2022-09-10',
           }}
-          googleCalendarApiKey={key}
+          googleCalendarApiKey={API_KEY}
           events={{
             googleCalendarId: GOOGLE_CALENDAR_ID,
           }}

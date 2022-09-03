@@ -67,7 +67,7 @@ class Rush extends React.Component {
               </header>
               <div>
                 <button>
-                  <a href={'http://tiny.cc/SigNuInterest'} target="_blank">
+                  <a href={'https://forms.gle/Czq1YXXffNcxjdJm8'} target="_blank">
                     Interest Form
                   </a>
                 </button>
