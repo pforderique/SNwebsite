@@ -1,26 +1,26 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import Layout from '../components/layout'
+import React from 'react';
+import Helmet from 'react-helmet';
+import Layout from '../components/layout';
 
-import './rush.scss'
+import './rush.scss';
 
-import 'react-responsive-carousel/lib/styles/carousel.min.css'
-import { Carousel } from 'react-responsive-carousel'
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Carousel } from 'react-responsive-carousel';
 
-import TimeGridCalendar from '../components/TimeGridCalendar'
+import TimeGridCalendar from '../components/TimeGridCalendar';
 
-import allBros from '../assets/images/slideshow/allBros.jpg'
-import dopeFlagPic from '../assets/images/slideshow/dopeFlagPic.jpg'
-import formal from '../assets/images/slideshow/formal.jpg'
-import initiation from '../assets/images/slideshow/initiation.jpg'
-import retreat from '../assets/images/slideshow/retreat.jpg'
-import ringDel from '../assets/images/slideshow/ringDel.jpg'
-import ringPrem from '../assets/images/slideshow/ringPrem.jpg'
-import snow from '../assets/images/slideshow/snow.jpg'
-import zoom from '../assets/images/slideshow/zoom.jpg'
-import Button from '@material-ui/core/Button'
+import allBros from '../assets/images/slideshow/allBros.jpg';
+import dopeFlagPic from '../assets/images/slideshow/dopeFlagPic.jpg';
+import formal from '../assets/images/slideshow/formal.jpg';
+import initiation from '../assets/images/slideshow/initiation.jpg';
+import retreat from '../assets/images/slideshow/retreat.jpg';
+import ringDel from '../assets/images/slideshow/ringDel.jpg';
+import ringPrem from '../assets/images/slideshow/ringPrem.jpg';
+import snow from '../assets/images/slideshow/snow.jpg';
+import zoom from '../assets/images/slideshow/zoom.jpg';
+import Button from '@material-ui/core/Button';
 
-let images = [
+const SLIDESHOW_IMAGES = [
   { src: allBros, legend: 'Paper Plate Awards, Spring 2020' },
   {
     src: dopeFlagPic,
@@ -33,23 +33,23 @@ let images = [
   { src: ringPrem, legend: 'Cute bros, Ring Premiere Spring 2020' },
   { src: snow, legend: 'New Hampshire, Spring Retreat 2019' },
   { src: zoom, legend: 'Trivia Night, Summer 2020' },
-]
+];
 
-const INTEREST_FORM_LINK = 'https://forms.gle/Czq1YXXffNcxjdJm8'
+const INTEREST_FORM_LINK = 'https://forms.gle/Czq1YXXffNcxjdJm8';
 
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * i)
-    const temp = array[i]
-    array[i] = array[j]
-    array[j] = temp
+    const j = Math.floor(Math.random() * i);
+    const temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
   }
 }
 
 class Rush extends React.Component {
   constructor(props) {
-    super(props)
-    shuffle(images)
+    super(props);
+    shuffle(SLIDESHOW_IMAGES);
   }
 
   render() {
@@ -85,8 +85,16 @@ class Rush extends React.Component {
                 <h2>Events</h2>
               </header>
 
-              <p align="left"> All events are also on the <a href="https://mitfallrush2021.sched.com/overview/type/Sigma+Nu" target
-              ="_blank" >IFC schedule</a> </p>
+              <p align="left">
+                {' '}
+                All events are also on the{' '}
+                <a
+                  href="https://mitfallrush2021.sched.com/overview/type/Sigma+Nu"
+                  target="_blank"
+                >
+                  IFC schedule
+                </a>{' '}
+              </p>
 
               <TimeGridCalendar />
 
@@ -101,7 +109,7 @@ class Rush extends React.Component {
                   interval={3000}
                   showArrows={false}
                 >
-                  {images.map((item, index) => (
+                  {SLIDESHOW_IMAGES.map((item, index) => (
                     <div key={index}>
                       <img src={item.src} alt={index} className={'image'} />
                       <p className="legend">{item.legend}</p>
@@ -148,10 +156,7 @@ class Rush extends React.Component {
               </header>
               <p>
                 Rush starts September 3rd, 2022! Fill out our{' '}
-                <a
-                  href={INTEREST_FORM_LINK}
-                  target="_blank"
-                >
+                <a href={INTEREST_FORM_LINK} target="_blank">
                   Interest Form{' '}
                 </a>
               </p>
@@ -168,32 +173,38 @@ class Rush extends React.Component {
               </p>
               <p>
                 <h3>Contact our rush team</h3>
-                <section style={{display: 'flex', justifyContent: 'center'}}>
-                  <ContactCard bro={{name: 'Carlos Sanchez', number: '347-546-5324'}}></ContactCard>
-                  <ContactCard bro={{name: 'Chris Picard', number: '617-606-8952'}}></ContactCard>
-                  <ContactCard bro={{name: 'Teo GutieRuiz', number: '323-382-4105'}}></ContactCard>
+                <section style={{ display: 'flex', justifyContent: 'center' }}>
+                  <ContactCard
+                    bro={{ name: 'Carlos Sanchez', number: '347-546-5324' }}
+                  ></ContactCard>
+                  <ContactCard
+                    bro={{ name: 'Chris Picard', number: '617-606-8952' }}
+                  ></ContactCard>
+                  <ContactCard
+                    bro={{ name: 'Teo GutieRuiz', number: '323-382-4105' }}
+                  ></ContactCard>
                 </section>
               </p>
             </div>
           </section>
         </div>
       </Layout>
-    )
+    );
   }
 }
 
 class ContactCard extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
   }
   render() {
     return (
-      <section style={{padding: '0px 20px'}}>
-        <a href={"tel:" + this.props.bro.number}>{this.props.bro.number}</a>
+      <section style={{ padding: '0px 20px' }}>
+        <a href={'tel:' + this.props.bro.number}>{this.props.bro.number}</a>
         <h4>{this.props.bro.name}</h4>
-      </section>      
+      </section>
     );
   }
 }
 
-export default Rush
+export default Rush;
