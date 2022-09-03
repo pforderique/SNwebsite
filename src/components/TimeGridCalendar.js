@@ -71,8 +71,8 @@ function TimeGridCalendar() {
           fixedWeekCount={false}
           plugins={[timeGridPlugin, googleCalendarPlugin]}
           validRange={{
-            start: '2021-09-04',
-            end: '2021-09-10',
+            start: '2022-09-03',
+            end: '2022-09-10',
           }}
           googleCalendarApiKey={key}
           events={{
