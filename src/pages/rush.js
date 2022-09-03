@@ -167,10 +167,8 @@ class Rush extends React.Component {
                 </a>
               </p>
               <p>
-                Contact our team at{' '}
-                <a href={'mailto:sn-rush2021@mit.edu'}>sn-rush2021@mit.edu</a>
-                {' or '}
-                <section style={{paddingTop: '20px', display: 'flex', justifyContent: 'center'}}>
+                <h3>Contact our rush team</h3>
+                <section style={{display: 'flex', justifyContent: 'center'}}>
                   <ContactCard bro={{name: 'Carlos Sanchez', number: '347-546-5324'}}></ContactCard>
                   <ContactCard bro={{name: 'Chris Picard', number: '617-606-8952'}}></ContactCard>
                   <ContactCard bro={{name: 'Teo GutieRuiz', number: '323-382-4105'}}></ContactCard>
