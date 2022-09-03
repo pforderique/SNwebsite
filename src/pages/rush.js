@@ -89,7 +89,7 @@ class Rush extends React.Component {
                 {' '}
                 All events are also on the{' '}
                 <a
-                  href="https://mitfallrush2021.sched.com/overview/type/Sigma+Nu"
+                  href="https://mitfallrush2022.sched.com/overview/type/Sigma+Nu"
                   target="_blank"
                 >
                   IFC schedule
