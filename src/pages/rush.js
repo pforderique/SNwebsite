@@ -35,6 +35,8 @@ let images = [
   { src: zoom, legend: 'Trivia Night, Summer 2020' },
 ]
 
+const INTEREST_FORM_LINK = 'https://forms.gle/Czq1YXXffNcxjdJm8'
+
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * i)
@@ -67,7 +69,7 @@ class Rush extends React.Component {
               </header>
               <div>
                 <button>
-                  <a href={'https://forms.gle/Czq1YXXffNcxjdJm8'} target="_blank">
+                  <a href={INTEREST_FORM_LINK} target="_blank">
                     Interest Form
                   </a>
                 </button>
@@ -145,10 +147,9 @@ class Rush extends React.Component {
                 <h2>Contact Info</h2>
               </header>
               <p>
-                Rush will start September 4th, 2021, but if you want to stay in
-                touch until then sign up on our{' '}
+                Rush starts September 3rd, 2022! Fill out our{' '}
                 <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSdG3SXCNw_rqQZyRW2rD0xodTmfzsJ35RoTWOJbOPLmgcX8dg/viewform"
+                  href={INTEREST_FORM_LINK}
                   target="_blank"
                 >
                   Interest Form{' '}
@@ -166,13 +167,34 @@ class Rush extends React.Component {
                 </a>
               </p>
               <p>
+                Contact our team at{' '}
                 <a href={'mailto:sn-rush2021@mit.edu'}>sn-rush2021@mit.edu</a>
+                {' or '}
+                <section style={{paddingTop: '20px', display: 'flex', justifyContent: 'center'}}>
+                  <ContactCard bro={{name: 'Carlos Sanchez', number: '347-546-5324'}}></ContactCard>
+                  <ContactCard bro={{name: 'Chris Picard', number: '617-606-8952'}}></ContactCard>
+                  <ContactCard bro={{name: 'Teo GutieRuiz', number: '323-382-4105'}}></ContactCard>
+                </section>
               </p>
             </div>
           </section>
         </div>
       </Layout>
     )
+  }
+}
+
+class ContactCard extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+  render() {
+    return (
+      <section style={{padding: '0px 20px'}}>
+        <a href={"tel:" + this.props.bro.number}>{this.props.bro.number}</a>
+        <h4>{this.props.bro.name}</h4>
+      </section>      
+    );
   }
 }
 
