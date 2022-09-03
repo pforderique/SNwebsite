@@ -8,7 +8,7 @@ import Tooltip from '@material-ui/core/Tooltip'
 import Typography from '@material-ui/core/Typography'
 import { flushToDom } from '@fullcalendar/react/dist/vdom'
 
-const API_KEY = 'AIzaSyD0rLC8A32v86g7Du9GRR-MYQm8Q2zvjzQ'; //process.env.GATSBY_CALENDAR_API_KEY
+const API_KEY = 'AIzaSyAvlCx9AWETkeJQlD0O1teMVXOv4Gl-TaA'; //process.env.GATSBY_CALENDAR_API_KEY
 const GOOGLE_CALENDAR_ID = 'on4vje0cfkputobfefgsfvc5jc@group.calendar.google.com'
 
 function TimeGridCalendar() {
@@ -37,7 +37,6 @@ function TimeGridCalendar() {
   }
 
   const eventContent = info => {
-    console.log('info', info);
     return (
       <Tooltip
         title={
