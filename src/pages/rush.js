@@ -20,7 +20,7 @@ import snow from '../assets/images/slideshow/snow.jpg';
 import zoom from '../assets/images/slideshow/zoom.jpg';
 import Button from '@material-ui/core/Button';
 
-const SLIDESHOW_IMAGES = shuffle([
+const SLIDESHOW_IMAGES = [
   { src: allBros, legend: 'Paper Plate Awards, Spring 2020' },
   {
     src: dopeFlagPic,
@@ -33,7 +33,7 @@ const SLIDESHOW_IMAGES = shuffle([
   { src: ringPrem, legend: 'Cute bros, Ring Premiere Spring 2020' },
   { src: snow, legend: 'New Hampshire, Spring Retreat 2019' },
   { src: zoom, legend: 'Trivia Night, Summer 2020' },
-]);
+];
 
 const INTEREST_FORM_LINK = 'https://forms.gle/Czq1YXXffNcxjdJm8';
 
