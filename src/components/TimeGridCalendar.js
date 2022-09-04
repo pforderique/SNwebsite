@@ -79,8 +79,8 @@ function TimeGridCalendar() {
             googleCalendarId: GOOGLE_CALENDAR_ID,
           }}
           initialView="timeGrid" //originally timeGridWeek
-          dayCount="6"
-          duration="days:6"
+          dayCount="4"
+          duration="days:4"
           slotMinTime={isFirstWeek ? '11:30:00' : '17:00:00'}
           nowIndicator={true}
           allDaySlot={false}
