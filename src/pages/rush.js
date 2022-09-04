@@ -20,7 +20,7 @@ import snow from '../assets/images/slideshow/snow.jpg';
 import zoom from '../assets/images/slideshow/zoom.jpg';
 import Button from '@material-ui/core/Button';
 
-const SLIDESHOW_IMAGES = [
+const SLIDESHOW_IMAGES = shuffle([
   { src: allBros, legend: 'Paper Plate Awards, Spring 2020' },
   {
     src: dopeFlagPic,
@@ -33,23 +33,24 @@ const SLIDESHOW_IMAGES = [
   { src: ringPrem, legend: 'Cute bros, Ring Premiere Spring 2020' },
   { src: snow, legend: 'New Hampshire, Spring Retreat 2019' },
   { src: zoom, legend: 'Trivia Night, Summer 2020' },
-];
+]);
 
 const INTEREST_FORM_LINK = 'https://forms.gle/Czq1YXXffNcxjdJm8';
 
-function shuffle(array) {
+function shuffle(arr) {
+  let array = [...arr];
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * i);
     const temp = array[i];
     array[i] = array[j];
     array[j] = temp;
   }
+  return array
 }
 
 class Rush extends React.Component {
   constructor(props) {
     super(props);
-    shuffle(SLIDESHOW_IMAGES);
   }
 
   render() {
