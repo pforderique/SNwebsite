@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PopUp from '../pages/popup';
+import clown from '../assets/images/brothers/clown.png'
 
 import './brother.scss';
 
@@ -26,7 +27,7 @@ const Brother = props => {
   return (
     <div className={'brother'}>
       <img
-        src={props.brother.img}
+        src={props.brother.pin === 775 ? clown : props.brother.img}
         key={props.brother.img}
         alt={props.brother.name}
         className={'brotherImage'}
