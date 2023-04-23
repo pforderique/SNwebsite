@@ -34,7 +34,8 @@
     "reactjs-popup": "^1.5.0",
     "serve-favicon": "^2.5.0",
     "sharp": "^0.27.0",
-    "vhost": "^3.0.2"
+    "vhost": "^3.0.2",
+    "vips": "^1.0.0"
   },
   "keywords": [
     "gatsby"

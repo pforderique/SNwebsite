@@ -45,7 +45,7 @@ const Summer = (props) => (
 
                 <div className='inner' style={{'paddingTop': '0px'}}>
                     <button>
-                        <a href={'https://tinyurl.com/SNSummer2022'} target="_blank">
+                        <a href={'https://forms.gle/nmNpb5C5Sgwt6NWX7'} target="_blank">
                             APPLY HERE
                         </a>
                     </button>
@@ -109,7 +109,7 @@ const Summer = (props) => (
                         <h2>Pricing</h2>
                     </header>
                     <p>
-                    For the summer of 2022, we have singles, doubles, triples, and quads available for rent from Monday, May 30th to Saturday, August 20th. Once you are approved for housing a spot will be reserved for you. You will have five (5) business days to return a signed lease agreement and a security deposit of $300. If you fail to submit a contract and/or deposit in this timeframe, your spot will be released. Full payment of the summer rent is due on or prior to May 23rd. If you prefer to pay your rent in two installments (1/2 on or before May 23rd and 1/2 on July 1st), a fee of $200 will be charged.
+                    For the summer of 2023, we have singles, doubles, triples, and quads available for rent from Monday, May 30th to Saturday, August 20th. Once you are approved for housing a spot will be reserved for you. You will have five (5) business days to return a signed lease agreement and a security deposit of $300. If you fail to submit a contract and/or deposit in this timeframe, your spot will be released. Full payment of the summer rent is due on or prior to May 23rd. If you prefer to pay your rent in two installments (1/2 on or before May 23rd and 1/2 on July 1st), a fee of $200 will be charged.
                     </p>
                     <h2>Rental Rates</h2>
                     <table align="center">
@@ -119,19 +119,19 @@ const Summer = (props) => (
                             <th>No. of Rooms</th>
                         </tr>
                             <td>Single</td>
-                            <td>$2,400</td>
-                            <td>$3,500</td>
+                            <td>$3,000</td>
+                            <td>$4,200</td>
                             <td><s>7 rooms</s></td>
                         <tr>
                             <td>Double</td>
-                            <td>$2,200</td>
                             <td>$2,800</td>
+                            <td>$3,400</td>
                             <td>5 rooms</td>
                         </tr>
                         <tr>
                             <td>Triple</td>
-                            <td>$2,400</td>
-                            <td>$2,500</td>
+                            <td>$2,700</td>
+                            <td>$2,900</td>
                             <td>2 rooms</td>
                         </tr>
                         <tr>
@@ -234,7 +234,7 @@ const Summer = (props) => (
                         <h2>Contact</h2>
                     </header>
                     <p>
-                        If you are interested in applying for summer housing, please apply at <a href='https://tinyurl.com/SNSummer2022'>this link.</a>
+                        If you are interested in applying for summer housing, please apply at <a href='https://forms.gle/nmNpb5C5Sgwt6NWX7'>this link.</a>
                     </p>
                     <p>
                         If you have any questions, please send an email to <a href='mailto:sn-summer-occupancy@mit.edu'>sn-summer-occupancy@mit.edu</a>
